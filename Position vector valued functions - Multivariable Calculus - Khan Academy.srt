@@ -1,0 +1,860 @@
+1
+00:00:00,480 --> 00:00:05,359
+all of the work we've been doing so far
+
+2
+00:00:02,240 --> 00:00:07,680
+with line integrals has been with scalar
+
+3
+00:00:05,359 --> 00:00:09,360
+functions or scalar valued functions and
+
+4
+00:00:07,680 --> 00:00:12,559
+when i say that that just means you give
+
+5
+00:00:09,360 --> 00:00:14,240
+me an x and a y and you evaluate the
+
+6
+00:00:12,559 --> 00:00:16,240
+function at that x and y and you get
+
+7
+00:00:14,240 --> 00:00:18,880
+another scalar value you get it just a
+
+8
+00:00:16,240 --> 00:00:21,359
+number you don't get a vector so what i
+
+9
+00:00:18,880 --> 00:00:23,519
+want to do in this video is start to get
+
+10
+00:00:21,359 --> 00:00:25,359
+ourselves warmed up with regards to
+
+11
+00:00:23,519 --> 00:00:27,199
+vectors so that we can understand what
+
+12
+00:00:25,359 --> 00:00:30,240
+it means to take a line integral with
+
+13
+00:00:27,199 --> 00:00:31,840
+vector valued functions so let me write
+
+14
+00:00:30,240 --> 00:00:32,960
+down some vector valued functions
+
+15
+00:00:31,840 --> 00:00:33,920
+actually even a better place to start
+
+16
+00:00:32,960 --> 00:00:35,920
+let me
+
+17
+00:00:33,920 --> 00:00:37,840
+let me draw a curve or let me describe a
+
+18
+00:00:35,920 --> 00:00:39,760
+curve so let's put that little f of x y
+
+19
+00:00:37,840 --> 00:00:42,320
+to the side we can ignore it for now
+
+20
+00:00:39,760 --> 00:00:45,680
+let's say i have some curve c
+
+21
+00:00:42,320 --> 00:00:49,120
+and it's described it can be parameter
+
+22
+00:00:45,680 --> 00:00:50,399
+parameterized i i can't say that word as
+
+23
+00:00:49,120 --> 00:00:53,280
+let's say x
+
+24
+00:00:50,399 --> 00:00:54,559
+is equal to x of t
+
+25
+00:00:53,280 --> 00:00:57,600
+y
+
+26
+00:00:54,559 --> 00:01:00,399
+is equal to some function y of t
+
+27
+00:00:57,600 --> 00:01:03,760
+and let's say that this is valid for t
+
+28
+00:01:00,399 --> 00:01:05,360
+is between a and b so t is greater than
+
+29
+00:01:03,760 --> 00:01:08,640
+or equal to a
+
+30
+00:01:05,360 --> 00:01:10,400
+and then less than or equal to b so if i
+
+31
+00:01:08,640 --> 00:01:11,200
+were to just draw this
+
+32
+00:01:10,400 --> 00:01:13,439
+on
+
+33
+00:01:11,200 --> 00:01:15,680
+let me say i could draw it like this i'm
+
+34
+00:01:13,439 --> 00:01:17,840
+staying very abstract
+
+35
+00:01:15,680 --> 00:01:20,240
+right now this is not a very specific
+
+36
+00:01:17,840 --> 00:01:23,680
+example this is the x-axis this is the
+
+37
+00:01:20,240 --> 00:01:25,360
+y-axis my curve let's say this is when t
+
+38
+00:01:23,680 --> 00:01:28,560
+is equal to
+
+39
+00:01:25,360 --> 00:01:30,640
+a and then the curve might do something
+
+40
+00:01:28,560 --> 00:01:32,000
+might do something like this
+
+41
+00:01:30,640 --> 00:01:34,799
+i don't know what it does let's say it's
+
+42
+00:01:32,000 --> 00:01:39,200
+over there this is t is equal to
+
+43
+00:01:34,799 --> 00:01:41,520
+b this actual point right here will be x
+
+44
+00:01:39,200 --> 00:01:44,640
+of b that would be the x coordinate you
+
+45
+00:01:41,520 --> 00:01:46,159
+evaluate this function at b and y
+
+46
+00:01:44,640 --> 00:01:48,240
+of b
+
+47
+00:01:46,159 --> 00:01:51,920
+and this is of course when t is equal to
+
+48
+00:01:48,240 --> 00:01:55,600
+a the actual coordinate in r2 on this on
+
+49
+00:01:51,920 --> 00:01:58,640
+the cartesian coordinates will be x of a
+
+50
+00:01:55,600 --> 00:02:02,079
+which is this right here and then y
+
+51
+00:01:58,640 --> 00:02:04,240
+of a which is that right there and we've
+
+52
+00:02:02,079 --> 00:02:06,079
+seen that before that's just a standard
+
+53
+00:02:04,240 --> 00:02:09,520
+way of describing a parametric equation
+
+54
+00:02:06,079 --> 00:02:11,599
+or curve using two parametric equations
+
+55
+00:02:09,520 --> 00:02:13,520
+what i want to do now is describe this
+
+56
+00:02:11,599 --> 00:02:16,720
+same exact curve
+
+57
+00:02:13,520 --> 00:02:19,520
+using a vector valued function so if i
+
+58
+00:02:16,720 --> 00:02:20,720
+define a vector valued function and if
+
+59
+00:02:19,520 --> 00:02:22,000
+you don't remember what those are we'll
+
+60
+00:02:20,720 --> 00:02:24,959
+have a little bit of review here let me
+
+61
+00:02:22,000 --> 00:02:27,040
+say i have a vector valued function r
+
+62
+00:02:24,959 --> 00:02:28,959
+and i'll put a little vector
+
+63
+00:02:27,040 --> 00:02:31,040
+arrow on top of it in a lot of textbooks
+
+64
+00:02:28,959 --> 00:02:32,959
+they'll just bold it and they'll leave
+
+65
+00:02:31,040 --> 00:02:34,800
+scalar valued functions unbolded but
+
+66
+00:02:32,959 --> 00:02:36,480
+it's hard to to draw a bold so i'll put
+
+67
+00:02:34,800 --> 00:02:39,200
+a little vector on top
+
+68
+00:02:36,480 --> 00:02:40,640
+and let's say that r is a function of t
+
+69
+00:02:39,200 --> 00:02:41,920
+and these are going to be position
+
+70
+00:02:40,640 --> 00:02:43,840
+vectors
+
+71
+00:02:41,920 --> 00:02:46,160
+position vectors
+
+72
+00:02:43,840 --> 00:02:48,480
+position
+
+73
+00:02:46,160 --> 00:02:50,400
+position vectors and i'm specifying that
+
+74
+00:02:48,480 --> 00:02:52,560
+because in general when someone talks
+
+75
+00:02:50,400 --> 00:02:54,720
+about a vector this vector
+
+76
+00:02:52,560 --> 00:02:56,319
+and this vector are considered
+
+77
+00:02:54,720 --> 00:02:58,159
+equivalent as long as they have the same
+
+78
+00:02:56,319 --> 00:02:59,920
+magnitude and direction no one really
+
+79
+00:02:58,159 --> 00:03:01,760
+cares about what their start and end
+
+80
+00:02:59,920 --> 00:03:03,519
+points are as long as their direction is
+
+81
+00:03:01,760 --> 00:03:05,120
+the same and their length is the same
+
+82
+00:03:03,519 --> 00:03:06,720
+but when you talk about position vectors
+
+83
+00:03:05,120 --> 00:03:08,800
+you're saying no these vectors are all
+
+84
+00:03:06,720 --> 00:03:10,879
+going to start at
+
+85
+00:03:08,800 --> 00:03:12,879
+zero at the origin and when you say it's
+
+86
+00:03:10,879 --> 00:03:15,120
+a position vector you're implicitly
+
+87
+00:03:12,879 --> 00:03:16,800
+saying this is specifying a unique
+
+88
+00:03:15,120 --> 00:03:18,319
+position in this case it's going to be
+
+89
+00:03:16,800 --> 00:03:19,760
+in two-dimensional space but it could be
+
+90
+00:03:18,319 --> 00:03:21,519
+in three-dimensional space or really
+
+91
+00:03:19,760 --> 00:03:23,120
+even four-five whatever n-dimensional
+
+92
+00:03:21,519 --> 00:03:25,360
+space so when you say the position
+
+93
+00:03:23,120 --> 00:03:28,400
+vector you're literally saying okay this
+
+94
+00:03:25,360 --> 00:03:29,440
+vector literally specifies that point in
+
+95
+00:03:28,400 --> 00:03:31,440
+space
+
+96
+00:03:29,440 --> 00:03:32,560
+so let's let's see if we can describe
+
+97
+00:03:31,440 --> 00:03:36,640
+this curve
+
+98
+00:03:32,560 --> 00:03:37,840
+as a vector a a position vector valued
+
+99
+00:03:36,640 --> 00:03:39,440
+function
+
+100
+00:03:37,840 --> 00:03:41,280
+so we could say r of t let me switch
+
+101
+00:03:39,440 --> 00:03:44,840
+back to that pink color
+
+102
+00:03:41,280 --> 00:03:48,239
+i'll just stay in green is equal to x of
+
+103
+00:03:44,840 --> 00:03:49,920
+t times the unit vector in the x
+
+104
+00:03:48,239 --> 00:03:51,680
+direction the unit vector gets a little
+
+105
+00:03:49,920 --> 00:03:53,360
+carrot on top a little hat that's like
+
+106
+00:03:51,680 --> 00:03:54,560
+the arrow for it that just says it's a
+
+107
+00:03:53,360 --> 00:03:56,159
+unit vector
+
+108
+00:03:54,560 --> 00:03:57,840
+plus
+
+109
+00:03:56,159 --> 00:03:59,040
+y of t
+
+110
+00:03:57,840 --> 00:04:01,680
+y of t
+
+111
+00:03:59,040 --> 00:04:03,120
+times j if i had if i was dealing with a
+
+112
+00:04:01,680 --> 00:04:05,200
+curve in three dimensions i would have
+
+113
+00:04:03,120 --> 00:04:07,439
+plus z of t times k but we're dealing
+
+114
+00:04:05,200 --> 00:04:08,879
+with two dimensions right here and so
+
+115
+00:04:07,439 --> 00:04:10,879
+the way this works is you're just taking
+
+116
+00:04:08,879 --> 00:04:13,280
+your well for any t and you know and
+
+117
+00:04:10,879 --> 00:04:16,160
+still we're going to have t is
+
+118
+00:04:13,280 --> 00:04:18,320
+t is greater than or equal to a and then
+
+119
+00:04:16,160 --> 00:04:20,160
+less than or equal to b and this is the
+
+120
+00:04:18,320 --> 00:04:24,000
+exact same thing as that let me just
+
+121
+00:04:20,160 --> 00:04:26,160
+redraw it so let me draw our coordinates
+
+122
+00:04:24,000 --> 00:04:26,840
+our coordinates right here
+
+123
+00:04:26,160 --> 00:04:30,000
+our
+
+124
+00:04:26,840 --> 00:04:33,360
+axes so that's the y-axis and this is
+
+125
+00:04:30,000 --> 00:04:35,120
+the x-axis so when you evaluate r of a
+
+126
+00:04:33,360 --> 00:04:38,080
+right that's our starting point so let
+
+127
+00:04:35,120 --> 00:04:40,080
+me do that so r of a maybe i'll do it
+
+128
+00:04:38,080 --> 00:04:42,240
+right over here
+
+129
+00:04:40,080 --> 00:04:45,199
+our position vector valued function
+
+130
+00:04:42,240 --> 00:04:47,040
+evaluated at t is equal to a
+
+131
+00:04:45,199 --> 00:04:48,080
+is going to be equal to
+
+132
+00:04:47,040 --> 00:04:49,280
+x
+
+133
+00:04:48,080 --> 00:04:52,000
+of a
+
+134
+00:04:49,280 --> 00:04:55,840
+times our unit vector in the x direction
+
+135
+00:04:52,000 --> 00:04:57,919
+plus y of a times our unit vector in the
+
+136
+00:04:55,840 --> 00:05:00,240
+vertical direction or in the y direction
+
+137
+00:04:57,919 --> 00:05:01,919
+and what's that going to look like well
+
+138
+00:05:00,240 --> 00:05:03,840
+x of a
+
+139
+00:05:01,919 --> 00:05:05,600
+it's going x of a is this thing right
+
+140
+00:05:03,840 --> 00:05:07,680
+here so it's x of a times the unit
+
+141
+00:05:05,600 --> 00:05:10,880
+vector so it's really you know maybe the
+
+142
+00:05:07,680 --> 00:05:12,080
+unit vector is this long it has length 1
+
+143
+00:05:10,880 --> 00:05:14,320
+so now we're just going to have a length
+
+144
+00:05:12,080 --> 00:05:16,479
+of x of a in that direction and then
+
+145
+00:05:14,320 --> 00:05:18,400
+same thing in y of a it's going to be y
+
+146
+00:05:16,479 --> 00:05:20,000
+of a length in that direction but the
+
+147
+00:05:18,400 --> 00:05:23,039
+bottom line this vector right here if
+
+148
+00:05:20,000 --> 00:05:25,600
+you add these scaled values of these two
+
+149
+00:05:23,039 --> 00:05:27,280
+unit vectors you're going to get you're
+
+150
+00:05:25,600 --> 00:05:28,320
+going to get r of a looking something
+
+151
+00:05:27,280 --> 00:05:29,680
+like this
+
+152
+00:05:28,320 --> 00:05:32,320
+it's going to be a vector that looks
+
+153
+00:05:29,680 --> 00:05:33,919
+something like that
+
+154
+00:05:32,320 --> 00:05:35,600
+just like that it's a vector it's a
+
+155
+00:05:33,919 --> 00:05:37,520
+position vector that's why we're nailing
+
+156
+00:05:35,600 --> 00:05:40,560
+it at the origin but drawing it in
+
+157
+00:05:37,520 --> 00:05:42,240
+standard position and that right there
+
+158
+00:05:40,560 --> 00:05:43,360
+is
+
+159
+00:05:42,240 --> 00:05:44,320
+r
+
+160
+00:05:43,360 --> 00:05:46,639
+of a
+
+161
+00:05:44,320 --> 00:05:49,600
+now what happens if a increases a little
+
+162
+00:05:46,639 --> 00:05:51,280
+bit what is r of a plus a little bit and
+
+163
+00:05:49,600 --> 00:05:54,400
+i don't know we could call that r of a
+
+164
+00:05:51,280 --> 00:05:56,560
+plus delta or r of a plus h
+
+165
+00:05:54,400 --> 00:05:58,960
+we do a different color so let's say r
+
+166
+00:05:56,560 --> 00:05:59,840
+let's say we increase a a little bit r
+
+167
+00:05:58,960 --> 00:06:02,560
+of a
+
+168
+00:05:59,840 --> 00:06:03,919
+plus some small h well that's just going
+
+169
+00:06:02,560 --> 00:06:07,759
+to be x of
+
+170
+00:06:03,919 --> 00:06:10,639
+a plus h times the unit vector i
+
+171
+00:06:07,759 --> 00:06:12,560
+plus y times a plus h times the unit
+
+172
+00:06:10,639 --> 00:06:14,240
+vector j and what's that going to look
+
+173
+00:06:12,560 --> 00:06:15,600
+like well we're going to go a little bit
+
+174
+00:06:14,240 --> 00:06:17,840
+further down the curve that's like
+
+175
+00:06:15,600 --> 00:06:19,600
+saying the coordinate x of a plus h and
+
+176
+00:06:17,840 --> 00:06:21,759
+y plus a plus h which might be that
+
+177
+00:06:19,600 --> 00:06:24,720
+point right there so we'll go to it'll
+
+178
+00:06:21,759 --> 00:06:27,440
+be a new unit vector it'll be a u a new
+
+179
+00:06:24,720 --> 00:06:29,199
+unit vector sorry it'll be a new vector
+
+180
+00:06:27,440 --> 00:06:31,039
+position vector not a unit vector these
+
+181
+00:06:29,199 --> 00:06:33,280
+don't necessarily have length 1 that
+
+182
+00:06:31,039 --> 00:06:35,520
+might be right here
+
+183
+00:06:33,280 --> 00:06:38,160
+let me do that same color as this
+
+184
+00:06:35,520 --> 00:06:39,919
+so it might be just like
+
+185
+00:06:38,160 --> 00:06:42,720
+just like that
+
+186
+00:06:39,919 --> 00:06:46,000
+so that right here is r
+
+187
+00:06:42,720 --> 00:06:48,479
+of a plus h so you see as you keep
+
+188
+00:06:46,000 --> 00:06:51,199
+increasing your value of t until you get
+
+189
+00:06:48,479 --> 00:06:53,120
+to b these these position vectors are
+
+190
+00:06:51,199 --> 00:06:54,800
+going to keep specifying
+
+191
+00:06:53,120 --> 00:06:56,720
+we're going to keep specifying points
+
+192
+00:06:54,800 --> 00:06:59,039
+along this curve so the curve let me
+
+193
+00:06:56,720 --> 00:07:01,199
+draw the curve in a different color
+
+194
+00:06:59,039 --> 00:07:02,720
+the curve looks something like this it's
+
+195
+00:07:01,199 --> 00:07:05,599
+meant to look exactly like the curve
+
+196
+00:07:02,720 --> 00:07:07,919
+that i have up here and for example r of
+
+197
+00:07:05,599 --> 00:07:09,680
+b is going to be is going to be a vector
+
+198
+00:07:07,919 --> 00:07:11,919
+that looks like this it's going to be a
+
+199
+00:07:09,680 --> 00:07:14,319
+vector that looks like
+
+200
+00:07:11,919 --> 00:07:16,080
+that let me i want to draw it relatively
+
+201
+00:07:14,319 --> 00:07:17,680
+straight
+
+202
+00:07:16,080 --> 00:07:18,800
+that vector
+
+203
+00:07:17,680 --> 00:07:20,880
+right there
+
+204
+00:07:18,800 --> 00:07:23,440
+is r
+
+205
+00:07:20,880 --> 00:07:25,199
+r of b so hopefully you realize that
+
+206
+00:07:23,440 --> 00:07:27,440
+look these position vectors really are
+
+207
+00:07:25,199 --> 00:07:29,440
+specifying the same points on this curve
+
+208
+00:07:27,440 --> 00:07:32,479
+as this original i guess straight up
+
+209
+00:07:29,440 --> 00:07:33,840
+parametrization that we did for this
+
+210
+00:07:32,479 --> 00:07:35,039
+curve and i just want to do that as a
+
+211
+00:07:33,840 --> 00:07:37,360
+little bit of review because we're now
+
+212
+00:07:35,039 --> 00:07:40,000
+going to break in into the idea of
+
+213
+00:07:37,360 --> 00:07:42,319
+actually taking a derivative of this
+
+214
+00:07:40,000 --> 00:07:45,800
+vector valued function and i'll do that
+
+215
+00:07:42,319 --> 00:07:45,800
+in the next video
+

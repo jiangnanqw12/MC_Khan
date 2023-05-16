@@ -1,0 +1,992 @@
+1
+00:00:00,000 --> 00:00:01,566
+- [Voiceover] Hey guys,
+so in the last video
+
+2
+00:00:01,566 --> 00:00:03,842
+I was talking about how
+you can define a function
+
+3
+00:00:03,842 --> 00:00:05,350
+whose graph is a plane,
+
+4
+00:00:05,350 --> 00:00:08,230
+and moreover a plane that
+passes through a specified point
+
+5
+00:00:08,230 --> 00:00:11,077
+and whose orientation
+you can somehow specify.
+
+6
+00:00:11,077 --> 00:00:13,758
+And we ended up seeing how
+specifying that orientation
+
+7
+00:00:13,758 --> 00:00:16,938
+comes down to certain partial
+derivative information.
+
+8
+00:00:16,938 --> 00:00:19,654
+And first let me just kind of
+repeat what the conclusion was
+
+9
+00:00:19,654 --> 00:00:22,186
+but I'll put it in more abstract terms
+
+10
+00:00:22,186 --> 00:00:24,994
+since I did it in a very
+specific example last time.
+
+11
+00:00:24,994 --> 00:00:27,270
+So basically if you want
+some kind of function
+
+12
+00:00:27,270 --> 00:00:29,222
+which gives you a plane that
+
+13
+00:00:29,222 --> 00:00:30,706
+passes through a certain point.
+
+14
+00:00:30,706 --> 00:00:32,218
+Well first let's see
+what that point is right.
+
+15
+00:00:32,218 --> 00:00:36,200
+Let's say the point was x
+nought, y nought, and z nought.
+
+16
+00:00:36,200 --> 00:00:37,963
+So these are constant values
+
+17
+00:00:37,963 --> 00:00:39,891
+and this is my way of
+abstractly describing
+
+18
+00:00:39,891 --> 00:00:41,563
+a single point in space using
+
+19
+00:00:41,563 --> 00:00:43,979
+x nought to represent a constant x value,
+
+20
+00:00:43,979 --> 00:00:47,067
+y nought to represent constant
+y value, that kind of thing.
+
+21
+00:00:47,067 --> 00:00:49,899
+So what it is, is it's gonna
+be some sort of other constant
+
+22
+00:00:49,899 --> 00:00:52,982
+a multiplied by x minus x nought.
+
+23
+00:00:54,287 --> 00:00:57,703
+So this white x here is the variable
+
+24
+00:00:57,703 --> 00:00:59,651
+and then x nought is just a constant.
+
+25
+00:00:59,651 --> 00:01:04,111
+Now let me go ahead and
+make that parentheses there.
+
+26
+00:01:04,111 --> 00:01:07,028
+Then we add to that b multiplied by
+
+27
+00:01:08,219 --> 00:01:09,775
+and then b is just some other constant
+
+28
+00:01:09,775 --> 00:01:11,423
+just like a is some other constant
+
+29
+00:01:11,423 --> 00:01:13,756
+multiplied by y minus y nought
+
+30
+00:01:15,419 --> 00:01:18,419
+and then all of that you add z nought.
+
+31
+00:01:19,275 --> 00:01:21,295
+And now if you were just
+presented this as it is
+
+32
+00:01:21,295 --> 00:01:22,291
+it's kind of a lot right,
+
+33
+00:01:22,291 --> 00:01:24,267
+there's five different constants going on.
+
+34
+00:01:24,267 --> 00:01:26,055
+But really what this is saying is
+
+35
+00:01:26,055 --> 00:01:29,163
+you want something where
+the partial derivative
+
+36
+00:01:29,163 --> 00:01:31,139
+with respect to x is just some constant
+
+37
+00:01:31,139 --> 00:01:33,715
+and you want to be able to
+specify what that constant is.
+
+38
+00:01:33,715 --> 00:01:35,398
+And similarly, the partial derivative
+
+39
+00:01:35,398 --> 00:01:37,225
+with respect to y is another constant.
+
+40
+00:01:37,225 --> 00:01:38,713
+And you just want to ensure that this
+
+41
+00:01:38,713 --> 00:01:41,361
+passes through this point
+x nought, y nought, z nought.
+
+42
+00:01:41,361 --> 00:01:44,585
+And if you imagine plugging in
+x the variable equals x nought
+
+43
+00:01:44,585 --> 00:01:46,745
+the constant this part goes to zero.
+
+44
+00:01:46,745 --> 00:01:48,697
+Similarly plugging in y nought the constant
+
+45
+00:01:48,697 --> 00:01:50,181
+makes this part go to zero.
+
+46
+00:01:50,181 --> 00:01:52,017
+So this is a way of
+specifying that when you
+
+47
+00:01:52,017 --> 00:01:55,361
+evaluate the function x
+nought y nought equals z nought,
+
+48
+00:01:55,361 --> 00:01:57,313
+and that's what makes sure that the graph
+
+49
+00:01:57,313 --> 00:01:58,937
+passes through that point.
+
+50
+00:01:58,937 --> 00:02:01,097
+So with that said let's
+start thinking about
+
+51
+00:02:01,097 --> 00:02:03,905
+how you can find the
+tangent plane to a graph.
+
+52
+00:02:03,905 --> 00:02:06,437
+And first of all let's think
+about what that point is,
+
+53
+00:02:06,437 --> 00:02:08,433
+how you specify such a point.
+
+54
+00:02:08,433 --> 00:02:11,125
+Instead of specifying any
+three numbers in space,
+
+55
+00:02:11,125 --> 00:02:12,521
+because you have to make sure the point
+
+56
+00:02:12,521 --> 00:02:13,961
+is somewhere on the graph,
+
+57
+00:02:13,961 --> 00:02:15,633
+you instead only specify two.
+
+58
+00:02:15,633 --> 00:02:18,161
+You're basically gonna say
+what's the x coordinate
+
+59
+00:02:18,161 --> 00:02:21,065
+and in this case let's say
+the x coordinate was one,
+
+60
+00:02:21,065 --> 00:02:23,433
+and then the y coordinate which
+
+61
+00:02:23,433 --> 00:02:25,173
+looks about like negative two.
+
+62
+00:02:25,173 --> 00:02:28,265
+To make it easier I'm just
+gonna say it is negative two.
+
+63
+00:02:28,265 --> 00:02:29,797
+Then the z coordinate is specified
+
+64
+00:02:29,797 --> 00:02:31,097
+because this is a graph.
+
+65
+00:02:31,097 --> 00:02:33,837
+Z coordinate is forced
+to be whatever the output
+
+66
+00:02:33,837 --> 00:02:36,669
+of the function is at one negative two.
+
+67
+00:02:36,669 --> 00:02:39,245
+So this is gonna be whatever
+the output of our function is
+
+68
+00:02:39,245 --> 00:02:40,912
+at one negative two.
+
+69
+00:02:42,149 --> 00:02:44,101
+And f here, f is going to be whatever
+
+70
+00:02:44,101 --> 00:02:45,725
+function gives us this graph.
+
+71
+00:02:45,725 --> 00:02:48,533
+So maybe I should write
+down the actual function
+
+72
+00:02:48,533 --> 00:02:50,089
+that I'm using for this graph.
+
+73
+00:02:50,089 --> 00:02:54,089
+In this case f which is
+a function of x and y
+
+74
+00:02:55,569 --> 00:02:58,319
+is equal to three minus one third
+
+75
+00:02:59,821 --> 00:03:03,257
+of x squared minus y squared.
+
+76
+00:03:03,257 --> 00:03:05,253
+So this is the function that we're using
+
+77
+00:03:05,253 --> 00:03:06,761
+and you evaluate it at that point
+
+78
+00:03:06,761 --> 00:03:09,337
+and this will give you your
+point in three dimensional space
+
+79
+00:03:09,337 --> 00:03:10,965
+that our linear function,
+
+80
+00:03:10,965 --> 00:03:13,589
+that our tangent plane
+has to pass through.
+
+81
+00:03:13,589 --> 00:03:15,445
+So we can start writing
+out our linear function.
+
+82
+00:03:15,445 --> 00:03:18,117
+We can say okay so our linear function
+
+83
+00:03:18,117 --> 00:03:20,138
+has a function of x and y.
+
+84
+00:03:20,138 --> 00:03:21,735
+It's gotta make sure it goes through
+
+85
+00:03:21,735 --> 00:03:22,856
+that one and that negative two,
+
+86
+00:03:22,856 --> 00:03:24,493
+so this is gonna be some constant a
+
+87
+00:03:24,493 --> 00:03:25,957
+that we'll fill in in a moment,
+
+88
+00:03:25,957 --> 00:03:28,533
+multiplied by x minus that one,
+
+89
+00:03:28,533 --> 00:03:32,993
+plus and then b also a constant
+we'll specify in a moment,
+
+90
+00:03:32,993 --> 00:03:35,466
+times y minus that negative two,
+
+91
+00:03:35,466 --> 00:03:37,799
+so it's minus a negative two
+
+92
+00:03:38,670 --> 00:03:41,318
+and then the thing that we add to it
+
+93
+00:03:41,318 --> 00:03:43,686
+is f of one negative two.
+
+94
+00:03:43,686 --> 00:03:45,310
+Now let's just go ahead and evaluate that.
+
+95
+00:03:45,310 --> 00:03:47,054
+Let's say we plug in one to negative two.
+
+96
+00:03:47,054 --> 00:03:51,221
+So if we go up here and we plug
+in three minus one third of
+
+97
+00:03:54,554 --> 00:03:56,714
+if x equals one, one third of one squared,
+
+98
+00:03:56,714 --> 00:03:58,850
+so that's one third one squared,
+
+99
+00:03:58,850 --> 00:04:01,262
+and then y is negative two.
+
+100
+00:04:01,262 --> 00:04:04,929
+So that would be minus
+negative two squared.
+
+101
+00:04:05,862 --> 00:04:09,195
+So that's three minus a third minus four
+
+102
+00:04:11,250 --> 00:04:12,874
+so the whole thing is equal to
+
+103
+00:04:12,874 --> 00:04:15,614
+three minus four is negative
+one minus another third
+
+104
+00:04:15,614 --> 00:04:17,614
+is negative four thirds.
+
+105
+00:04:18,910 --> 00:04:21,254
+So that's what we add
+to this entire thing.
+
+106
+00:04:21,254 --> 00:04:23,504
+We add negative four thirds
+
+107
+00:04:25,250 --> 00:04:26,458
+or maybe I should just kind of
+
+108
+00:04:26,458 --> 00:04:28,802
+make clear the separation here.
+
+109
+00:04:28,802 --> 00:04:31,730
+So this is our function but we
+don't know what a and b are.
+
+110
+00:04:31,730 --> 00:04:33,818
+Those are things that we need to plug in.
+
+111
+00:04:33,818 --> 00:04:35,814
+Now the whole idea of the tangent plane
+
+112
+00:04:35,814 --> 00:04:38,554
+is that the partial
+derivative with respect to x
+
+113
+00:04:38,554 --> 00:04:41,038
+should match that of
+the original function.
+
+114
+00:04:41,038 --> 00:04:42,410
+So if we go over to the graph here
+
+115
+00:04:42,410 --> 00:04:44,754
+and start thinking about
+partial derivative information.
+
+116
+00:04:44,754 --> 00:04:47,446
+If we want the partial
+derivative with respect to x
+
+117
+00:04:47,446 --> 00:04:50,234
+then you imagine moving purely
+in the x direction here.
+
+118
+00:04:50,234 --> 00:04:54,114
+This intersects the graph
+along some kind of curve
+
+119
+00:04:54,114 --> 00:04:56,134
+and what the partial
+derivative with respect to x
+
+120
+00:04:56,134 --> 00:05:00,301
+at this point tells you, is
+the slope of the tangent line,
+
+121
+00:05:06,240 --> 00:05:08,020
+in that direction of that point.
+
+122
+00:05:08,020 --> 00:05:10,320
+So that's what the partial
+derivative with respect to x
+
+123
+00:05:10,320 --> 00:05:12,804
+is telling you and what
+you want when you look
+
+124
+00:05:12,804 --> 00:05:15,984
+at the tangent plane is
+that the tangent plane
+
+125
+00:05:15,984 --> 00:05:17,772
+also has that same slope.
+
+126
+00:05:17,772 --> 00:05:19,144
+If I lined things up here,
+
+127
+00:05:19,144 --> 00:05:21,580
+you'd want it also to
+have that same slope.
+
+128
+00:05:21,580 --> 00:05:24,436
+So you can specify over here and say a.
+
+129
+00:05:24,436 --> 00:05:28,012
+You want a to be equal
+to the partial derivative
+
+130
+00:05:28,012 --> 00:05:30,916
+of the function with respect to x
+
+131
+00:05:30,916 --> 00:05:33,816
+evaluated at this one negative two.
+
+132
+00:05:33,816 --> 00:05:38,027
+Evaluated at that special
+point, one negative two.
+
+133
+00:05:38,027 --> 00:05:42,027
+And similarly b for pretty
+much the same reasons
+
+134
+00:05:43,386 --> 00:05:47,553
+and I'll draw it out here
+so let's erase this line.
+
+135
+00:05:49,722 --> 00:05:53,506
+So instead of intersecting
+it with that slice
+
+136
+00:05:53,506 --> 00:05:56,038
+let's see what movement in
+the y direction looks like.
+
+137
+00:05:56,038 --> 00:05:58,362
+So in this case it looks
+like a very steep slope right
+
+138
+00:05:58,362 --> 00:06:01,589
+because in this case the
+tangent line in that direction
+
+139
+00:06:01,589 --> 00:06:05,349
+is a pretty steep slope
+and now when we bring in
+
+140
+00:06:05,349 --> 00:06:09,229
+the tangent plane it
+should intersect with that
+
+141
+00:06:09,229 --> 00:06:13,709
+constant x value plane
+along that same slope.
+
+142
+00:06:13,709 --> 00:06:15,149
+Made it kind of messy there
+
+143
+00:06:15,149 --> 00:06:18,145
+but you can see the line formed
+
+144
+00:06:18,145 --> 00:06:20,001
+by intersecting these two planes
+
+145
+00:06:20,001 --> 00:06:22,185
+should be that desired tangent,
+
+146
+00:06:22,185 --> 00:06:23,997
+and what that corresponds to in formulas
+
+147
+00:06:23,997 --> 00:06:27,665
+is that this b which represents
+the partial derivative of l,
+
+148
+00:06:27,665 --> 00:06:30,449
+l is the tangent plane function,
+
+149
+00:06:30,449 --> 00:06:33,933
+that should be the same as if
+we took the partial derivative
+
+150
+00:06:33,933 --> 00:06:37,137
+of f with respect to y at that point,
+
+151
+00:06:37,137 --> 00:06:39,809
+at this point one negative two.
+
+152
+00:06:39,809 --> 00:06:41,897
+And this is stuff that we can compute
+
+153
+00:06:41,897 --> 00:06:43,061
+and that we can figure out.
+
+154
+00:06:43,061 --> 00:06:45,405
+So let's start plugging that in.
+
+155
+00:06:45,405 --> 00:06:46,799
+First let me just copy this function
+
+156
+00:06:46,799 --> 00:06:49,132
+because we're gonna need it.
+
+157
+00:06:55,295 --> 00:06:57,462
+Now let's go on down here.
+
+158
+00:06:58,967 --> 00:07:01,475
+I'm just gonna, let's paste it down here
+
+159
+00:07:01,475 --> 00:07:03,423
+in the bottom because
+that's what we'll need.
+
+160
+00:07:03,423 --> 00:07:05,071
+So let's compute the
+partial derivative of f
+
+161
+00:07:05,071 --> 00:07:06,723
+with respect to x.
+
+162
+00:07:06,723 --> 00:07:09,415
+So we look down here, the
+only place where x shows up
+
+163
+00:07:09,415 --> 00:07:12,991
+is in this negative one
+third of x squared context
+
+164
+00:07:12,991 --> 00:07:16,379
+so the partial derivative
+of f with respect to x
+
+165
+00:07:16,379 --> 00:07:19,027
+is gonna be just the
+derivative of this little guy
+
+166
+00:07:19,027 --> 00:07:20,955
+which is negative, we bring down the two,
+
+167
+00:07:20,955 --> 00:07:23,038
+negative two thirds of x.
+
+168
+00:07:25,087 --> 00:07:28,339
+So when we go ahead and
+plug in x equals one
+
+169
+00:07:28,339 --> 00:07:31,171
+to see what it looks like
+when we evaluate at this point
+
+170
+00:07:31,171 --> 00:07:35,327
+that's just gonna be equal
+to negative two thirds.
+
+171
+00:07:35,327 --> 00:07:36,675
+So that tells us that a is gonna
+
+172
+00:07:36,675 --> 00:07:38,531
+have to be negative two thirds.
+
+173
+00:07:38,531 --> 00:07:39,415
+Now for similar reasons,
+
+174
+00:07:39,415 --> 00:07:41,343
+let's go ahead and compute the
+
+175
+00:07:41,343 --> 00:07:43,711
+partial derivative with respect to y.
+
+176
+00:07:43,711 --> 00:07:46,011
+We look down here, the
+only place that y shows up
+
+177
+00:07:46,011 --> 00:07:49,051
+in the entire expression
+is this negative y squared.
+
+178
+00:07:49,051 --> 00:07:53,555
+So the partial derivative
+of f with respect to y
+
+179
+00:07:53,555 --> 00:07:57,138
+is equal to negative
+two y, negative two y.
+
+180
+00:07:58,131 --> 00:08:01,170
+And now when we plug in
+y equals negative two
+
+181
+00:08:01,170 --> 00:08:04,494
+what we get is negative two
+multiplied coincidentally
+
+182
+00:08:04,494 --> 00:08:06,612
+by negative two, didn't
+have to be the case
+
+183
+00:08:06,612 --> 00:08:10,541
+that those were the same, and
+that whole thing equals four.
+
+184
+00:08:10,541 --> 00:08:14,469
+So the partial derivative
+of f with respect to y
+
+185
+00:08:14,469 --> 00:08:16,033
+evaluated at this point one negative two
+
+186
+00:08:16,033 --> 00:08:17,357
+is equal to four.
+
+187
+00:08:17,357 --> 00:08:18,865
+So if we were to plug
+this information back up
+
+188
+00:08:18,865 --> 00:08:20,653
+into our formula we would replace
+
+189
+00:08:20,653 --> 00:08:22,257
+a with negative two thirds.
+
+190
+00:08:22,257 --> 00:08:24,650
+It would say negative two thirds.
+
+191
+00:08:24,650 --> 00:08:29,293
+And we would replace b with
+four, replace b with four.
+
+192
+00:08:29,293 --> 00:08:33,221
+And that would give us the full formula,
+
+193
+00:08:33,221 --> 00:08:36,580
+the full formula for the tangent plane.
+
+194
+00:08:36,580 --> 00:08:38,232
+And this can be kind of
+a lot to look at at first
+
+195
+00:08:38,232 --> 00:08:42,248
+because we have to specify the
+input point one negative two.
+
+196
+00:08:42,248 --> 00:08:43,456
+And then we had to figure out where
+
+197
+00:08:43,456 --> 00:08:45,544
+the function evaluates at that point.
+
+198
+00:08:45,544 --> 00:08:46,984
+And then we had to figure out both of the
+
+199
+00:08:46,984 --> 00:08:50,328
+partial derivatives with respect
+to x and with respect to y.
+
+200
+00:08:50,328 --> 00:08:51,976
+But all in all, there's not actually
+
+201
+00:08:51,976 --> 00:08:54,672
+a lot to remember from how
+you go about computing this.
+
+202
+00:08:54,672 --> 00:08:55,808
+Looking at the graph actually makes
+
+203
+00:08:55,808 --> 00:08:57,620
+things seem a lot more reasonable
+
+204
+00:08:57,620 --> 00:08:59,896
+because each of those terms
+has an actual meaning.
+
+205
+00:08:59,896 --> 00:09:03,168
+If we look at the one and negative two,
+
+206
+00:09:03,168 --> 00:09:04,632
+that's just telling us the input,
+
+207
+00:09:04,632 --> 00:09:06,444
+the kind of x and y
+coordindates of the input
+
+208
+00:09:06,444 --> 00:09:07,952
+and of course we have to evaluate that
+
+209
+00:09:07,952 --> 00:09:10,180
+because that tells us the z coordinate
+
+210
+00:09:10,180 --> 00:09:13,548
+that will put us on the graph
+corresponding to that point
+
+211
+00:09:13,548 --> 00:09:15,872
+and then to get a tangent plane
+
+212
+00:09:15,872 --> 00:09:17,079
+you just need to specify the two bits of
+
+213
+00:09:17,079 --> 00:09:19,027
+partial differential information
+
+214
+00:09:19,027 --> 00:09:20,839
+and that will tell you how this graph
+
+215
+00:09:20,839 --> 00:09:22,231
+needs to be oriented,
+
+216
+00:09:22,231 --> 00:09:23,903
+and once you start thinking
+of things in that way,
+
+217
+00:09:23,903 --> 00:09:26,227
+geometrically, even though
+there's a lot going on here,
+
+218
+00:09:26,227 --> 00:09:28,291
+there's five different
+numbers you have to put in,
+
+219
+00:09:28,291 --> 00:09:31,335
+each one of them feels like
+of course you need that number
+
+220
+00:09:31,335 --> 00:09:33,539
+otherwise you couldn't
+specify a tangent plane.
+
+221
+00:09:33,539 --> 00:09:35,327
+There's kind of a lot
+of information required
+
+222
+00:09:35,327 --> 00:09:37,883
+to put it on the appropriate spot.
+
+223
+00:09:37,883 --> 00:09:39,938
+So with that I will see you next video.
+

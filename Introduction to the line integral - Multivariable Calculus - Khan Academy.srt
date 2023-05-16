@@ -1,0 +1,2168 @@
+1
+00:00:00,480 --> 00:00:04,319
+if we're just dealing with two
+
+2
+00:00:02,320 --> 00:00:06,080
+dimensions and we want to find the area
+
+3
+00:00:04,319 --> 00:00:08,000
+under curve we have
+
+4
+00:00:06,080 --> 00:00:10,320
+good tools in our toolkit all ready to
+
+5
+00:00:08,000 --> 00:00:13,120
+do it and i'll just remind us of our
+
+6
+00:00:10,320 --> 00:00:16,400
+tools so let's say that's x axis that's
+
+7
+00:00:13,120 --> 00:00:18,000
+the y-axis let me draw some arbitrary
+
+8
+00:00:16,400 --> 00:00:20,720
+function right here
+
+9
+00:00:18,000 --> 00:00:23,199
+that's my function f of x and let's say
+
+10
+00:00:20,720 --> 00:00:26,400
+we want to find the area
+
+11
+00:00:23,199 --> 00:00:29,119
+between x is equal to a so that's x
+
+12
+00:00:26,400 --> 00:00:31,920
+equal to a and x is equal to
+
+13
+00:00:29,119 --> 00:00:33,280
+b we saw this many many many videos ago
+
+14
+00:00:31,920 --> 00:00:35,760
+that the way you can think about is you
+
+15
+00:00:33,280 --> 00:00:38,239
+take super small widths of x or super
+
+16
+00:00:35,760 --> 00:00:40,160
+small changes in x we could call them
+
+17
+00:00:38,239 --> 00:00:42,239
+delta x's but because they're so small
+
+18
+00:00:40,160 --> 00:00:43,920
+we're going to call them a dx
+
+19
+00:00:42,239 --> 00:00:46,399
+we're going to call them a dx super
+
+20
+00:00:43,920 --> 00:00:48,320
+infinitesimally small changes in x and
+
+21
+00:00:46,399 --> 00:00:50,960
+then you multiply them times the value
+
+22
+00:00:48,320 --> 00:00:52,640
+of f of x at that point so you multiply
+
+23
+00:00:50,960 --> 00:00:57,360
+it times the height at that point which
+
+24
+00:00:52,640 --> 00:00:59,640
+is the value of f of x so you get f of x
+
+25
+00:00:57,360 --> 00:01:02,000
+times each of these infinite
+
+26
+00:00:59,640 --> 00:01:05,040
+infinitesimally small bases that'll give
+
+27
+00:01:02,000 --> 00:01:06,000
+you the area of this infinitesimally
+
+28
+00:01:05,040 --> 00:01:08,159
+narrow
+
+29
+00:01:06,000 --> 00:01:10,000
+rectangle right there and since each of
+
+30
+00:01:08,159 --> 00:01:11,439
+these guys are infinitely small you're
+
+31
+00:01:10,000 --> 00:01:13,119
+going to have an infinite number of
+
+32
+00:01:11,439 --> 00:01:14,960
+these rectangles in order to fill the
+
+33
+00:01:13,119 --> 00:01:16,400
+space you're going to have an infinite
+
+34
+00:01:14,960 --> 00:01:19,200
+number of these
+
+35
+00:01:16,400 --> 00:01:21,200
+right and so the tool we used was the
+
+36
+00:01:19,200 --> 00:01:24,000
+definite integral the definite integral
+
+37
+00:01:21,200 --> 00:01:25,600
+is a sum it's an infinite sum of these
+
+38
+00:01:24,000 --> 00:01:27,200
+infinitely small
+
+39
+00:01:25,600 --> 00:01:29,200
+areas or these infinitely small
+
+40
+00:01:27,200 --> 00:01:30,960
+rectangles and the notations that we use
+
+41
+00:01:29,200 --> 00:01:33,680
+would say we go from a
+
+42
+00:01:30,960 --> 00:01:35,360
+to b and we've done many videos on how
+
+43
+00:01:33,680 --> 00:01:37,040
+do you evaluate these things but i just
+
+44
+00:01:35,360 --> 00:01:39,040
+want to remind you conceptually what
+
+45
+00:01:37,040 --> 00:01:41,920
+this is saying this is conceptually
+
+46
+00:01:39,040 --> 00:01:43,680
+saying let's take a small change in x
+
+47
+00:01:41,920 --> 00:01:45,680
+multiply it times the height at that
+
+48
+00:01:43,680 --> 00:01:47,280
+point so small change in x multiply it
+
+49
+00:01:45,680 --> 00:01:48,479
+times the height at that point and
+
+50
+00:01:47,280 --> 00:01:50,159
+you're going to have an infinite number
+
+51
+00:01:48,479 --> 00:01:51,840
+of these because these x's are super
+
+52
+00:01:50,159 --> 00:01:53,119
+small they're infinitely small so you're
+
+53
+00:01:51,840 --> 00:01:54,960
+going to have infinite number of those
+
+54
+00:01:53,119 --> 00:01:57,520
+so take an infinite sum of all of those
+
+55
+00:01:54,960 --> 00:01:59,360
+from x is equal to a to x is equal to b
+
+56
+00:01:57,520 --> 00:02:00,880
+and that's just our standard definite
+
+57
+00:01:59,360 --> 00:02:03,360
+integral now what i want to do in this
+
+58
+00:02:00,880 --> 00:02:05,040
+video is extend this broaden this a
+
+59
+00:02:03,360 --> 00:02:06,880
+little bit to solve a
+
+60
+00:02:05,040 --> 00:02:09,200
+i guess maybe you could say a harder or
+
+61
+00:02:06,880 --> 00:02:10,479
+a broader class of problems
+
+62
+00:02:09,200 --> 00:02:12,400
+let's say
+
+63
+00:02:10,479 --> 00:02:14,080
+let's say that we are let's go to three
+
+64
+00:02:12,400 --> 00:02:15,840
+dimensions now and i'll just draw the x
+
+65
+00:02:14,080 --> 00:02:18,800
+y plane first maybe i'll keep this just
+
+66
+00:02:15,840 --> 00:02:20,480
+to kind of make the analogy clear
+
+67
+00:02:18,800 --> 00:02:22,319
+so let me draw i'm going to kind of
+
+68
+00:02:20,480 --> 00:02:24,000
+flatten this so we have some perspective
+
+69
+00:02:22,319 --> 00:02:27,520
+so let's say that this right here is the
+
+70
+00:02:24,000 --> 00:02:29,040
+y-axis kind of going behind the screen
+
+71
+00:02:27,520 --> 00:02:31,120
+as you can imagine if i just pushed on
+
+72
+00:02:29,040 --> 00:02:35,760
+this and knocked it down so that's the
+
+73
+00:02:31,120 --> 00:02:38,000
+y-axis and that is my x-axis right there
+
+74
+00:02:35,760 --> 00:02:41,040
+that is my x-axis and let's say i have
+
+75
+00:02:38,000 --> 00:02:43,200
+some path in the x-y plane
+
+76
+00:02:41,040 --> 00:02:45,120
+so and in order to really define a path
+
+77
+00:02:43,200 --> 00:02:47,920
+and the x-y plane i'll have to
+
+78
+00:02:45,120 --> 00:02:50,239
+parametrize or parameterize i have
+
+79
+00:02:47,920 --> 00:02:52,400
+trouble saying that both the x and y
+
+80
+00:02:50,239 --> 00:02:54,400
+variables so let's say that x
+
+81
+00:02:52,400 --> 00:02:56,080
+let's say that x is equal to let me
+
+82
+00:02:54,400 --> 00:02:57,280
+switch colors i'm using that orange too
+
+83
+00:02:56,080 --> 00:02:59,360
+much
+
+84
+00:02:57,280 --> 00:03:00,879
+let's say that x
+
+85
+00:02:59,360 --> 00:03:03,840
+is equal to
+
+86
+00:03:00,879 --> 00:03:05,360
+some function of some parameter t and
+
+87
+00:03:03,840 --> 00:03:08,400
+let's say y
+
+88
+00:03:05,360 --> 00:03:10,480
+is equal to some other function of that
+
+89
+00:03:08,400 --> 00:03:12,239
+same parameter t and let's say we're
+
+90
+00:03:10,480 --> 00:03:13,280
+going to start we're going to have t go
+
+91
+00:03:12,239 --> 00:03:15,360
+from
+
+92
+00:03:13,280 --> 00:03:18,720
+t is going to be greater than or equal
+
+93
+00:03:15,360 --> 00:03:21,519
+to a and then less than or equal to b
+
+94
+00:03:18,720 --> 00:03:23,840
+now this will define a path in the x y
+
+95
+00:03:21,519 --> 00:03:25,840
+plane and if you if this seems confusing
+
+96
+00:03:23,840 --> 00:03:28,000
+you might want to review the videos on
+
+97
+00:03:25,840 --> 00:03:30,480
+parametric equations but essentially you
+
+98
+00:03:28,000 --> 00:03:32,159
+know when t is equal to a when t is
+
+99
+00:03:30,480 --> 00:03:34,879
+equal to a you know you're going to have
+
+100
+00:03:32,159 --> 00:03:37,599
+x is equal to so at t is equal to a
+
+101
+00:03:34,879 --> 00:03:38,879
+you're going to have x is equal to
+
+102
+00:03:37,599 --> 00:03:40,720
+g of a
+
+103
+00:03:38,879 --> 00:03:43,280
+and you're going to have y
+
+104
+00:03:40,720 --> 00:03:44,720
+is equal to h of a
+
+105
+00:03:43,280 --> 00:03:46,400
+so you're going to have this point right
+
+106
+00:03:44,720 --> 00:03:48,480
+here so maybe it might be i don't know
+
+107
+00:03:46,400 --> 00:03:51,040
+i'll just draw an ordinary random point
+
+108
+00:03:48,480 --> 00:03:52,319
+here maybe that's when t is equal to a
+
+109
+00:03:51,040 --> 00:03:54,720
+you're going to have you're going to
+
+110
+00:03:52,319 --> 00:03:56,720
+plot the coordinate point g of a that's
+
+111
+00:03:54,720 --> 00:03:58,640
+going to be our x coordinate this is g
+
+112
+00:03:56,720 --> 00:04:01,200
+of a right here and then our y
+
+113
+00:03:58,640 --> 00:04:02,959
+coordinate is going to be h of a
+
+114
+00:04:01,200 --> 00:04:04,239
+right you just put t is equal to a in
+
+115
+00:04:02,959 --> 00:04:06,319
+each of these equations and then you get
+
+116
+00:04:04,239 --> 00:04:08,879
+a value for x and y so this coordinate
+
+117
+00:04:06,319 --> 00:04:10,799
+right here would be h of a and then you
+
+118
+00:04:08,879 --> 00:04:12,159
+would keep incrementing t larger and
+
+119
+00:04:10,799 --> 00:04:13,599
+larger until you get to b but you're
+
+120
+00:04:12,159 --> 00:04:15,280
+going to get a series of points that are
+
+121
+00:04:13,599 --> 00:04:17,199
+going to look something like
+
+122
+00:04:15,280 --> 00:04:19,759
+let's say it looks something like that
+
+123
+00:04:17,199 --> 00:04:23,120
+that right there is a curve or it's a
+
+124
+00:04:19,759 --> 00:04:24,479
+path in the x y plane and you know what
+
+125
+00:04:23,120 --> 00:04:25,840
+you're saying how does that relate to
+
+126
+00:04:24,479 --> 00:04:27,199
+that right now you know what are we
+
+127
+00:04:25,840 --> 00:04:28,720
+doing well let me just write a c here
+
+128
+00:04:27,199 --> 00:04:29,759
+for saying that's our curve or that's
+
+129
+00:04:28,720 --> 00:04:32,400
+our path
+
+130
+00:04:29,759 --> 00:04:35,040
+now let's say i have another function
+
+131
+00:04:32,400 --> 00:04:37,520
+that associates every point in the x y
+
+132
+00:04:35,040 --> 00:04:40,960
+plane with some value so let's say i
+
+133
+00:04:37,520 --> 00:04:42,479
+have some function f of x y
+
+134
+00:04:40,960 --> 00:04:43,919
+f of x y
+
+135
+00:04:42,479 --> 00:04:46,000
+what it does is it associates every
+
+136
+00:04:43,919 --> 00:04:48,639
+point on the x y plane with some values
+
+137
+00:04:46,000 --> 00:04:51,040
+so let me plot x f of x y so let me
+
+138
+00:04:48,639 --> 00:04:53,360
+make a vertical axis here we could do a
+
+139
+00:04:51,040 --> 00:04:55,520
+different color
+
+140
+00:04:53,360 --> 00:04:57,919
+call it the f of x y axis maybe we could
+
+141
+00:04:55,520 --> 00:05:00,160
+even call it the z axis if you want to
+
+142
+00:04:57,919 --> 00:05:02,880
+but it's some vertical axis right there
+
+143
+00:05:00,160 --> 00:05:05,520
+and for every point so if you give me an
+
+144
+00:05:02,880 --> 00:05:07,039
+x and a y and you put into my f of x y
+
+145
+00:05:05,520 --> 00:05:09,680
+function it's going to give you some
+
+146
+00:05:07,039 --> 00:05:12,000
+point so let me so i can just draw some
+
+147
+00:05:09,680 --> 00:05:13,440
+type of a surface that f of x y
+
+148
+00:05:12,000 --> 00:05:15,039
+represents and this will always become a
+
+149
+00:05:13,440 --> 00:05:17,199
+lot more concrete when i do some
+
+150
+00:05:15,039 --> 00:05:18,960
+concrete examples so say let's say that
+
+151
+00:05:17,199 --> 00:05:21,120
+f x y looks something like this i'm
+
+152
+00:05:18,960 --> 00:05:23,280
+going to try my best to draw it let's
+
+153
+00:05:21,120 --> 00:05:25,600
+i'll do a different color
+
+154
+00:05:23,280 --> 00:05:27,120
+let's say f of x y you know some surface
+
+155
+00:05:25,600 --> 00:05:28,800
+i'll draw a part of it
+
+156
+00:05:27,120 --> 00:05:31,120
+it's some surface that looks let's say
+
+157
+00:05:28,800 --> 00:05:34,000
+it looks something like that
+
+158
+00:05:31,120 --> 00:05:36,639
+that is f of x y
+
+159
+00:05:34,000 --> 00:05:39,280
+f of x y and remember all this is is you
+
+160
+00:05:36,639 --> 00:05:41,440
+give me an x and you give me a y you pop
+
+161
+00:05:39,280 --> 00:05:42,880
+it into f of x y it's going to give me
+
+162
+00:05:41,440 --> 00:05:44,720
+some third value that we're going to
+
+163
+00:05:42,880 --> 00:05:46,639
+plot in this vertical axis right here i
+
+164
+00:05:44,720 --> 00:05:48,320
+mean examples f x y
+
+165
+00:05:46,639 --> 00:05:50,639
+it could be i'm not saying this is a
+
+166
+00:05:48,320 --> 00:05:52,560
+particular case it could be x plus y
+
+167
+00:05:50,639 --> 00:05:54,080
+it could be f of x y these are just
+
+168
+00:05:52,560 --> 00:05:57,759
+examples it could be
+
+169
+00:05:54,080 --> 00:06:00,080
+x times y if x is 1 y is 2 f of x y will
+
+170
+00:05:57,759 --> 00:06:02,720
+be 1 times 2. but let's say when you
+
+171
+00:06:00,080 --> 00:06:04,960
+plot for every point on the on on the x
+
+172
+00:06:02,720 --> 00:06:06,960
+y plane when you plot f x y you get this
+
+173
+00:06:04,960 --> 00:06:09,280
+surface up here and we want to do
+
+174
+00:06:06,960 --> 00:06:12,000
+something interesting we want to figure
+
+175
+00:06:09,280 --> 00:06:13,520
+out not the area under this curve this
+
+176
+00:06:12,000 --> 00:06:16,800
+was very simple when we did it the first
+
+177
+00:06:13,520 --> 00:06:19,120
+time i want to find the area
+
+178
+00:06:16,800 --> 00:06:21,440
+the area if you imagine a curtain or a
+
+179
+00:06:19,120 --> 00:06:23,120
+fence that goes along this this curve
+
+180
+00:06:21,440 --> 00:06:25,280
+that we this pat you can imagine this
+
+181
+00:06:23,120 --> 00:06:27,840
+being a very straight linear path going
+
+182
+00:06:25,280 --> 00:06:29,759
+just along the x-axis from a to b now we
+
+183
+00:06:27,840 --> 00:06:32,240
+have this kind of crazy curvy path
+
+184
+00:06:29,759 --> 00:06:33,919
+that's going along the x-y plane and you
+
+185
+00:06:32,240 --> 00:06:35,680
+can imagine if you drew a wall or
+
+186
+00:06:33,919 --> 00:06:37,680
+curtain or a fence that went straight up
+
+187
+00:06:35,680 --> 00:06:40,319
+from this to
+
+188
+00:06:37,680 --> 00:06:41,840
+my f of x y so let me do my best effort
+
+189
+00:06:40,319 --> 00:06:43,600
+to draw that
+
+190
+00:06:41,840 --> 00:06:45,440
+so let me draw it so it's going to go up
+
+191
+00:06:43,600 --> 00:06:47,759
+to there and maybe this point
+
+192
+00:06:45,440 --> 00:06:49,360
+corresponds to there and when you draw
+
+193
+00:06:47,759 --> 00:06:50,080
+that curtain up it's going to intersect
+
+194
+00:06:49,360 --> 00:06:52,160
+it
+
+195
+00:06:50,080 --> 00:06:53,840
+something like that let's say it looks
+
+196
+00:06:52,160 --> 00:06:55,280
+something like that so this point right
+
+197
+00:06:53,840 --> 00:06:57,520
+here
+
+198
+00:06:55,280 --> 00:06:58,960
+corresponds to that point
+
+199
+00:06:57,520 --> 00:07:01,759
+right there so if you imagine you have a
+
+200
+00:06:58,960 --> 00:07:03,759
+curtain you could f x y is the roof and
+
+201
+00:07:01,759 --> 00:07:05,440
+this is a what i've drawn here this
+
+202
+00:07:03,759 --> 00:07:08,319
+curve this kind of shows you the bottom
+
+203
+00:07:05,440 --> 00:07:11,120
+of a of a of a wall this is some kind of
+
+204
+00:07:08,319 --> 00:07:12,720
+crazy wall and let me say this point it
+
+205
+00:07:11,120 --> 00:07:14,479
+corresponds to
+
+206
+00:07:12,720 --> 00:07:18,479
+well actually let me let me draw a
+
+207
+00:07:14,479 --> 00:07:20,639
+little bit different i want to draw
+
+208
+00:07:18,479 --> 00:07:22,639
+this point will correspond to some point
+
+209
+00:07:20,639 --> 00:07:24,400
+up here so when you when you trace where
+
+210
+00:07:22,639 --> 00:07:26,800
+it intersects it'll look something like
+
+211
+00:07:24,400 --> 00:07:29,280
+maybe like that i don't know something
+
+212
+00:07:26,800 --> 00:07:31,120
+like that and i'm trying my best to help
+
+213
+00:07:29,280 --> 00:07:32,639
+you visualize this
+
+214
+00:07:31,120 --> 00:07:35,039
+so this side you know maybe i'll shade
+
+215
+00:07:32,639 --> 00:07:36,240
+this in to make it a little solid
+
+216
+00:07:35,039 --> 00:07:37,759
+let's say f of x y is a little
+
+217
+00:07:36,240 --> 00:07:40,240
+transparent you can see but then you
+
+218
+00:07:37,759 --> 00:07:42,240
+have this curvy looking wall here
+
+219
+00:07:40,240 --> 00:07:45,759
+and the whole point of this video is how
+
+220
+00:07:42,240 --> 00:07:48,240
+can we figure out the area of this curvy
+
+221
+00:07:45,759 --> 00:07:50,479
+looking wall right this curvy looking
+
+222
+00:07:48,240 --> 00:07:52,160
+wall that's essentially the wall or the
+
+223
+00:07:50,479 --> 00:07:54,879
+fence that happens if you go from this
+
+224
+00:07:52,160 --> 00:07:56,960
+curve and jump up and hit the ceiling at
+
+225
+00:07:54,879 --> 00:07:59,039
+this f of x y so let's think a little
+
+226
+00:07:56,960 --> 00:08:01,520
+bit about how we can do it well if we
+
+227
+00:07:59,039 --> 00:08:02,879
+just use the analogy of what we did
+
+228
+00:08:01,520 --> 00:08:03,680
+previously we could say well look you
+
+229
+00:08:02,879 --> 00:08:05,680
+know
+
+230
+00:08:03,680 --> 00:08:07,759
+this let's call this
+
+231
+00:08:05,680 --> 00:08:09,360
+you know let's call let's make a little
+
+232
+00:08:07,759 --> 00:08:13,199
+change in distance
+
+233
+00:08:09,360 --> 00:08:15,520
+of our of our curve let's call that ds
+
+234
+00:08:13,199 --> 00:08:18,000
+ds that's a little change in distance of
+
+235
+00:08:15,520 --> 00:08:19,680
+my curve right there and if i multiply
+
+236
+00:08:18,000 --> 00:08:22,479
+that change in distance of the curve
+
+237
+00:08:19,680 --> 00:08:25,120
+times f of x y at that point
+
+238
+00:08:22,479 --> 00:08:27,599
+times f of x y that point
+
+239
+00:08:25,120 --> 00:08:30,080
+i'm going to get the area i am going to
+
+240
+00:08:27,599 --> 00:08:32,399
+get the area of that little rectangle
+
+241
+00:08:30,080 --> 00:08:33,760
+right there right so if i take ds my
+
+242
+00:08:32,399 --> 00:08:35,599
+change in my
+
+243
+00:08:33,760 --> 00:08:37,360
+you can imagine the arc length of this
+
+244
+00:08:35,599 --> 00:08:40,159
+curve at that point
+
+245
+00:08:37,360 --> 00:08:41,760
+so let me write you know ds is equal to
+
+246
+00:08:40,159 --> 00:08:43,279
+super small
+
+247
+00:08:41,760 --> 00:08:45,120
+super
+
+248
+00:08:43,279 --> 00:08:46,720
+small
+
+249
+00:08:45,120 --> 00:08:47,839
+change
+
+250
+00:08:46,720 --> 00:08:49,680
+change
+
+251
+00:08:47,839 --> 00:08:52,399
+in arc length
+
+252
+00:08:49,680 --> 00:08:55,120
+in arc length of of our path or of our
+
+253
+00:08:52,399 --> 00:08:57,279
+curve that's our ds so you can imagine
+
+254
+00:08:55,120 --> 00:09:00,080
+the area of that little rectangle right
+
+255
+00:08:57,279 --> 00:09:01,600
+there along my curvy wall is going to be
+
+256
+00:09:00,080 --> 00:09:03,920
+ds
+
+257
+00:09:01,600 --> 00:09:05,040
+d i'll make it a capital s
+
+258
+00:09:03,920 --> 00:09:07,040
+d s
+
+259
+00:09:05,040 --> 00:09:09,600
+times the height at that point well
+
+260
+00:09:07,040 --> 00:09:12,080
+that's f of x y
+
+261
+00:09:09,600 --> 00:09:13,680
+f of x y and then if i take the sum
+
+262
+00:09:12,080 --> 00:09:15,360
+because these are infinitely narrow
+
+263
+00:09:13,680 --> 00:09:17,279
+these d s's are infinitely they have
+
+264
+00:09:15,360 --> 00:09:20,399
+infinitely small width if i were to take
+
+265
+00:09:17,279 --> 00:09:24,080
+the infinite sum of all of those guys
+
+266
+00:09:20,399 --> 00:09:27,440
+from t is equal to a
+
+267
+00:09:24,080 --> 00:09:29,279
+to t is equal to b right from t is equal
+
+268
+00:09:27,440 --> 00:09:31,360
+to a i keep taking the sum of those
+
+269
+00:09:29,279 --> 00:09:34,000
+rectangles to t is equal to b right
+
+270
+00:09:31,360 --> 00:09:35,839
+there that will give me my area you know
+
+271
+00:09:34,000 --> 00:09:36,959
+i'm just using the exact same logic as i
+
+272
+00:09:35,839 --> 00:09:38,880
+did up there i'm not being very
+
+273
+00:09:36,959 --> 00:09:40,320
+mathematically rigorous but i want to
+
+274
+00:09:38,880 --> 00:09:42,800
+give you the intuition of what we're
+
+275
+00:09:40,320 --> 00:09:45,040
+doing we're really kind of just bending
+
+276
+00:09:42,800 --> 00:09:47,279
+the base of this thing to get a curvy
+
+277
+00:09:45,040 --> 00:09:48,640
+wall instead of a straight direct wall
+
+278
+00:09:47,279 --> 00:09:50,800
+like we had up here but you're saying
+
+279
+00:09:48,640 --> 00:09:52,560
+sal you know this is all abstract and
+
+280
+00:09:50,800 --> 00:09:54,560
+how can i even calculate something like
+
+281
+00:09:52,560 --> 00:09:57,200
+this this makes no sense to me i have an
+
+282
+00:09:54,560 --> 00:09:59,120
+s here i have an x and a y i have a t
+
+283
+00:09:57,200 --> 00:10:01,040
+what can i do with this and that's let's
+
+284
+00:09:59,120 --> 00:10:02,240
+see if we can make some headway and i
+
+285
+00:10:01,040 --> 00:10:04,240
+promise you when we do it with a
+
+286
+00:10:02,240 --> 00:10:06,079
+tangible problem the end product of this
+
+287
+00:10:04,240 --> 00:10:07,519
+video is going to be a little bit
+
+288
+00:10:06,079 --> 00:10:09,440
+hairy to look at
+
+289
+00:10:07,519 --> 00:10:11,440
+but when we do it with an actual problem
+
+290
+00:10:09,440 --> 00:10:13,200
+it'll actually i think make be very
+
+291
+00:10:11,440 --> 00:10:14,399
+concrete and you'll see it's not too
+
+292
+00:10:13,200 --> 00:10:17,839
+hard to deal with but let's see if we
+
+293
+00:10:14,399 --> 00:10:19,760
+can get all of this in terms of t so
+
+294
+00:10:17,839 --> 00:10:21,279
+first of all let's let's focus just on
+
+295
+00:10:19,760 --> 00:10:24,880
+this ds
+
+296
+00:10:21,279 --> 00:10:27,040
+so let me re-pick up the x-y-axis
+
+297
+00:10:24,880 --> 00:10:28,560
+so if i were to re-flip the x-y let me
+
+298
+00:10:27,040 --> 00:10:30,160
+switch colors it's just getting a little
+
+299
+00:10:28,560 --> 00:10:32,640
+monotonous
+
+300
+00:10:30,160 --> 00:10:34,160
+so if i were to re-flip the x-y-axis
+
+301
+00:10:32,640 --> 00:10:35,440
+like that i'm actually doing that same
+
+302
+00:10:34,160 --> 00:10:37,839
+green so you know we're dealing with the
+
+303
+00:10:35,440 --> 00:10:40,160
+same x y axis
+
+304
+00:10:37,839 --> 00:10:43,519
+so that's my y-axis
+
+305
+00:10:40,160 --> 00:10:45,120
+that is my x-axis and so this path right
+
+306
+00:10:43,519 --> 00:10:46,720
+here if i were to just draw it you know
+
+307
+00:10:45,120 --> 00:10:48,240
+straight up like this
+
+308
+00:10:46,720 --> 00:10:50,959
+it would look something like this it
+
+309
+00:10:48,240 --> 00:10:54,079
+would look something like this
+
+310
+00:10:50,959 --> 00:10:56,399
+right that's my path my my arc you know
+
+311
+00:10:54,079 --> 00:11:00,000
+this is when t is equal to a so this is
+
+312
+00:10:56,399 --> 00:11:01,600
+t is equal to a this is t is equal to b
+
+313
+00:11:00,000 --> 00:11:03,760
+same thing i just kind of picked it back
+
+314
+00:11:01,600 --> 00:11:05,760
+up so we can visualize it and we say
+
+315
+00:11:03,760 --> 00:11:07,760
+that we have some
+
+316
+00:11:05,760 --> 00:11:09,360
+change in arc length let's say this this
+
+317
+00:11:07,760 --> 00:11:11,040
+let me switch colors let's say that this
+
+318
+00:11:09,360 --> 00:11:12,800
+one right here
+
+319
+00:11:11,040 --> 00:11:15,600
+let's say that's some small change in
+
+320
+00:11:12,800 --> 00:11:18,640
+arc length and we're calling that d s
+
+321
+00:11:15,600 --> 00:11:21,600
+now is there some way to relate d s to
+
+322
+00:11:18,640 --> 00:11:23,279
+infinitely small changes in x or y
+
+323
+00:11:21,600 --> 00:11:25,200
+well if we think about it if we really
+
+324
+00:11:23,279 --> 00:11:26,480
+if we and this is all a little bit hand
+
+325
+00:11:25,200 --> 00:11:27,839
+wavy i'm not being mathematically
+
+326
+00:11:26,480 --> 00:11:29,519
+rigorous but i think it'll give you the
+
+327
+00:11:27,839 --> 00:11:31,760
+correct intuition
+
+328
+00:11:29,519 --> 00:11:33,920
+if you imagine this is you can figure
+
+329
+00:11:31,760 --> 00:11:37,519
+out the length of ds if you know the
+
+330
+00:11:33,920 --> 00:11:40,720
+lengths of the super small changes in x
+
+331
+00:11:37,519 --> 00:11:42,240
+and super small changes in y
+
+332
+00:11:40,720 --> 00:11:44,720
+so if this if this distance right here
+
+333
+00:11:42,240 --> 00:11:46,640
+is dx infinitesimally small change in x
+
+334
+00:11:44,720 --> 00:11:49,279
+this distance right here is d y
+
+335
+00:11:46,640 --> 00:11:51,600
+infinitesimally small change in y
+
+336
+00:11:49,279 --> 00:11:53,839
+right then we can figure out d s from
+
+337
+00:11:51,600 --> 00:11:55,360
+the pythagorean theorem you can say that
+
+338
+00:11:53,839 --> 00:11:57,360
+d s
+
+339
+00:11:55,360 --> 00:11:59,760
+d s is going to be it's the hypotenuse
+
+340
+00:11:57,360 --> 00:12:01,120
+of this triangle it's equal to the
+
+341
+00:11:59,760 --> 00:12:02,240
+square root
+
+342
+00:12:01,120 --> 00:12:04,320
+of
+
+343
+00:12:02,240 --> 00:12:05,600
+d x squared
+
+344
+00:12:04,320 --> 00:12:07,760
+plus
+
+345
+00:12:05,600 --> 00:12:11,040
+plus d y
+
+346
+00:12:07,760 --> 00:12:12,880
+plus d y squared so that seems to make
+
+347
+00:12:11,040 --> 00:12:14,880
+to make things a little bit you know we
+
+348
+00:12:12,880 --> 00:12:16,639
+can get rid of the ds all of a sudden so
+
+349
+00:12:14,880 --> 00:12:20,480
+let's rewrite this little expression
+
+350
+00:12:16,639 --> 00:12:22,000
+here using this sense of what ds ds is
+
+351
+00:12:20,480 --> 00:12:24,079
+really the square root of dx squared
+
+352
+00:12:22,000 --> 00:12:25,440
+plus dy squared and i'm not being very
+
+353
+00:12:24,079 --> 00:12:26,639
+rigorous and actually it's very hard to
+
+354
+00:12:25,440 --> 00:12:28,160
+be rigorous with differentials but
+
+355
+00:12:26,639 --> 00:12:28,959
+intuitively i think it makes a lot of
+
+356
+00:12:28,160 --> 00:12:31,040
+sense
+
+357
+00:12:28,959 --> 00:12:33,839
+so we can say that this integral the
+
+358
+00:12:31,040 --> 00:12:36,800
+area of this curvy curtain is going to
+
+359
+00:12:33,839 --> 00:12:39,440
+be the integral from t is equal to a
+
+360
+00:12:36,800 --> 00:12:40,320
+to t is equal to b
+
+361
+00:12:39,440 --> 00:12:42,000
+of
+
+362
+00:12:40,320 --> 00:12:44,639
+f of
+
+363
+00:12:42,000 --> 00:12:47,680
+x y instead of writing d s we can write
+
+364
+00:12:44,639 --> 00:12:52,000
+this times the square root
+
+365
+00:12:47,680 --> 00:12:53,839
+the square root of d x squared plus d y
+
+366
+00:12:52,000 --> 00:12:55,440
+squared now we at least got rid of this
+
+367
+00:12:53,839 --> 00:12:57,200
+big capital s but we still haven't
+
+368
+00:12:55,440 --> 00:12:58,800
+solved the problem of how do we solve
+
+369
+00:12:57,200 --> 00:12:59,920
+something you know an integral a
+
+370
+00:12:58,800 --> 00:13:01,760
+definite integral that looks like this
+
+371
+00:12:59,920 --> 00:13:04,000
+we have it in terms of t here but we
+
+372
+00:13:01,760 --> 00:13:05,360
+only have it in terms of x's and y's
+
+373
+00:13:04,000 --> 00:13:06,399
+here so we need to get everything in
+
+374
+00:13:05,360 --> 00:13:08,959
+terms of t
+
+375
+00:13:06,399 --> 00:13:10,560
+well we know x and y are both functions
+
+376
+00:13:08,959 --> 00:13:11,519
+of t so we can actually rewrite it like
+
+377
+00:13:10,560 --> 00:13:13,200
+this
+
+378
+00:13:11,519 --> 00:13:15,200
+we can rewrite it as
+
+379
+00:13:13,200 --> 00:13:18,160
+we can rewrite it as from t
+
+380
+00:13:15,200 --> 00:13:20,560
+is equal to a to t is equal to b
+
+381
+00:13:18,160 --> 00:13:23,680
+and f of x y we can write it f is a
+
+382
+00:13:20,560 --> 00:13:25,920
+function of x which is a function of t
+
+383
+00:13:23,680 --> 00:13:28,399
+and y is a func and f is also a function
+
+384
+00:13:25,920 --> 00:13:30,240
+of y which is also a function of t
+
+385
+00:13:28,399 --> 00:13:32,240
+so you give me a t i'll be able to give
+
+386
+00:13:30,240 --> 00:13:34,880
+you an x or a y and once you give me an
+
+387
+00:13:32,240 --> 00:13:36,079
+x or y i can figure out what f is so we
+
+388
+00:13:34,880 --> 00:13:37,920
+have that
+
+389
+00:13:36,079 --> 00:13:40,079
+and then we have this part right here
+
+390
+00:13:37,920 --> 00:13:44,160
+let's do it in orange
+
+391
+00:13:40,079 --> 00:13:45,279
+square root of d x squared plus d y
+
+392
+00:13:44,160 --> 00:13:47,440
+squared
+
+393
+00:13:45,279 --> 00:13:48,880
+but we still don't have things in terms
+
+394
+00:13:47,440 --> 00:13:51,040
+of t
+
+395
+00:13:48,880 --> 00:13:52,560
+we need a dt someplace here in order to
+
+396
+00:13:51,040 --> 00:13:53,839
+be able to evaluate this integral and
+
+397
+00:13:52,560 --> 00:13:55,199
+we'll see that in the next video when i
+
+398
+00:13:53,839 --> 00:13:57,680
+do a concrete problem but i really want
+
+399
+00:13:55,199 --> 00:13:59,040
+to give you a sense for the the end
+
+400
+00:13:57,680 --> 00:14:00,240
+product where the the formula we're
+
+401
+00:13:59,040 --> 00:14:02,240
+going to get this at the end product
+
+402
+00:14:00,240 --> 00:14:04,959
+this video where it comes from so one
+
+403
+00:14:02,240 --> 00:14:07,440
+thing we can do is if we if we allow
+
+404
+00:14:04,959 --> 00:14:09,920
+ourselves to algebraically manipulate
+
+405
+00:14:07,440 --> 00:14:13,760
+differentials what we could do is
+
+406
+00:14:09,920 --> 00:14:15,920
+let us multiply and divide by dt so one
+
+407
+00:14:13,760 --> 00:14:18,160
+way to think about it you could rewrite
+
+408
+00:14:15,920 --> 00:14:19,839
+so let me just take a do this orange
+
+409
+00:14:18,160 --> 00:14:21,360
+part right here let's do a little side
+
+410
+00:14:19,839 --> 00:14:24,079
+right here so if you take this orange
+
+411
+00:14:21,360 --> 00:14:25,920
+part and write it in pink and you have
+
+412
+00:14:24,079 --> 00:14:28,399
+dx squared
+
+413
+00:14:25,920 --> 00:14:30,240
+and then you have plus d y
+
+414
+00:14:28,399 --> 00:14:32,560
+squared and let's say we just multiply
+
+415
+00:14:30,240 --> 00:14:35,040
+it times dt
+
+416
+00:14:32,560 --> 00:14:36,639
+over dt right that's you know a small
+
+417
+00:14:35,040 --> 00:14:38,000
+change in t divided by a small change in
+
+418
+00:14:36,639 --> 00:14:40,240
+t that's one so of course you can
+
+419
+00:14:38,000 --> 00:14:41,600
+multiply it by that if we were to bring
+
+420
+00:14:40,240 --> 00:14:43,839
+this part
+
+421
+00:14:41,600 --> 00:14:45,600
+inside of the square root sign right so
+
+422
+00:14:43,839 --> 00:14:47,440
+let me let me rewrite this this is the
+
+423
+00:14:45,600 --> 00:14:51,120
+same thing as
+
+424
+00:14:47,440 --> 00:14:55,040
+1 over dt times the square root
+
+425
+00:14:51,120 --> 00:14:57,040
+of dx squared plus d y squared and then
+
+426
+00:14:55,040 --> 00:14:58,480
+times that dt
+
+427
+00:14:57,040 --> 00:15:00,480
+right i just wanted to write it this way
+
+428
+00:14:58,480 --> 00:15:02,639
+i'm just multiplying by one and here i'm
+
+429
+00:15:00,480 --> 00:15:04,639
+just taking this dt writing it there and
+
+430
+00:15:02,639 --> 00:15:06,560
+leaving this over here and now if i
+
+431
+00:15:04,639 --> 00:15:08,639
+wanted to bring this into the square
+
+432
+00:15:06,560 --> 00:15:09,680
+root sign this is the same thing this is
+
+433
+00:15:08,639 --> 00:15:11,199
+equal to
+
+434
+00:15:09,680 --> 00:15:12,720
+and i'll do it very slowly just to make
+
+435
+00:15:11,199 --> 00:15:13,920
+sure i'm not
+
+436
+00:15:12,720 --> 00:15:15,839
+allow you to believe that i'm not doing
+
+437
+00:15:13,920 --> 00:15:17,279
+anything shady with the algebra this is
+
+438
+00:15:15,839 --> 00:15:18,800
+the same thing as the square root of 1
+
+439
+00:15:17,279 --> 00:15:20,959
+over dt
+
+440
+00:15:18,800 --> 00:15:22,880
+squared let me make the radical a little
+
+441
+00:15:20,959 --> 00:15:25,040
+bit bigger times
+
+442
+00:15:22,880 --> 00:15:27,279
+dx squared
+
+443
+00:15:25,040 --> 00:15:29,920
+plus d y squared
+
+444
+00:15:27,279 --> 00:15:31,360
+and then all of that times dt
+
+445
+00:15:29,920 --> 00:15:32,399
+right i didn't do anything you could
+
+446
+00:15:31,360 --> 00:15:34,000
+just take the square root of this and
+
+447
+00:15:32,399 --> 00:15:35,759
+you get 1 over dt
+
+448
+00:15:34,000 --> 00:15:36,959
+and then if i just distribute this this
+
+449
+00:15:35,759 --> 00:15:40,079
+is equal to
+
+450
+00:15:36,959 --> 00:15:42,320
+this is equal to the square root the
+
+451
+00:15:40,079 --> 00:15:44,079
+square root and we have our dt out at
+
+452
+00:15:42,320 --> 00:15:46,160
+the end of
+
+453
+00:15:44,079 --> 00:15:49,360
+dx squared
+
+454
+00:15:46,160 --> 00:15:51,120
+or we could even write dx over dt
+
+455
+00:15:49,360 --> 00:15:52,000
+squared
+
+456
+00:15:51,120 --> 00:15:53,279
+plus
+
+457
+00:15:52,000 --> 00:15:55,120
+dy
+
+458
+00:15:53,279 --> 00:15:57,360
+over dt
+
+459
+00:15:55,120 --> 00:15:59,839
+squared right dx squared over dt squared
+
+460
+00:15:57,360 --> 00:16:01,759
+is just dx over dt squared same thing
+
+461
+00:15:59,839 --> 00:16:03,759
+with the y's and now all of a sudden
+
+462
+00:16:01,759 --> 00:16:05,680
+this starts to look pretty interesting
+
+463
+00:16:03,759 --> 00:16:06,800
+let's substitute this expression with
+
+464
+00:16:05,680 --> 00:16:08,959
+this one we said that these are
+
+465
+00:16:06,800 --> 00:16:10,560
+equivalent and i'll switch colors just
+
+466
+00:16:08,959 --> 00:16:13,600
+just for the sake of it so we have the
+
+467
+00:16:10,560 --> 00:16:15,279
+integral from t is equal to a let me get
+
+468
+00:16:13,600 --> 00:16:19,680
+our drawing back if i
+
+469
+00:16:15,279 --> 00:16:22,480
+from t is equal to a to t is equal to b
+
+470
+00:16:19,680 --> 00:16:27,040
+of f of x of t
+
+471
+00:16:22,480 --> 00:16:29,440
+times or f of x of t and f of or and y
+
+472
+00:16:27,040 --> 00:16:30,959
+of t they're both functions of t and now
+
+473
+00:16:29,440 --> 00:16:32,720
+instead of this expression we can write
+
+474
+00:16:30,959 --> 00:16:35,759
+the square root
+
+475
+00:16:32,720 --> 00:16:38,399
+the square root of well what's dx what's
+
+476
+00:16:35,759 --> 00:16:40,240
+what's the change in x with respect to
+
+477
+00:16:38,399 --> 00:16:41,600
+ti or whatever this parameter is what is
+
+478
+00:16:40,240 --> 00:16:44,079
+dx dt
+
+479
+00:16:41,600 --> 00:16:46,560
+dx dt is the same thing
+
+480
+00:16:44,079 --> 00:16:48,560
+dx dt let me write this down
+
+481
+00:16:46,560 --> 00:16:51,199
+dx dt
+
+482
+00:16:48,560 --> 00:16:52,560
+dx dt is the same thing actually i
+
+483
+00:16:51,199 --> 00:16:53,600
+should write it here it's the same thing
+
+484
+00:16:52,560 --> 00:16:54,880
+as
+
+485
+00:16:53,600 --> 00:16:57,680
+g prime
+
+486
+00:16:54,880 --> 00:17:00,320
+of t right x is a function of t the
+
+487
+00:16:57,680 --> 00:17:02,560
+function i wrote is g prime of t and
+
+488
+00:17:00,320 --> 00:17:06,079
+then this d y d t
+
+489
+00:17:02,560 --> 00:17:07,439
+d y d t is the same thing as h prime of
+
+490
+00:17:06,079 --> 00:17:09,199
+t we could say that you know this
+
+491
+00:17:07,439 --> 00:17:10,720
+function of t so i just want to make
+
+492
+00:17:09,199 --> 00:17:12,160
+that clear we know these two functions
+
+493
+00:17:10,720 --> 00:17:13,760
+so we can just take their derivatives
+
+494
+00:17:12,160 --> 00:17:16,799
+with respect to t but i'm just going to
+
+495
+00:17:13,760 --> 00:17:19,039
+leave it in that form so
+
+496
+00:17:16,799 --> 00:17:22,000
+the square root and we take
+
+497
+00:17:19,039 --> 00:17:25,199
+the derivative of x with respect to t
+
+498
+00:17:22,000 --> 00:17:27,919
+squared plus the derivative of y with
+
+499
+00:17:25,199 --> 00:17:30,240
+respect to t squared and then all of
+
+500
+00:17:27,919 --> 00:17:32,799
+that times dt and this might look like
+
+501
+00:17:30,240 --> 00:17:34,320
+some strange and convoluted formula but
+
+502
+00:17:32,799 --> 00:17:36,559
+this is actually something that we know
+
+503
+00:17:34,320 --> 00:17:38,720
+how to deal with we've now simplified
+
+504
+00:17:36,559 --> 00:17:41,200
+this strange
+
+505
+00:17:38,720 --> 00:17:43,120
+you know this arc length problem or this
+
+506
+00:17:41,200 --> 00:17:44,160
+line integral right that's essentially
+
+507
+00:17:43,120 --> 00:17:46,880
+what we're doing we're taking an
+
+508
+00:17:44,160 --> 00:17:49,039
+integral over a curve or over a line as
+
+509
+00:17:46,880 --> 00:17:50,400
+opposed to just an interval on the
+
+510
+00:17:49,039 --> 00:17:52,080
+x-axis
+
+511
+00:17:50,400 --> 00:17:54,080
+we've taken the strange
+
+512
+00:17:52,080 --> 00:17:56,240
+line integral that's in terms of the arc
+
+513
+00:17:54,080 --> 00:17:58,160
+length of the line and x's and y's and
+
+514
+00:17:56,240 --> 00:17:59,280
+we've put everything in terms of t and
+
+515
+00:17:58,160 --> 00:18:01,039
+i'm going to show you that in the next
+
+516
+00:17:59,280 --> 00:18:02,640
+video right everything is going to be
+
+517
+00:18:01,039 --> 00:18:05,360
+expressed in terms of t so this just
+
+518
+00:18:02,640 --> 00:18:06,640
+turns into a simple definite integral so
+
+519
+00:18:05,360 --> 00:18:07,919
+hopefully that didn't confuse you too
+
+520
+00:18:06,640 --> 00:18:09,280
+much i think you're going to see in the
+
+521
+00:18:07,919 --> 00:18:11,360
+next video that this right here is
+
+522
+00:18:09,280 --> 00:18:12,640
+actually a very straightforward thing to
+
+523
+00:18:11,360 --> 00:18:14,320
+implement and just to remind you where
+
+524
+00:18:12,640 --> 00:18:16,559
+it all came from i think there's i got
+
+525
+00:18:14,320 --> 00:18:19,120
+the parentheses right this right here
+
+526
+00:18:16,559 --> 00:18:20,320
+was just a change in our arc length that
+
+527
+00:18:19,120 --> 00:18:21,760
+whole thing right there was just a
+
+528
+00:18:20,320 --> 00:18:22,880
+change in arc length and this is just
+
+529
+00:18:21,760 --> 00:18:24,400
+the height
+
+530
+00:18:22,880 --> 00:18:26,480
+this is just the height
+
+531
+00:18:24,400 --> 00:18:28,720
+of our function at that point and we're
+
+532
+00:18:26,480 --> 00:18:31,120
+just summing it doing an infinite sum of
+
+533
+00:18:28,720 --> 00:18:33,120
+infinitely small lengths so this was the
+
+534
+00:18:31,120 --> 00:18:34,799
+change in our arc length times the
+
+535
+00:18:33,120 --> 00:18:36,720
+height this is going to have an
+
+536
+00:18:34,799 --> 00:18:38,000
+infinitely narrow width and you're going
+
+537
+00:18:36,720 --> 00:18:39,919
+to take an infinite number of these
+
+538
+00:18:38,000 --> 00:18:41,760
+rectangles to get the area of this and
+
+539
+00:18:39,919 --> 00:18:44,160
+of this entire fence or this entire
+
+540
+00:18:41,760 --> 00:18:45,600
+curtain and that's what this definite
+
+541
+00:18:44,160 --> 00:18:49,880
+integral will give us and we'll actually
+
+542
+00:18:45,600 --> 00:18:49,880
+apply it in the next video
+

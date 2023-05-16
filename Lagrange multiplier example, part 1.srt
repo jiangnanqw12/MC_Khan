@@ -1,0 +1,928 @@
+1
+00:00:00,640 --> 00:00:04,640
+so let's say you're running some kind of
+
+2
+00:00:01,839 --> 00:00:07,200
+company and you guys produce widgets you
+
+3
+00:00:04,640 --> 00:00:09,599
+produce some little trinket that people
+
+4
+00:00:07,200 --> 00:00:12,160
+enjoy buying and the main costs that you
+
+5
+00:00:09,599 --> 00:00:13,679
+have are labor
+
+6
+00:00:12,160 --> 00:00:17,360
+you know the the workers that you have
+
+7
+00:00:13,679 --> 00:00:17,360
+creating these and steal
+
+8
+00:00:17,760 --> 00:00:22,160
+and let's just say that your labor costs
+
+9
+00:00:19,920 --> 00:00:24,480
+are twenty dollars per hour
+
+10
+00:00:22,160 --> 00:00:27,359
+twenty dollars each hour
+
+11
+00:00:24,480 --> 00:00:29,840
+and then your steel costs are
+
+12
+00:00:27,359 --> 00:00:31,119
+uh two thousand dollars keep the numbers
+
+13
+00:00:29,840 --> 00:00:34,719
+kind of related to each other two
+
+14
+00:00:31,119 --> 00:00:36,239
+thousand dollars for every ton of steel
+
+15
+00:00:34,719 --> 00:00:37,520
+and then you've had your analysts work a
+
+16
+00:00:36,239 --> 00:00:39,680
+little bit on trying to model the
+
+17
+00:00:37,520 --> 00:00:42,239
+revenues you can make with your widgets
+
+18
+00:00:39,680 --> 00:00:44,399
+as a function of hours of labor and tons
+
+19
+00:00:42,239 --> 00:00:46,320
+of steel now let's say the revenue model
+
+20
+00:00:44,399 --> 00:00:49,120
+that they've come up with the revenue as
+
+21
+00:00:46,320 --> 00:00:52,879
+a function of you know hours of labor
+
+22
+00:00:49,120 --> 00:00:55,840
+and then s for steel let's say
+
+23
+00:00:52,879 --> 00:00:58,960
+is equal to about you know 100 times the
+
+24
+00:00:55,840 --> 00:01:01,840
+hours of labor to the power two-thirds
+
+25
+00:00:58,960 --> 00:01:03,840
+multiplied by the tons of steel to the
+
+26
+00:01:01,840 --> 00:01:05,280
+power one-third
+
+27
+00:01:03,840 --> 00:01:06,960
+if you put in a given amount of labor
+
+28
+00:01:05,280 --> 00:01:08,479
+and a given amount of steel this is
+
+29
+00:01:06,960 --> 00:01:10,000
+about how much money you're going to
+
+30
+00:01:08,479 --> 00:01:11,280
+expect to earn
+
+31
+00:01:10,000 --> 00:01:12,640
+and of course you want to earn as much
+
+32
+00:01:11,280 --> 00:01:14,080
+as you can let's say you actually have a
+
+33
+00:01:12,640 --> 00:01:17,920
+budget for how much you're able to spend
+
+34
+00:01:14,080 --> 00:01:17,920
+on all these things and your budget
+
+35
+00:01:18,320 --> 00:01:20,799
+the budget
+
+36
+00:01:19,920 --> 00:01:22,880
+is
+
+37
+00:01:20,799 --> 00:01:24,640
+twenty thousand dollars
+
+38
+00:01:22,880 --> 00:01:26,799
+you're willing to spend twenty thousand
+
+39
+00:01:24,640 --> 00:01:28,799
+dollars and you wanna make as much money
+
+40
+00:01:26,799 --> 00:01:30,000
+as you can according to this model based
+
+41
+00:01:28,799 --> 00:01:32,159
+on that
+
+42
+00:01:30,000 --> 00:01:34,000
+now this is exactly the kind of problem
+
+43
+00:01:32,159 --> 00:01:35,840
+that the lagrange multiplier technique
+
+44
+00:01:34,000 --> 00:01:37,439
+is made for we're trying to maximize
+
+45
+00:01:35,840 --> 00:01:39,520
+some kind of function and we have a
+
+46
+00:01:37,439 --> 00:01:41,439
+constraint now right now the constraint
+
+47
+00:01:39,520 --> 00:01:43,280
+isn't written as a formula but we can
+
+48
+00:01:41,439 --> 00:01:45,280
+pretty easily write it as a formula
+
+49
+00:01:43,280 --> 00:01:46,799
+because what makes up our budget well
+
+50
+00:01:45,280 --> 00:01:49,360
+it's going to be the number of hours of
+
+51
+00:01:46,799 --> 00:01:50,640
+labor multiplied by 20 so that's going
+
+52
+00:01:49,360 --> 00:01:53,280
+to be
+
+53
+00:01:50,640 --> 00:01:55,280
+20 dollars per hour multiplied by the
+
+54
+00:01:53,280 --> 00:01:57,680
+number of hours you put in
+
+55
+00:01:55,280 --> 00:02:00,000
+plus 2000
+
+56
+00:01:57,680 --> 00:02:02,640
+dollars per tons of steel
+
+57
+00:02:00,000 --> 00:02:04,799
+times the tons of steel that you put in
+
+58
+00:02:02,640 --> 00:02:06,640
+so the constraint
+
+59
+00:02:04,799 --> 00:02:08,720
+is basically that
+
+60
+00:02:06,640 --> 00:02:10,560
+you have to have these values equal
+
+61
+00:02:08,720 --> 00:02:11,760
+twenty thousand dollars i mean you could
+
+62
+00:02:10,560 --> 00:02:13,840
+say less than right you could say you're
+
+63
+00:02:11,760 --> 00:02:16,000
+not willing to go any more than that but
+
+64
+00:02:13,840 --> 00:02:17,680
+intuitively and in reality it's going to
+
+65
+00:02:16,000 --> 00:02:19,280
+be the case that in order to maximize
+
+66
+00:02:17,680 --> 00:02:20,879
+your revenues you should squeeze every
+
+67
+00:02:19,280 --> 00:02:22,800
+dollar that you have available and
+
+68
+00:02:20,879 --> 00:02:24,160
+actually hit this constraint so this
+
+69
+00:02:22,800 --> 00:02:25,760
+right here is the constraint of our
+
+70
+00:02:24,160 --> 00:02:27,280
+problem and let's go ahead and give this
+
+71
+00:02:25,760 --> 00:02:29,040
+guy a name the function that we're
+
+72
+00:02:27,280 --> 00:02:30,720
+dealing with a name
+
+73
+00:02:29,040 --> 00:02:31,599
+and i'm going to call it g
+
+74
+00:02:30,720 --> 00:02:33,360
+of
+
+75
+00:02:31,599 --> 00:02:35,440
+h s
+
+76
+00:02:33,360 --> 00:02:36,800
+which is going to be that guy
+
+77
+00:02:35,440 --> 00:02:38,480
+and now if you'll remember in the last
+
+78
+00:02:36,800 --> 00:02:40,959
+few videos the way we visualize
+
+79
+00:02:38,480 --> 00:02:43,280
+something like this is to think about
+
+80
+00:02:40,959 --> 00:02:44,640
+the set of all possible inputs so in
+
+81
+00:02:43,280 --> 00:02:47,280
+this case you know you might be thinking
+
+82
+00:02:44,640 --> 00:02:49,120
+about the hs plane
+
+83
+00:02:47,280 --> 00:02:51,120
+you know the number of hours of labor on
+
+84
+00:02:49,120 --> 00:02:53,360
+one axis the number of tons of steel on
+
+85
+00:02:51,120 --> 00:02:54,879
+another and this constraint well in this
+
+86
+00:02:53,360 --> 00:02:56,319
+case it's a it's a linear function so
+
+87
+00:02:54,879 --> 00:02:59,200
+this constraint is going to give us some
+
+88
+00:02:56,319 --> 00:03:01,120
+kind of line that tells us which pairs
+
+89
+00:02:59,200 --> 00:03:03,120
+of s and h are going to achieve that
+
+90
+00:03:01,120 --> 00:03:04,560
+constraint and then the revenue function
+
+91
+00:03:03,120 --> 00:03:07,440
+that we're dealing with will have
+
+92
+00:03:04,560 --> 00:03:08,480
+certain contours you know maybe revenues
+
+93
+00:03:07,440 --> 00:03:09,920
+of
+
+94
+00:03:08,480 --> 00:03:11,200
+ten thousand dollars have a certain
+
+95
+00:03:09,920 --> 00:03:12,640
+contour that looks like this and
+
+96
+00:03:11,200 --> 00:03:13,920
+revenues of a hundred thousand dollars
+
+97
+00:03:12,640 --> 00:03:16,400
+have a certain contour that looks like
+
+98
+00:03:13,920 --> 00:03:18,239
+this but what we want is to find which
+
+99
+00:03:16,400 --> 00:03:19,920
+value is barely touching the constraint
+
+100
+00:03:18,239 --> 00:03:22,080
+curve
+
+101
+00:03:19,920 --> 00:03:23,360
+just tangent to it at a given point
+
+102
+00:03:22,080 --> 00:03:25,519
+because that's going to be the contour
+
+103
+00:03:23,360 --> 00:03:27,440
+line where if you up the value by just a
+
+104
+00:03:25,519 --> 00:03:29,040
+little bit it would no longer intersect
+
+105
+00:03:27,440 --> 00:03:31,120
+with that curve there would no longer be
+
+106
+00:03:29,040 --> 00:03:33,200
+values of h and s that satisfy this
+
+107
+00:03:31,120 --> 00:03:34,560
+constraint
+
+108
+00:03:33,200 --> 00:03:37,280
+and the way to think about finding that
+
+109
+00:03:34,560 --> 00:03:40,239
+tangency is to consider the
+
+110
+00:03:37,280 --> 00:03:41,920
+vector perpendicular to the tangent line
+
+111
+00:03:40,239 --> 00:03:43,840
+to the curve at that point which
+
+112
+00:03:41,920 --> 00:03:46,480
+fortunately is represented by let's see
+
+113
+00:03:43,840 --> 00:03:48,480
+let me make some room for myself here
+
+114
+00:03:46,480 --> 00:03:51,360
+represented by the gradient
+
+115
+00:03:48,480 --> 00:03:53,120
+the gradient of our our r function the
+
+116
+00:03:51,360 --> 00:03:54,159
+the function whose contours this is the
+
+117
+00:03:53,120 --> 00:03:55,840
+revenue
+
+118
+00:03:54,159 --> 00:03:57,360
+and what it means for this to be tangent
+
+119
+00:03:55,840 --> 00:03:59,760
+to the constraint line
+
+120
+00:03:57,360 --> 00:04:03,360
+is that there's going to be
+
+121
+00:03:59,760 --> 00:04:05,120
+another vector the gradient of g of our
+
+122
+00:04:03,360 --> 00:04:06,640
+constraint function
+
+123
+00:04:05,120 --> 00:04:08,480
+that points in the same direction that's
+
+124
+00:04:06,640 --> 00:04:10,239
+proportional to that and typically the
+
+125
+00:04:08,480 --> 00:04:11,680
+way you write this is to say that the
+
+126
+00:04:10,239 --> 00:04:14,799
+gradient
+
+127
+00:04:11,680 --> 00:04:16,400
+of this function is proportional to
+
+128
+00:04:14,799 --> 00:04:19,519
+proportional to
+
+129
+00:04:16,400 --> 00:04:21,199
+the gradient of g
+
+130
+00:04:19,519 --> 00:04:24,080
+and this proportionality constant is
+
+131
+00:04:21,199 --> 00:04:26,160
+called our lagrange multiplier
+
+132
+00:04:24,080 --> 00:04:28,720
+it's called
+
+133
+00:04:26,160 --> 00:04:31,440
+the lagrange
+
+134
+00:04:28,720 --> 00:04:31,440
+multiplier
+
+135
+00:04:33,520 --> 00:04:37,040
+so let's go ahead and start working it
+
+136
+00:04:35,120 --> 00:04:38,160
+out let's first compute the gradient of
+
+137
+00:04:37,040 --> 00:04:39,840
+r
+
+138
+00:04:38,160 --> 00:04:41,600
+so the gradient of r
+
+139
+00:04:39,840 --> 00:04:43,600
+is going to be the partial derivative of
+
+140
+00:04:41,600 --> 00:04:45,759
+r with respect to its first variable
+
+141
+00:04:43,600 --> 00:04:48,560
+which is h so partial derivative with
+
+142
+00:04:45,759 --> 00:04:50,320
+respect to h and the second component is
+
+143
+00:04:48,560 --> 00:04:52,320
+its partial derivative with respect to
+
+144
+00:04:50,320 --> 00:04:56,160
+that second variable s
+
+145
+00:04:52,320 --> 00:04:58,400
+with respect to s
+
+146
+00:04:56,160 --> 00:05:00,479
+and in this case
+
+147
+00:04:58,400 --> 00:05:02,320
+that first partial derivative if we
+
+148
+00:05:00,479 --> 00:05:04,160
+treat h as a variable and s as a
+
+149
+00:05:02,320 --> 00:05:06,960
+constant then that two-thirds gets
+
+150
+00:05:04,160 --> 00:05:08,240
+brought down so that'll be 100
+
+151
+00:05:06,960 --> 00:05:11,440
+times
+
+152
+00:05:08,240 --> 00:05:12,960
+two-thirds times h
+
+153
+00:05:11,440 --> 00:05:14,800
+h to the power of well we've got to
+
+154
+00:05:12,960 --> 00:05:16,960
+subtract one from two-thirds when we
+
+155
+00:05:14,800 --> 00:05:18,400
+bring it down so that'll be negative
+
+156
+00:05:16,960 --> 00:05:20,479
+one-third
+
+157
+00:05:18,400 --> 00:05:22,880
+multiplied by s
+
+158
+00:05:20,479 --> 00:05:24,479
+to the one-third
+
+159
+00:05:22,880 --> 00:05:26,720
+and then the second component here the
+
+160
+00:05:24,479 --> 00:05:29,280
+partial derivative with respect to s
+
+161
+00:05:26,720 --> 00:05:31,199
+is going to be 100 times well now by
+
+162
+00:05:29,280 --> 00:05:33,039
+treating s as the variable we take down
+
+163
+00:05:31,199 --> 00:05:34,240
+that one-third so that's
+
+164
+00:05:33,039 --> 00:05:35,840
+one-third
+
+165
+00:05:34,240 --> 00:05:38,080
+h to the two-thirds just looks like a
+
+166
+00:05:35,840 --> 00:05:40,560
+constant as far as s is concerned and
+
+167
+00:05:38,080 --> 00:05:42,960
+then we take s to the one-third minus
+
+168
+00:05:40,560 --> 00:05:44,400
+one which is negative
+
+169
+00:05:42,960 --> 00:05:46,479
+two-thirds
+
+170
+00:05:44,400 --> 00:05:48,320
+negative two-thirds
+
+171
+00:05:46,479 --> 00:05:50,880
+great so that's the gradient of r and
+
+172
+00:05:48,320 --> 00:05:52,880
+now we need the gradient of g
+
+173
+00:05:50,880 --> 00:05:54,800
+and that one's a lot easier actually
+
+174
+00:05:52,880 --> 00:05:58,160
+because g is just a linear function so
+
+175
+00:05:54,800 --> 00:05:58,160
+when we take the gradient of g
+
+176
+00:05:58,800 --> 00:06:04,240
+which is its partial derivative
+
+177
+00:06:01,199 --> 00:06:06,160
+with respect to h partial h
+
+178
+00:06:04,240 --> 00:06:09,680
+and its partial derivative with respect
+
+179
+00:06:06,160 --> 00:06:09,680
+to s partial s
+
+180
+00:06:10,319 --> 00:06:14,000
+well the partial with respect to h is
+
+181
+00:06:12,000 --> 00:06:16,800
+just 20. the function looks like 20
+
+182
+00:06:14,000 --> 00:06:19,440
+times h plus something that's a constant
+
+183
+00:06:16,800 --> 00:06:20,880
+so that ends up being 20.
+
+184
+00:06:19,440 --> 00:06:23,520
+and then the partial with respect to s
+
+185
+00:06:20,880 --> 00:06:25,759
+likewise it's just 2 000 because it's
+
+186
+00:06:23,520 --> 00:06:27,120
+just some constant multiplied by s plus
+
+187
+00:06:25,759 --> 00:06:28,240
+a bunch of other stuff that looks like
+
+188
+00:06:27,120 --> 00:06:29,600
+constants
+
+189
+00:06:28,240 --> 00:06:31,919
+so that's great
+
+190
+00:06:29,600 --> 00:06:34,319
+and this means when we set the gradient
+
+191
+00:06:31,919 --> 00:06:36,319
+of r equal to the gradient of g the pair
+
+192
+00:06:34,319 --> 00:06:38,080
+of equations that we get
+
+193
+00:06:36,319 --> 00:06:41,199
+and let me just write it all out again
+
+194
+00:06:38,080 --> 00:06:43,520
+is we have this top one which i'll call
+
+195
+00:06:41,199 --> 00:06:44,720
+200 thirds
+
+196
+00:06:43,520 --> 00:06:46,160
+times and let's go ahead and do a little
+
+197
+00:06:44,720 --> 00:06:48,560
+simplifying while i'm rewriting things
+
+198
+00:06:46,160 --> 00:06:49,440
+here so h to the one third
+
+199
+00:06:48,560 --> 00:06:51,759
+is
+
+200
+00:06:49,440 --> 00:06:53,440
+really one over
+
+201
+00:06:51,759 --> 00:06:55,919
+h to the negative one third sorry is one
+
+202
+00:06:53,440 --> 00:06:58,240
+over h to the one third and that's s to
+
+203
+00:06:55,919 --> 00:06:59,840
+the one third so all of this that first
+
+204
+00:06:58,240 --> 00:07:02,720
+component is being set equal to the
+
+205
+00:06:59,840 --> 00:07:04,160
+first component of the gradient of g
+
+206
+00:07:02,720 --> 00:07:06,160
+which is 20
+
+207
+00:07:04,160 --> 00:07:07,520
+times lambda times this lagrange
+
+208
+00:07:06,160 --> 00:07:08,960
+multiplier because we're not setting the
+
+209
+00:07:07,520 --> 00:07:11,280
+gradients equal to each other we're just
+
+210
+00:07:08,960 --> 00:07:12,720
+setting them proportional to each other
+
+211
+00:07:11,280 --> 00:07:14,000
+so that's the first equation and then
+
+212
+00:07:12,720 --> 00:07:15,520
+the second one i'll go ahead and do some
+
+213
+00:07:14,000 --> 00:07:17,599
+simplifying while i rewrite that one
+
+214
+00:07:15,520 --> 00:07:18,880
+also that's going to be
+
+215
+00:07:17,599 --> 00:07:21,599
+100
+
+216
+00:07:18,880 --> 00:07:22,800
+thirds and then h to the two thirds so
+
+217
+00:07:21,599 --> 00:07:26,400
+times
+
+218
+00:07:22,800 --> 00:07:28,080
+h to the two thirds divided by s to the
+
+219
+00:07:26,400 --> 00:07:29,840
+two thirds because s to the negative two
+
+220
+00:07:28,080 --> 00:07:31,039
+thirds is the same as one over s to the
+
+221
+00:07:29,840 --> 00:07:32,560
+two-thirds
+
+222
+00:07:31,039 --> 00:07:35,280
+all of that
+
+223
+00:07:32,560 --> 00:07:36,080
+is equal to two thousand
+
+224
+00:07:35,280 --> 00:07:38,240
+two
+
+225
+00:07:36,080 --> 00:07:39,759
+thousand times lambda and the important
+
+226
+00:07:38,240 --> 00:07:43,199
+thing is it's that same lambda because
+
+227
+00:07:39,759 --> 00:07:44,319
+the entire vector has to be proportional
+
+228
+00:07:43,199 --> 00:07:45,680
+and i think right here is probably a
+
+229
+00:07:44,319 --> 00:07:46,720
+pretty good point to stop and in the
+
+230
+00:07:45,680 --> 00:07:48,160
+next video i'll go ahead and work
+
+231
+00:07:46,720 --> 00:07:51,160
+through the details and we'll land on a
+
+232
+00:07:48,160 --> 00:07:51,160
+solution
+

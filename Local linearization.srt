@@ -1,0 +1,1184 @@
+1
+00:00:00,000 --> 00:00:01,402
+- [Voiceover] In the last couple videos, I
+
+2
+00:00:01,402 --> 00:00:03,896
+showed how you can take a function, ah,
+
+3
+00:00:03,896 --> 00:00:06,379
+just a function with two inputs,
+
+4
+00:00:06,379 --> 00:00:09,015
+and find the tangent plane to its graph,
+
+5
+00:00:09,015 --> 00:00:10,328
+and the way that you think about this,
+
+6
+00:00:10,328 --> 00:00:11,581
+you first find a point,
+
+7
+00:00:11,581 --> 00:00:12,994
+some kind of input point,
+
+8
+00:00:12,994 --> 00:00:14,757
+which is, you know I'll just write
+
+9
+00:00:14,757 --> 00:00:17,046
+abstractly as x nought and y nought.
+
+10
+00:00:17,046 --> 00:00:19,471
+And you see where that
+point ends up on the graph,
+
+11
+00:00:19,471 --> 00:00:21,282
+and you wanna find a new function,
+
+12
+00:00:21,282 --> 00:00:23,462
+a new function which we were calling L,
+
+13
+00:00:23,462 --> 00:00:24,894
+and maybe you say L sub f,
+
+14
+00:00:24,894 --> 00:00:27,158
+which also is a function of x and y.
+
+15
+00:00:27,158 --> 00:00:28,657
+And you want the graph of that function
+
+16
+00:00:28,657 --> 00:00:31,135
+to be a plane tangent to the graph.
+
+17
+00:00:31,135 --> 00:00:33,428
+Now this often goes by another name.
+
+18
+00:00:33,428 --> 00:00:36,481
+This will go under the
+name Local Linearization,
+
+19
+00:00:36,481 --> 00:00:40,648
+Local linearization, this is
+kind of a long word, zation.
+
+20
+00:00:43,013 --> 00:00:44,933
+And what this basically means,
+
+21
+00:00:44,933 --> 00:00:46,674
+the word local means you're looking at
+
+22
+00:00:46,674 --> 00:00:47,890
+a specific input point.
+
+23
+00:00:47,890 --> 00:00:48,893
+So in this case,
+
+24
+00:00:48,893 --> 00:00:51,955
+it's a specific input
+point x nought, y nought,
+
+25
+00:00:51,955 --> 00:00:54,232
+and the idea of a linearization,
+
+26
+00:00:54,232 --> 00:00:56,621
+a linearization, means
+you're approximating
+
+27
+00:00:56,621 --> 00:00:58,676
+the function with something simpler,
+
+28
+00:00:58,676 --> 00:01:00,243
+with something that's actually linear,
+
+29
+00:01:00,243 --> 00:01:01,475
+and I'll tell you what
+I mean by linear in,
+
+30
+00:01:01,475 --> 00:01:02,738
+in just a moment.
+
+31
+00:01:02,738 --> 00:01:05,997
+But the whole idea here is that
+we don't really care about,
+
+32
+00:01:05,997 --> 00:01:08,939
+you know, tangent planes
+in an abstract 3D spaced
+
+33
+00:01:08,939 --> 00:01:10,238
+to some kind of graph.
+
+34
+00:01:10,238 --> 00:01:11,620
+The whole reason for doing this,
+
+35
+00:01:11,620 --> 00:01:14,266
+is that this is a really good
+way to approximate a function,
+
+36
+00:01:14,266 --> 00:01:16,393
+which is potentially a
+very complicated function
+
+37
+00:01:16,393 --> 00:01:17,744
+with something that's much easier,
+
+38
+00:01:17,744 --> 00:01:20,114
+something that has constant
+partial derivatives.
+
+39
+00:01:20,114 --> 00:01:22,147
+Now my goal of this
+video is gonna be to show
+
+40
+00:01:22,147 --> 00:01:24,569
+how we write this local linearization here
+
+41
+00:01:24,569 --> 00:01:27,370
+in vector form, because
+it'll be both more compact,
+
+42
+00:01:27,370 --> 00:01:28,907
+and hopefully easier to remember,
+
+43
+00:01:28,907 --> 00:01:30,136
+and also it's more general.
+
+44
+00:01:30,136 --> 00:01:32,071
+It'll apply to things
+that have more than just,
+
+45
+00:01:32,071 --> 00:01:34,691
+just two input variables
+like this one does.
+
+46
+00:01:34,691 --> 00:01:36,422
+So just to remind us of where we were,
+
+47
+00:01:36,422 --> 00:01:38,816
+and what we got to in
+the last couple videos,
+
+48
+00:01:38,816 --> 00:01:40,579
+I'll write a little bit
+more abstractly this time,
+
+49
+00:01:40,579 --> 00:01:42,345
+rather than a specific example.
+
+50
+00:01:42,345 --> 00:01:44,640
+The way you do this local linearization
+
+51
+00:01:44,640 --> 00:01:46,297
+is first you find the partial derivative
+
+52
+00:01:46,297 --> 00:01:47,801
+of f with respect to x,
+
+53
+00:01:47,801 --> 00:01:51,444
+which I'll write with
+the subscript notation.
+
+54
+00:01:51,444 --> 00:01:54,679
+And you evaluate that at x of o
+
+55
+00:01:54,679 --> 00:01:55,964
+or x nought, y nought.
+
+56
+00:01:55,964 --> 00:01:57,177
+You evaluate it at the point
+
+57
+00:01:57,177 --> 00:01:59,004
+about which you're approximating
+
+58
+00:01:59,004 --> 00:02:03,447
+and then you multiply that
+by x minus that constant.
+
+59
+00:02:03,447 --> 00:02:04,806
+So the only variable right here,
+
+60
+00:02:04,806 --> 00:02:05,757
+everything is a constant,
+
+61
+00:02:05,757 --> 00:02:08,028
+but the only variable part is that x.
+
+62
+00:02:08,028 --> 00:02:09,007
+And then we add to that,
+
+63
+00:02:09,007 --> 00:02:10,502
+basically doing the same thing with y.
+
+64
+00:02:10,502 --> 00:02:12,713
+You take the partial
+derivative with respect to y,
+
+65
+00:02:12,713 --> 00:02:14,749
+you evaluate it at the input point,
+
+66
+00:02:14,749 --> 00:02:17,083
+the point about which you are linearizing,
+
+67
+00:02:17,083 --> 00:02:20,750
+and then you multiply
+it by y minus ys of o.
+
+68
+00:02:22,214 --> 00:02:23,938
+And then to this entire thing
+
+69
+00:02:23,938 --> 00:02:25,720
+because you wanna make sure that when
+
+70
+00:02:25,720 --> 00:02:28,153
+you evaluate this function
+at the input point itself.
+
+71
+00:02:28,153 --> 00:02:30,457
+You see, when you plug
+in x nought and y nought,
+
+72
+00:02:30,457 --> 00:02:31,585
+this terms goes to zero,
+
+73
+00:02:31,585 --> 00:02:33,449
+cause x nought minus x nought is zero.
+
+74
+00:02:33,449 --> 00:02:34,532
+This terms goes to zero,
+
+75
+00:02:34,532 --> 00:02:36,132
+and this is the whole
+reason we kind of paired
+
+76
+00:02:36,132 --> 00:02:38,864
+up these terms and organized
+the constants in this way.
+
+77
+00:02:38,864 --> 00:02:40,518
+This way, you can just think about adding
+
+78
+00:02:40,518 --> 00:02:44,361
+whatever the function itself
+evaluates to at that point.
+
+79
+00:02:44,361 --> 00:02:46,090
+And this will ensure
+that your linearization
+
+80
+00:02:46,090 --> 00:02:48,212
+actually equals the function itself
+
+81
+00:02:48,212 --> 00:02:49,097
+at the local point.
+
+82
+00:02:49,097 --> 00:02:51,379
+Cause hopefully if you're
+approximating it near a point,
+
+83
+00:02:51,379 --> 00:02:53,323
+then at that point, it's actually equal.
+
+84
+00:02:53,323 --> 00:02:56,250
+So what do I mean by this word linear?
+
+85
+00:02:56,250 --> 00:02:58,550
+The word linear has a
+very precise formulation,
+
+86
+00:02:58,550 --> 00:03:00,731
+especially in the context
+of linear algebra,
+
+87
+00:03:00,731 --> 00:03:02,363
+and admittedly, this is not actually
+
+88
+00:03:02,363 --> 00:03:04,709
+a linear function in the technical sense.
+
+89
+00:03:04,709 --> 00:03:05,828
+But loosely what it means,
+
+90
+00:03:05,828 --> 00:03:07,527
+and the reason people call it linear,
+
+91
+00:03:07,527 --> 00:03:10,059
+is that this x term
+here, this variable term,
+
+92
+00:03:10,059 --> 00:03:11,869
+doesn't have anything
+fancy going on with it.
+
+93
+00:03:11,869 --> 00:03:13,984
+It's just being multiplied by a constant,
+
+94
+00:03:13,984 --> 00:03:15,829
+and similarly this y term it's just being
+
+95
+00:03:15,829 --> 00:03:16,936
+multiplied by a constant.
+
+96
+00:03:16,936 --> 00:03:18,588
+It's not squared, there's no square root,
+
+97
+00:03:18,588 --> 00:03:20,939
+it's not in an exponent
+or anything like that.
+
+98
+00:03:20,939 --> 00:03:23,000
+And although there is a
+more technical meaning
+
+99
+00:03:23,000 --> 00:03:24,045
+of the word linear,
+
+100
+00:03:24,045 --> 00:03:25,497
+this is all it really
+needs in this context.
+
+101
+00:03:25,497 --> 00:03:26,719
+This is all you need to think about.
+
+102
+00:03:26,719 --> 00:03:30,065
+Each variable is just
+multiplied by a constant.
+
+103
+00:03:30,065 --> 00:03:32,306
+Now you might see this in
+a more complicated form,
+
+104
+00:03:32,306 --> 00:03:36,148
+or what's at first a more
+complicated form using vectors.
+
+105
+00:03:36,148 --> 00:03:37,593
+So first of all, let's think about
+
+106
+00:03:37,593 --> 00:03:38,975
+how we would start describing
+
+107
+00:03:38,975 --> 00:03:41,330
+everything going on here with vectors.
+
+108
+00:03:41,330 --> 00:03:42,638
+So the input, ah,
+
+109
+00:03:42,638 --> 00:03:45,070
+rather than talk about the
+input as being a pair of points,
+
+110
+00:03:45,070 --> 00:03:47,583
+what I wanna say is that
+there's some vector,
+
+111
+00:03:47,583 --> 00:03:49,165
+some vector that has
+these as its components,
+
+112
+00:03:49,165 --> 00:03:51,207
+and we just wanna capture that all,
+
+113
+00:03:51,207 --> 00:03:52,696
+and I wanna give that a name.
+
+114
+00:03:52,696 --> 00:03:54,949
+And kind of unfortunately
+the name that we give this,
+
+115
+00:03:54,949 --> 00:03:57,173
+it's very common to just call it x,
+
+116
+00:03:57,173 --> 00:03:59,009
+and maybe a bold-faced x and that would be
+
+117
+00:03:59,009 --> 00:04:00,689
+easier to do typing than it is writing,
+
+118
+00:04:00,689 --> 00:04:02,234
+so I'll just kind of try
+to emphasize bold-faced
+
+119
+00:04:02,234 --> 00:04:03,681
+x equals this vector,
+
+120
+00:04:03,681 --> 00:04:05,213
+and where's, that's confusing cause x
+
+121
+00:04:05,213 --> 00:04:08,056
+is already one of the input
+variables that's just a number.
+
+122
+00:04:08,056 --> 00:04:09,303
+Um, but I'll try to emphasize it,
+
+123
+00:04:09,303 --> 00:04:10,165
+just making it bold.
+
+124
+00:04:10,165 --> 00:04:11,555
+You'll see this in writing a lot.
+
+125
+00:04:11,555 --> 00:04:13,069
+X is this input vector,
+
+126
+00:04:13,069 --> 00:04:15,861
+and then similarly, the specified, ah,
+
+127
+00:04:15,861 --> 00:04:18,344
+specified input about
+which we are approximating,
+
+128
+00:04:18,344 --> 00:04:20,330
+you would call, see I'll make it a nice
+
+129
+00:04:20,330 --> 00:04:22,196
+bold-faced x nought.
+
+130
+00:04:22,196 --> 00:04:24,829
+We'll, we'll do that nought
+to just kind of indicate
+
+131
+00:04:24,829 --> 00:04:26,584
+that it's a constant of some kind.
+
+132
+00:04:26,584 --> 00:04:27,417
+And what that is,
+
+133
+00:04:27,417 --> 00:04:29,184
+it's a vector containing the two numbers
+
+134
+00:04:29,184 --> 00:04:30,434
+x nought, y nought.
+
+135
+00:04:31,649 --> 00:04:32,482
+So this is just us
+starting to write things
+
+136
+00:04:32,482 --> 00:04:34,438
+in a more vectorized way
+
+137
+00:04:34,438 --> 00:04:36,093
+and the convenience here is that,
+
+138
+00:04:36,093 --> 00:04:37,248
+that if you're dealing with a function
+
+139
+00:04:37,248 --> 00:04:40,436
+with three input variables
+or four or a hundred,
+
+140
+00:04:40,436 --> 00:04:41,790
+you could still just write it as this
+
+141
+00:04:41,790 --> 00:04:44,030
+bold-faced x with the understanding
+
+142
+00:04:44,030 --> 00:04:46,125
+that the vector has a lot more components.
+
+143
+00:04:46,125 --> 00:04:48,185
+So now, let's take a look at,
+
+144
+00:04:48,185 --> 00:04:51,645
+at these first two terms
+in our linearization.
+
+145
+00:04:51,645 --> 00:04:53,695
+We can start thinking of this as a,
+
+146
+00:04:53,695 --> 00:04:55,874
+as a dot product, actually.
+
+147
+00:04:55,874 --> 00:04:57,462
+So let me first just kind of move this guy
+
+148
+00:04:57,462 --> 00:04:59,226
+out of the way and give
+ourselves some room.
+
+149
+00:04:59,226 --> 00:05:01,457
+So he's gonna just go up there,
+
+150
+00:05:01,457 --> 00:05:03,114
+this the same guy,
+
+151
+00:05:03,114 --> 00:05:05,642
+and now I wanna think about
+writing this other term here
+
+152
+00:05:05,642 --> 00:05:07,319
+as a, as a dot product.
+
+153
+00:05:07,319 --> 00:05:10,004
+And what that looks like is we have
+
+154
+00:05:10,004 --> 00:05:10,837
+the two partial derivatives fs of x
+
+155
+00:05:10,837 --> 00:05:14,686
+and fs of y, indicating
+the partial derivatives
+
+156
+00:05:14,686 --> 00:05:16,660
+with respect to x and y,
+
+157
+00:05:16,660 --> 00:05:18,517
+and each one of them is evaluated.
+
+158
+00:05:18,517 --> 00:05:19,666
+Let's see, I'll do it, I'll do it
+
+159
+00:05:19,666 --> 00:05:22,916
+evaluating at our bold-faced x nought,
+
+160
+00:05:23,898 --> 00:05:25,370
+and then this one is also evaluated
+
+161
+00:05:25,370 --> 00:05:27,128
+at that bold-faced x nought.
+
+162
+00:05:27,128 --> 00:05:29,141
+So, really you're thinking
+about this as being,
+
+163
+00:05:29,141 --> 00:05:31,431
+you know, a vector that contains
+two different variables.
+
+164
+00:05:31,431 --> 00:05:34,292
+You're just packing it
+into a single symbol,
+
+165
+00:05:34,292 --> 00:05:35,860
+and the dot product here
+
+166
+00:05:35,860 --> 00:05:38,669
+is against, ah, you
+know, the first component
+
+167
+00:05:38,669 --> 00:05:40,408
+is x minus x nought,
+
+168
+00:05:40,408 --> 00:05:44,295
+so I'd write that as x
+minus x nought the number,
+
+169
+00:05:44,295 --> 00:05:45,720
+and then similarly, y minus,
+
+170
+00:05:45,720 --> 00:05:47,658
+let's see, I'll do it in the same color,
+
+171
+00:05:47,658 --> 00:05:49,158
+y nought the number.
+
+172
+00:05:50,584 --> 00:05:52,287
+Ah, but we can write each one of these
+
+173
+00:05:52,287 --> 00:05:53,965
+in a more compact form,
+
+174
+00:05:53,965 --> 00:05:56,605
+where this, the vector that
+has the partial derivatives,
+
+175
+00:05:56,605 --> 00:05:59,164
+that's the gradient, and
+if that feels unfamiliar,
+
+176
+00:05:59,164 --> 00:06:01,453
+maybe go back and check out
+the videos on the gradient,
+
+177
+00:06:01,453 --> 00:06:03,014
+but this whole vector is
+basically just saying,
+
+178
+00:06:03,014 --> 00:06:05,089
+take the gradient and evaluate it at that,
+
+179
+00:06:05,089 --> 00:06:08,924
+that vector input, you know, x nought.
+
+180
+00:06:08,924 --> 00:06:11,651
+And in the second component here,
+
+181
+00:06:11,651 --> 00:06:13,035
+that's telling you you've got
+
+182
+00:06:13,035 --> 00:06:16,026
+x and y minus x nought and y nought.
+
+183
+00:06:16,026 --> 00:06:17,729
+So what you're basically doing is taking
+
+184
+00:06:17,729 --> 00:06:19,501
+the, you know, bold-faced input,
+
+185
+00:06:19,501 --> 00:06:21,933
+the variable vector x,
+
+186
+00:06:21,933 --> 00:06:23,571
+and then you're subtracting off,
+
+187
+00:06:23,571 --> 00:06:28,499
+you know, x nought, where x
+nought is some kind of constant.
+
+188
+00:06:28,499 --> 00:06:29,379
+So this right here,
+
+189
+00:06:29,379 --> 00:06:31,416
+this is just vector terms
+where you're thinking of this
+
+190
+00:06:31,416 --> 00:06:32,872
+as being a vector with two components,
+
+191
+00:06:32,872 --> 00:06:34,872
+and this one is a vector
+with two components,
+
+192
+00:06:34,872 --> 00:06:35,705
+but if your function happened to
+
+193
+00:06:35,705 --> 00:06:37,009
+be something more complicated,
+
+194
+00:06:37,009 --> 00:06:39,343
+with, you know, a hundred input variables,
+
+195
+00:06:39,343 --> 00:06:40,914
+this would be the same
+thing you write down.
+
+196
+00:06:40,914 --> 00:06:43,067
+You would just understand
+that when you expand this,
+
+197
+00:06:43,067 --> 00:06:43,900
+there's gonna be a hundred different
+
+198
+00:06:43,900 --> 00:06:45,740
+components in the vector.
+
+199
+00:06:45,740 --> 00:06:47,860
+Um, and this is what a linear term
+
+200
+00:06:47,860 --> 00:06:49,605
+looks like in vector terminology,
+
+201
+00:06:49,605 --> 00:06:51,322
+cause this dot product is telling you
+
+202
+00:06:51,322 --> 00:06:52,878
+that all of the components
+
+203
+00:06:52,878 --> 00:06:54,218
+of that bold-faced x vector,
+
+204
+00:06:54,218 --> 00:06:56,536
+the, that expands into, you know,
+
+205
+00:06:56,536 --> 00:06:59,777
+not bold-faced x, y, z,
+whatever else it expands to.
+
+206
+00:06:59,777 --> 00:07:01,372
+All of those are just being multiplied
+
+207
+00:07:01,372 --> 00:07:03,547
+by some kind of constant.
+
+208
+00:07:03,547 --> 00:07:04,681
+So we take that whole thing,
+
+209
+00:07:04,681 --> 00:07:08,317
+that's, that's how you simplify
+the first couple terms here,
+
+210
+00:07:08,317 --> 00:07:10,008
+and of course, we just add on
+
+211
+00:07:10,008 --> 00:07:11,739
+the value of the function itself.
+
+212
+00:07:11,739 --> 00:07:14,103
+So you would take that as the linear term.
+
+213
+00:07:14,103 --> 00:07:15,937
+And no, I kind of like to
+add it on to the front,
+
+214
+00:07:15,937 --> 00:07:17,406
+actually, where you think about taking
+
+215
+00:07:17,406 --> 00:07:19,420
+the function itself and evaluating it
+
+216
+00:07:19,420 --> 00:07:23,210
+at that, that constant input x nought,
+
+217
+00:07:23,210 --> 00:07:25,008
+cause that way you can kind of think
+
+218
+00:07:25,008 --> 00:07:28,184
+this is your constant term,
+this is your constant term,
+
+219
+00:07:28,184 --> 00:07:31,274
+and then the rest of the stuff
+here is your linear term.
+
+220
+00:07:31,274 --> 00:07:32,299
+Rest of your stuff is your linear.
+
+221
+00:07:32,299 --> 00:07:34,357
+Cause later on if we
+start adding other terms
+
+222
+00:07:34,357 --> 00:07:35,280
+like a quadratic term
+
+223
+00:07:35,280 --> 00:07:36,344
+or more complicated things,
+
+224
+00:07:36,344 --> 00:07:38,299
+you can kind of keep
+adding them on the end.
+
+225
+00:07:38,299 --> 00:07:39,536
+So this right here,
+
+226
+00:07:39,536 --> 00:07:41,083
+is the expression that you will often see
+
+227
+00:07:41,083 --> 00:07:43,279
+for the local linearization.
+
+228
+00:07:43,279 --> 00:07:45,839
+And the only place where the
+actual variable shows up,
+
+229
+00:07:45,839 --> 00:07:48,801
+the variable vector, is
+right here, is this guy.
+
+230
+00:07:48,801 --> 00:07:50,539
+Cause, you know, when
+you evaluate the function
+
+231
+00:07:50,539 --> 00:07:52,976
+f at a specified input,
+that's just a constant.
+
+232
+00:07:52,976 --> 00:07:54,662
+when you evaluate the
+gradient at that input,
+
+233
+00:07:54,662 --> 00:07:55,768
+it's just a constant.
+
+234
+00:07:55,768 --> 00:07:57,777
+And we're subtracting off that, that
+
+235
+00:07:57,777 --> 00:07:59,868
+um, specified input
+that's just a constant.
+
+236
+00:07:59,868 --> 00:08:02,269
+So this is the only place
+where your variable shows up.
+
+237
+00:08:02,269 --> 00:08:03,657
+So once all is said and done,
+
+238
+00:08:03,657 --> 00:08:05,178
+and once you do your computations,
+
+239
+00:08:05,178 --> 00:08:07,208
+this is a very simple function.
+
+240
+00:08:07,208 --> 00:08:09,406
+And the, the important part
+is maybe this is much simpler
+
+241
+00:08:09,406 --> 00:08:11,054
+than the function f itself,
+
+242
+00:08:11,054 --> 00:08:12,749
+which allows you to, you know,
+
+243
+00:08:12,749 --> 00:08:14,539
+maybe compute something more quickly
+
+244
+00:08:14,539 --> 00:08:17,064
+if you're writing a program that needs to,
+
+245
+00:08:17,064 --> 00:08:19,314
+you know, deal with some
+kind of complicated function,
+
+246
+00:08:19,314 --> 00:08:21,301
+but runtime is an issue or maybe,
+
+247
+00:08:21,301 --> 00:08:23,101
+it's a function that you
+never knew in the first place,
+
+248
+00:08:23,101 --> 00:08:25,700
+but you were able to approximate
+its value at a point,
+
+249
+00:08:25,700 --> 00:08:27,207
+and approximate its gradient.
+
+250
+00:08:27,207 --> 00:08:28,647
+So this is what lets you approximate
+
+251
+00:08:28,647 --> 00:08:30,758
+the function as a whole near that point.
+
+252
+00:08:30,758 --> 00:08:32,318
+So again, this might look very abstract,
+
+253
+00:08:32,318 --> 00:08:34,235
+but if you just kind of unravel everything
+
+254
+00:08:34,235 --> 00:08:35,693
+and think back to where it came from
+
+255
+00:08:35,693 --> 00:08:37,657
+and look at, look at the specific example
+
+256
+00:08:37,657 --> 00:08:39,382
+of a, you know, tangent plane, um,
+
+257
+00:08:39,382 --> 00:08:41,478
+hopefully it all makes
+a little bit of sense
+
+258
+00:08:41,478 --> 00:08:44,007
+and you see that this is
+really just the simplest
+
+259
+00:08:44,007 --> 00:08:47,417
+possible function that
+evaluates to the same value
+
+260
+00:08:47,417 --> 00:08:49,436
+as f when you input this point,
+
+261
+00:08:49,436 --> 00:08:51,554
+and whose partial derivatives all evaluate
+
+262
+00:08:51,554 --> 00:08:53,197
+to the same values as those of f
+
+263
+00:08:53,197 --> 00:08:55,028
+at that specified point.
+
+264
+00:08:55,028 --> 00:08:56,510
+And if you wanna see
+more examples of this,
+
+265
+00:08:56,510 --> 00:08:57,998
+and what it looks like and
+maybe how you can use it
+
+266
+00:08:57,998 --> 00:09:00,047
+to approximate certain functions,
+
+267
+00:09:00,047 --> 00:09:01,673
+I have an article on that,
+that you can go check out,
+
+268
+00:09:01,673 --> 00:09:03,780
+and it would be
+particularly good to kind of
+
+269
+00:09:03,780 --> 00:09:04,846
+go in with a piece of paper
+
+270
+00:09:04,846 --> 00:09:07,476
+and sort of work through
+the examples yourself
+
+271
+00:09:07,476 --> 00:09:09,489
+as you, as you work through it.
+
+272
+00:09:09,489 --> 00:09:10,609
+And with that said,
+
+273
+00:09:10,609 --> 00:09:12,097
+I will see you next video.
+

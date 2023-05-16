@@ -1,0 +1,672 @@
+1
+00:00:00,617 --> 00:00:01,765
+- [Voiceover] So, in
+the last video I talked
+
+2
+00:00:01,765 --> 00:00:04,614
+about curvature and the
+radius of curvature,
+
+3
+00:00:04,614 --> 00:00:06,220
+and I described it purely geometrically
+
+4
+00:00:06,220 --> 00:00:07,647
+where I'm saying, you imagine driving
+
+5
+00:00:07,647 --> 00:00:10,339
+along a certain road,
+your steering wheel locks,
+
+6
+00:00:10,339 --> 00:00:12,408
+and you're wondering what
+the radius of the circle
+
+7
+00:00:12,408 --> 00:00:14,685
+that you draw with your
+car, you know through
+
+8
+00:00:14,685 --> 00:00:16,646
+whatever surrounding fields
+there are on the road
+
+9
+00:00:16,646 --> 00:00:19,197
+as a result, and the special symbol
+
+10
+00:00:19,197 --> 00:00:22,324
+that we have for this,
+for this idea of curvature
+
+11
+00:00:22,324 --> 00:00:24,844
+is a little kappa, and
+that's gonna be one divided
+
+12
+00:00:24,844 --> 00:00:26,292
+by the radius, and the reason we do
+
+13
+00:00:26,292 --> 00:00:28,805
+that is basically you want a large kappa,
+
+14
+00:00:28,805 --> 00:00:31,988
+a large curvature to
+correspond with a sharp turn
+
+15
+00:00:31,988 --> 00:00:35,733
+so, sharp turn, small
+radius, large curvature.
+
+16
+00:00:35,733 --> 00:00:37,117
+But the question is how do we describe
+
+17
+00:00:37,117 --> 00:00:39,784
+this in a more mathematical way?
+
+18
+00:00:40,756 --> 00:00:45,157
+So, I'm gonna to go ahead
+and clear up, get rid of the
+
+19
+00:00:45,157 --> 00:00:47,484
+circle itself and all of that radius
+
+20
+00:00:47,484 --> 00:00:50,947
+and just be looking at the
+curve itself in it's own right.
+
+21
+00:00:50,947 --> 00:00:53,029
+The way you typically
+describe a curve like this
+
+22
+00:00:53,029 --> 00:00:54,938
+is para-metrically, so, you'll have
+
+23
+00:00:54,938 --> 00:00:56,997
+some kind of vector valued function s
+
+24
+00:00:56,997 --> 00:00:59,565
+that takes in a single parameter t,
+
+25
+00:00:59,565 --> 00:01:02,052
+and then it's gonna output
+the x and y coordinates,
+
+26
+00:01:02,052 --> 00:01:04,395
+each as functions of t.
+
+27
+00:01:04,395 --> 00:01:06,716
+So, this will be the x coordinate,
+
+28
+00:01:06,716 --> 00:01:08,133
+the y coordinate.
+
+29
+00:01:10,396 --> 00:01:12,141
+And then this specific
+case, I'll just tell you
+
+30
+00:01:12,141 --> 00:01:15,503
+the curve that I drew
+happens to be parameterized
+
+31
+00:01:15,503 --> 00:01:19,670
+by one minus the sign of t
+as the x component function,
+
+32
+00:01:21,844 --> 00:01:24,756
+actually no, it's t minus
+sign of t, and the bottom part
+
+33
+00:01:24,756 --> 00:01:26,839
+is one minus cosign of t.
+
+34
+00:01:28,478 --> 00:01:31,276
+That's the curve that I drew.
+
+35
+00:01:31,276 --> 00:01:32,860
+And the way that you're
+thinking about this
+
+36
+00:01:32,860 --> 00:01:35,670
+is for each value t you
+get a certain vector
+
+37
+00:01:35,670 --> 00:01:37,340
+that puts you at a point on the curve,
+
+38
+00:01:37,340 --> 00:01:40,205
+and as t changes the
+vector you get changes,
+
+39
+00:01:40,205 --> 00:01:42,300
+but the tip of that vector kind of traces
+
+40
+00:01:42,300 --> 00:01:44,967
+out the curve as a whole, right?
+
+41
+00:01:48,060 --> 00:01:50,901
+And you can imagine the
+vector drawing the curve
+
+42
+00:01:50,901 --> 00:01:52,543
+as t varies,
+
+43
+00:01:52,543 --> 00:01:54,797
+and the thought behind making
+curvature mathematical,
+
+44
+00:01:54,797 --> 00:01:57,317
+here I'll kind of clear
+up some room for myself,
+
+45
+00:01:57,317 --> 00:02:00,424
+is that you take the tangent vectors here
+
+46
+00:02:00,424 --> 00:02:01,257
+so,
+
+47
+00:02:02,975 --> 00:02:05,765
+so, you might image a unit tangent vector
+
+48
+00:02:05,765 --> 00:02:07,515
+at every given point,
+
+49
+00:02:08,646 --> 00:02:09,479
+and you're wondering
+
+50
+00:02:09,479 --> 00:02:12,510
+how quickly those guys change direction,
+
+51
+00:02:12,510 --> 00:02:13,343
+right?
+
+52
+00:02:15,005 --> 00:02:17,350
+So with the little schematic
+that I have drawn here
+
+53
+00:02:17,350 --> 00:02:20,783
+I'm just gonna call this guy t one
+
+54
+00:02:20,783 --> 00:02:22,664
+for like the first tangent vector,
+
+55
+00:02:22,664 --> 00:02:26,044
+t2 , t3, and I haven't specified
+
+56
+00:02:26,044 --> 00:02:26,930
+where they started or anything
+
+57
+00:02:26,930 --> 00:02:28,299
+I just what give a feel for you've got
+
+58
+00:02:28,299 --> 00:02:29,853
+various different tangent vectors
+
+59
+00:02:29,853 --> 00:02:31,739
+and I'm just gonna say that all of them
+
+60
+00:02:31,739 --> 00:02:35,348
+each one of them t sub
+somethings has a unit length.
+
+61
+00:02:35,348 --> 00:02:38,619
+And the idea of curvature
+is to look at how quickly
+
+62
+00:02:38,619 --> 00:02:41,346
+that unit tangent vector
+changes directions.
+
+63
+00:02:41,346 --> 00:02:44,802
+So, you know you might imagine
+a completely different space
+
+64
+00:02:44,802 --> 00:02:47,715
+so, rather than rooting
+each vector on the curve,
+
+65
+00:02:47,715 --> 00:02:49,642
+let's see what it would look like if you
+
+66
+00:02:49,642 --> 00:02:50,798
+just kind of write each vector
+
+67
+00:02:50,798 --> 00:02:52,898
+in its own right off in some other spot.
+
+68
+00:02:52,898 --> 00:02:55,700
+So, this guy here would be t one,
+
+69
+00:02:55,700 --> 00:02:59,194
+and then t two points a little bit down,
+
+70
+00:02:59,194 --> 00:03:03,819
+and then t three points
+kind of much more down
+
+71
+00:03:03,819 --> 00:03:07,347
+So, all of these, this would
+be t one, that guy is t two
+
+72
+00:03:07,347 --> 00:03:09,779
+and these are the same vectors
+I'm just kind of drawing them
+
+73
+00:03:09,779 --> 00:03:12,234
+all rooted at the same spot
+so it's a little easier
+
+74
+00:03:12,234 --> 00:03:14,138
+to see how they turn, and you wanna say,
+
+75
+00:03:14,138 --> 00:03:16,261
+okay how much do you
+change as you go from t one
+
+76
+00:03:16,261 --> 00:03:18,677
+to t two, is that a large angle change?
+
+77
+00:03:18,677 --> 00:03:20,955
+and as you go from t two to t three,
+
+78
+00:03:20,955 --> 00:03:22,655
+is that a large change as well?
+
+79
+00:03:22,655 --> 00:03:25,712
+And you can kind of see
+how if you have a curve,
+
+80
+00:03:25,712 --> 00:03:27,779
+and let's say it's,
+
+81
+00:03:27,779 --> 00:03:29,606
+if you have a curve
+that curves quite a bit,
+
+82
+00:03:29,606 --> 00:03:31,687
+you know it's doing something like that
+
+83
+00:03:31,687 --> 00:03:34,354
+then the unit vector,
+the unit tangent vector
+
+84
+00:03:34,354 --> 00:03:37,006
+at this point changes quite rapidly
+
+85
+00:03:37,006 --> 00:03:38,581
+over a short distance to be something
+
+86
+00:03:38,581 --> 00:03:40,143
+almost 90 degrees different.
+
+87
+00:03:40,143 --> 00:03:42,487
+Whereas, if you take the unit vector here
+
+88
+00:03:42,487 --> 00:03:44,290
+and see how much does
+it change as you go from
+
+89
+00:03:44,290 --> 00:03:46,376
+this point over to this point
+
+90
+00:03:46,376 --> 00:03:48,383
+it doesn't really change that much.
+
+91
+00:03:48,383 --> 00:03:49,502
+So, the thought behind curvatures,
+
+92
+00:03:49,502 --> 00:03:50,815
+we gonna take the rate of change of
+
+93
+00:03:50,815 --> 00:03:52,690
+that unit tangent vector,
+
+94
+00:03:52,690 --> 00:03:55,039
+so, the rate of change of t, and I'm gonna
+
+95
+00:03:55,039 --> 00:03:57,144
+let capital T be a function
+
+96
+00:03:57,144 --> 00:03:58,952
+that tells you whatever
+the unit tangent vector
+
+97
+00:03:58,952 --> 00:04:00,606
+at each point is,
+
+98
+00:04:00,606 --> 00:04:01,930
+and I'm not gonna take the rate of change
+
+99
+00:04:01,930 --> 00:04:05,465
+in terms of, you know
+the parameter little t,
+
+100
+00:04:05,465 --> 00:04:07,744
+which is what we use to
+parameterize the curve,
+
+101
+00:04:07,744 --> 00:04:09,886
+because it shouldn't matter
+how you parameterize the curve,
+
+102
+00:04:09,886 --> 00:04:12,143
+maybe you're driving
+along it really quickly
+
+103
+00:04:12,143 --> 00:04:13,299
+or really slowly.
+
+104
+00:04:13,299 --> 00:04:14,879
+Instead, what you wanna take
+
+105
+00:04:14,879 --> 00:04:18,481
+is the rate of change with
+respect to arc length.
+
+106
+00:04:18,481 --> 00:04:20,887
+Arc length, and I'm
+using the variable s here
+
+107
+00:04:20,887 --> 00:04:22,391
+to denote arc length, and what I mean by
+
+108
+00:04:22,391 --> 00:04:26,767
+that is that if take just
+a tiny little step here
+
+109
+00:04:26,767 --> 00:04:29,787
+the distance of that
+step, the actual distance
+
+110
+00:04:29,787 --> 00:04:32,759
+in the x y plane, you
+consider to be the arc length.
+
+111
+00:04:32,759 --> 00:04:34,367
+And if you imagine it
+being really, really small
+
+112
+00:04:34,367 --> 00:04:36,069
+you're considering that a d s,
+
+113
+00:04:36,069 --> 00:04:38,581
+a tiny change in the arc length.
+
+114
+00:04:38,581 --> 00:04:40,391
+So this is the quantity
+that we care about.
+
+115
+00:04:40,391 --> 00:04:43,511
+How much does that unit
+tangent vector change
+
+116
+00:04:43,511 --> 00:04:45,736
+with respect to a tiny
+change in the arc length?
+
+117
+00:04:45,736 --> 00:04:47,631
+You know, as we travel along, let's say,
+
+118
+00:04:47,631 --> 00:04:50,714
+it was a distance of like 0.5, right,
+
+119
+00:04:51,719 --> 00:04:55,576
+you wanna know, did this
+unit vector change a lot
+
+120
+00:04:55,576 --> 00:04:56,580
+or a little bit.
+
+121
+00:04:56,580 --> 00:04:57,583
+But I should add something here,
+
+122
+00:04:57,583 --> 00:04:59,913
+this tiny change in the vector
+
+123
+00:04:59,913 --> 00:05:01,341
+that would tell you,
+
+124
+00:05:01,341 --> 00:05:02,999
+you know what the vector connecting
+
+125
+00:05:02,999 --> 00:05:04,887
+their two tips is,
+
+126
+00:05:04,887 --> 00:05:06,589
+so, this would be a
+vector valued quantity,
+
+127
+00:05:06,589 --> 00:05:08,675
+and curvature itself
+should just be a number.
+
+128
+00:05:08,675 --> 00:05:11,647
+So, what we really care about
+is the size of this guy.
+
+129
+00:05:11,647 --> 00:05:14,767
+So, what we really care
+about, the size of this,
+
+130
+00:05:14,767 --> 00:05:17,358
+which is a vector valued quantity,
+
+131
+00:05:17,358 --> 00:05:18,516
+and that'll be an indication of just
+
+132
+00:05:18,516 --> 00:05:20,367
+how much the curve curves.
+
+133
+00:05:20,367 --> 00:05:22,044
+But if I'm at a sharper turned curve
+
+134
+00:05:22,044 --> 00:05:23,761
+you go over that same distance
+
+135
+00:05:23,761 --> 00:05:25,216
+and then suddenly the change
+
+136
+00:05:25,216 --> 00:05:27,793
+in the tangent vectors goes by quite a bit
+
+137
+00:05:27,793 --> 00:05:30,535
+that would be telling you
+it's a high curvature.
+
+138
+00:05:30,535 --> 00:05:32,110
+And in the next video
+I'm gonna talk through
+
+139
+00:05:32,110 --> 00:05:34,755
+what that looks like, how you think about
+
+140
+00:05:34,755 --> 00:05:36,939
+this tangent vector function,
+
+141
+00:05:36,939 --> 00:05:38,699
+this unit tangent vector function,
+
+142
+00:05:38,699 --> 00:05:41,236
+and what it looks like to
+take the derivative of that
+
+143
+00:05:41,236 --> 00:05:43,315
+with respect to arc length.
+
+144
+00:05:43,315 --> 00:05:44,795
+It can get a little convoluted
+
+145
+00:05:44,795 --> 00:05:46,452
+in terms of the symbols involved,
+
+146
+00:05:46,452 --> 00:05:47,715
+and the constant picture you should have
+
+147
+00:05:47,715 --> 00:05:50,011
+in the back of your mind is that circle,
+
+148
+00:05:50,011 --> 00:05:52,093
+that circle that's hugging
+the curve very closely
+
+149
+00:05:52,093 --> 00:05:53,867
+at a certain point,
+
+150
+00:05:53,867 --> 00:05:57,356
+and this means of taking the
+magnitude of the rate of change
+
+151
+00:05:57,356 --> 00:06:00,987
+of the unit tangent vector
+with respect to arc length
+
+152
+00:06:00,987 --> 00:06:04,320
+is all just trying to capture that idea.
+

@@ -1,0 +1,1112 @@
+1
+00:00:01,599 --> 00:00:05,120
+so i've written here three different
+
+2
+00:00:03,360 --> 00:00:07,120
+functions the first one is a
+
+3
+00:00:05,120 --> 00:00:09,200
+multivariable function it has a two
+
+4
+00:00:07,120 --> 00:00:11,360
+variable input x y
+
+5
+00:00:09,200 --> 00:00:13,519
+and a single variable output that's x
+
+6
+00:00:11,360 --> 00:00:15,360
+squared times y that's just a number and
+
+7
+00:00:13,519 --> 00:00:17,199
+then the other two functions are each
+
+8
+00:00:15,360 --> 00:00:19,920
+just regular old single variable
+
+9
+00:00:17,199 --> 00:00:22,240
+functions and what i want to do is start
+
+10
+00:00:19,920 --> 00:00:23,760
+thinking about the composition of them
+
+11
+00:00:22,240 --> 00:00:26,960
+so i'm going to take as the first
+
+12
+00:00:23,760 --> 00:00:27,840
+component the value of the function x of
+
+13
+00:00:26,960 --> 00:00:31,039
+t
+
+14
+00:00:27,840 --> 00:00:33,120
+so you pump t through that and then you
+
+15
+00:00:31,039 --> 00:00:35,760
+make that the first component of f and
+
+16
+00:00:33,120 --> 00:00:38,000
+the second component will be the value
+
+17
+00:00:35,760 --> 00:00:39,520
+of the function y of t
+
+18
+00:00:38,000 --> 00:00:41,360
+so the image that you might have in your
+
+19
+00:00:39,520 --> 00:00:42,719
+head for something like this is you can
+
+20
+00:00:41,360 --> 00:00:44,640
+think of t
+
+21
+00:00:42,719 --> 00:00:45,520
+as just living on a number line of some
+
+22
+00:00:44,640 --> 00:00:47,039
+kind
+
+23
+00:00:45,520 --> 00:00:50,000
+then you have x and y
+
+24
+00:00:47,039 --> 00:00:51,520
+which is just a plane so that'll be
+
+25
+00:00:50,000 --> 00:00:53,680
+you know your x coordinate your y
+
+26
+00:00:51,520 --> 00:00:55,039
+coordinate two dimensional space
+
+27
+00:00:53,680 --> 00:00:57,360
+and then you have your output which is
+
+28
+00:00:55,039 --> 00:00:59,199
+just whatever the value of f is and for
+
+29
+00:00:57,360 --> 00:01:00,960
+this whole function
+
+30
+00:00:59,199 --> 00:01:03,840
+for this whole composition of functions
+
+31
+00:01:00,960 --> 00:01:05,920
+you're thinking of x t y t as taking a
+
+32
+00:01:03,840 --> 00:01:07,920
+single point in t and kind of moving it
+
+33
+00:01:05,920 --> 00:01:10,000
+over to two dimensional space somewhere
+
+34
+00:01:07,920 --> 00:01:12,400
+and then from there our multivariable
+
+35
+00:01:10,000 --> 00:01:14,400
+function takes that back down so this is
+
+36
+00:01:12,400 --> 00:01:15,360
+just a single variable function
+
+37
+00:01:14,400 --> 00:01:16,880
+nothing
+
+38
+00:01:15,360 --> 00:01:18,159
+you know nothing too fancy going on in
+
+39
+00:01:16,880 --> 00:01:19,680
+terms of where you start and where you
+
+40
+00:01:18,159 --> 00:01:20,799
+end up it's just what's happening in the
+
+41
+00:01:19,680 --> 00:01:22,720
+middle
+
+42
+00:01:20,799 --> 00:01:24,880
+and what i want to know is what's the
+
+43
+00:01:22,720 --> 00:01:26,640
+derivative of this function
+
+44
+00:01:24,880 --> 00:01:28,479
+if i take this and it's just an ordinary
+
+45
+00:01:26,640 --> 00:01:29,759
+derivative not a partial derivative
+
+46
+00:01:28,479 --> 00:01:31,759
+because this is a single variable
+
+47
+00:01:29,759 --> 00:01:34,000
+function one variable input one variable
+
+48
+00:01:31,759 --> 00:01:35,840
+output how do you take its derivative
+
+49
+00:01:34,000 --> 00:01:36,880
+and there's a a special rule for this
+
+50
+00:01:35,840 --> 00:01:39,280
+it's called the chain rule the
+
+51
+00:01:36,880 --> 00:01:41,600
+multivariable chain rule but you don't
+
+52
+00:01:39,280 --> 00:01:42,720
+actually need it so let's actually walk
+
+53
+00:01:41,600 --> 00:01:44,479
+through this
+
+54
+00:01:42,720 --> 00:01:45,840
+showing that you don't need it it's not
+
+55
+00:01:44,479 --> 00:01:47,280
+that you'll never need it it's just for
+
+56
+00:01:45,840 --> 00:01:48,320
+computations like this you could go
+
+57
+00:01:47,280 --> 00:01:50,000
+without it
+
+58
+00:01:48,320 --> 00:01:52,880
+it's a very useful theoretical tool a
+
+59
+00:01:50,000 --> 00:01:54,720
+very useful model to have in mind for
+
+60
+00:01:52,880 --> 00:01:55,759
+what function function composition looks
+
+61
+00:01:54,720 --> 00:01:57,040
+like and
+
+62
+00:01:55,759 --> 00:01:58,640
+implies for derivatives in the
+
+63
+00:01:57,040 --> 00:02:00,479
+multivariable world
+
+64
+00:01:58,640 --> 00:02:04,079
+so let's just start plugging things in
+
+65
+00:02:00,479 --> 00:02:06,719
+here if i have f of x of t of y of t the
+
+66
+00:02:04,079 --> 00:02:08,640
+first thing i might do is write okay f
+
+67
+00:02:06,719 --> 00:02:10,239
+and instead of x of t just write in
+
+68
+00:02:08,640 --> 00:02:12,560
+cosine of t
+
+69
+00:02:10,239 --> 00:02:14,080
+since that's the function that i have
+
+70
+00:02:12,560 --> 00:02:15,920
+for x of t
+
+71
+00:02:14,080 --> 00:02:17,360
+and then y we replace that with sine of
+
+72
+00:02:15,920 --> 00:02:19,440
+t
+
+73
+00:02:17,360 --> 00:02:21,120
+sine of t
+
+74
+00:02:19,440 --> 00:02:23,840
+and of course i'm hoping to take the
+
+75
+00:02:21,120 --> 00:02:23,840
+derivative of this
+
+76
+00:02:24,239 --> 00:02:27,680
+and then from there we can go to the
+
+77
+00:02:25,520 --> 00:02:29,840
+definition of f f of x y equals x
+
+78
+00:02:27,680 --> 00:02:32,480
+squared times y which means we take that
+
+79
+00:02:29,840 --> 00:02:34,239
+first component squared so we'll take
+
+80
+00:02:32,480 --> 00:02:36,319
+that first component
+
+81
+00:02:34,239 --> 00:02:39,200
+cosine of t
+
+82
+00:02:36,319 --> 00:02:39,200
+and then square it
+
+83
+00:02:40,160 --> 00:02:44,400
+square that guy and then we'll multiply
+
+84
+00:02:42,640 --> 00:02:46,480
+it by the second component
+
+85
+00:02:44,400 --> 00:02:47,760
+sine of t
+
+86
+00:02:46,480 --> 00:02:48,879
+sine of t
+
+87
+00:02:47,760 --> 00:02:51,840
+and again we're just taking this
+
+88
+00:02:48,879 --> 00:02:53,200
+derivative
+
+89
+00:02:51,840 --> 00:02:54,319
+and you might be wondering okay why am i
+
+90
+00:02:53,200 --> 00:02:57,040
+doing this you're just showing me how to
+
+91
+00:02:54,319 --> 00:02:58,959
+take a first derivative an ordinary
+
+92
+00:02:57,040 --> 00:03:00,319
+derivative but the pattern that we'll
+
+93
+00:02:58,959 --> 00:03:01,840
+see is going to lead us to the
+
+94
+00:03:00,319 --> 00:03:03,760
+multivariable chain rule and it's
+
+95
+00:03:01,840 --> 00:03:05,280
+actually kind of surprising when you see
+
+96
+00:03:03,760 --> 00:03:07,360
+it in this context because it pops out
+
+97
+00:03:05,280 --> 00:03:08,959
+in a way that you might not expect
+
+98
+00:03:07,360 --> 00:03:11,040
+things to pop out
+
+99
+00:03:08,959 --> 00:03:12,959
+so continuing our chugging along when
+
+100
+00:03:11,040 --> 00:03:15,440
+you take the derivative of this you do
+
+101
+00:03:12,959 --> 00:03:18,640
+the product rule lefty right times plus
+
+102
+00:03:15,440 --> 00:03:20,560
+right d left so in this case the left is
+
+103
+00:03:18,640 --> 00:03:21,760
+cosine squared of t we just leave that
+
+104
+00:03:20,560 --> 00:03:24,319
+as it is
+
+105
+00:03:21,760 --> 00:03:26,080
+cosine squared of t
+
+106
+00:03:24,319 --> 00:03:27,840
+and multiply it by the derivative of the
+
+107
+00:03:26,080 --> 00:03:30,400
+right d right so that's going to be
+
+108
+00:03:27,840 --> 00:03:32,560
+cosine of t
+
+109
+00:03:30,400 --> 00:03:35,360
+cosine of t
+
+110
+00:03:32,560 --> 00:03:37,680
+and then we add to that right which is
+
+111
+00:03:35,360 --> 00:03:39,920
+you know keep that right side
+
+112
+00:03:37,680 --> 00:03:41,760
+unchanged multiplied by the derivative
+
+113
+00:03:39,920 --> 00:03:43,519
+of the left and for that we use the
+
+114
+00:03:41,760 --> 00:03:44,959
+chain rule the the single variable chain
+
+115
+00:03:43,519 --> 00:03:47,040
+rule where you think of taking the
+
+116
+00:03:44,959 --> 00:03:49,200
+derivative of the outside so you hope
+
+117
+00:03:47,040 --> 00:03:50,799
+that plop that 2 down like you're taking
+
+118
+00:03:49,200 --> 00:03:53,760
+the derivative of 2x but you're just
+
+119
+00:03:50,799 --> 00:03:55,920
+writing in cosine instead of x
+
+120
+00:03:53,760 --> 00:03:57,120
+cosine t
+
+121
+00:03:55,920 --> 00:03:58,400
+and then you multiply that by the
+
+122
+00:03:57,120 --> 00:04:00,319
+derivative
+
+123
+00:03:58,400 --> 00:04:02,159
+by the derivative of the inside that's a
+
+124
+00:04:00,319 --> 00:04:04,480
+tongue twister um
+
+125
+00:04:02,159 --> 00:04:06,400
+which is negative sine of t
+
+126
+00:04:04,480 --> 00:04:08,080
+negative sine of t and i'm afraid i'm
+
+127
+00:04:06,400 --> 00:04:10,080
+gonna run off the edge here
+
+128
+00:04:08,080 --> 00:04:12,080
+certainly with the many many parentheses
+
+129
+00:04:10,080 --> 00:04:13,599
+that i need uh i'll i'll go ahead and
+
+130
+00:04:12,080 --> 00:04:15,840
+rewrite this though i'm going to rewrite
+
+131
+00:04:13,599 --> 00:04:17,600
+it anyway because there's a certain
+
+132
+00:04:15,840 --> 00:04:19,440
+pattern that i
+
+133
+00:04:17,600 --> 00:04:23,040
+hope to make clear
+
+134
+00:04:19,440 --> 00:04:23,040
+so let me just rewrite this side
+
+135
+00:04:26,400 --> 00:04:31,680
+just copy that down here
+
+136
+00:04:28,880 --> 00:04:33,120
+i just want to rewrite this guy
+
+137
+00:04:31,680 --> 00:04:34,639
+you might be wondering why but it'll
+
+138
+00:04:33,120 --> 00:04:36,000
+become clear in just a moment why i want
+
+139
+00:04:34,639 --> 00:04:37,440
+to do this
+
+140
+00:04:36,000 --> 00:04:39,600
+so in this case
+
+141
+00:04:37,440 --> 00:04:40,639
+i'm going to write this as
+
+142
+00:04:39,600 --> 00:04:43,840
+2
+
+143
+00:04:40,639 --> 00:04:43,840
+times cosine of t
+
+144
+00:04:44,000 --> 00:04:46,880
+times sine of t
+
+145
+00:04:47,520 --> 00:04:50,560
+and then all of that multiplied by
+
+146
+00:04:48,880 --> 00:04:53,440
+negative sine of t
+
+147
+00:04:50,560 --> 00:04:53,440
+negative sine of t
+
+148
+00:04:55,360 --> 00:04:58,720
+so this is the derivative this is the
+
+149
+00:04:57,040 --> 00:05:01,039
+derivative of the composition of
+
+150
+00:04:58,720 --> 00:05:02,560
+functions that ultimately was a single
+
+151
+00:05:01,039 --> 00:05:04,479
+variable function but it kind of went
+
+152
+00:05:02,560 --> 00:05:06,160
+through two different variables
+
+153
+00:05:04,479 --> 00:05:08,639
+and i just want to make an observation
+
+154
+00:05:06,160 --> 00:05:09,520
+in terms of the partial derivatives of f
+
+155
+00:05:08,639 --> 00:05:11,759
+so
+
+156
+00:05:09,520 --> 00:05:13,440
+let me just make a copy of this guy
+
+157
+00:05:11,759 --> 00:05:15,680
+give ourselves a little bit of room down
+
+158
+00:05:13,440 --> 00:05:15,680
+here
+
+159
+00:05:15,840 --> 00:05:19,840
+just paste that over here
+
+160
+00:05:18,160 --> 00:05:22,000
+so let's look at the partial derivatives
+
+161
+00:05:19,840 --> 00:05:23,440
+of f for a second here
+
+162
+00:05:22,000 --> 00:05:25,039
+so if i took the partial derivative with
+
+163
+00:05:23,440 --> 00:05:27,520
+respect to x
+
+164
+00:05:25,039 --> 00:05:29,840
+partial partial x
+
+165
+00:05:27,520 --> 00:05:31,680
+which means y is treated as a constant
+
+166
+00:05:29,840 --> 00:05:33,039
+so i take the derivative of x squared to
+
+167
+00:05:31,680 --> 00:05:34,560
+get 2x
+
+168
+00:05:33,039 --> 00:05:36,320
+and then multiply it by that constant
+
+169
+00:05:34,560 --> 00:05:38,720
+which is just y
+
+170
+00:05:36,320 --> 00:05:41,280
+and if i also do it with respect to y
+
+171
+00:05:38,720 --> 00:05:43,520
+get all of them in there
+
+172
+00:05:41,280 --> 00:05:45,280
+so now y looks like a variable x looks
+
+173
+00:05:43,520 --> 00:05:46,960
+like a constant so x squared also looks
+
+174
+00:05:45,280 --> 00:05:49,360
+like a constant constant times a
+
+175
+00:05:46,960 --> 00:05:51,600
+variable the derivative is just that
+
+176
+00:05:49,360 --> 00:05:54,560
+constant
+
+177
+00:05:51,600 --> 00:05:56,400
+these two their pattern comes up in the
+
+178
+00:05:54,560 --> 00:05:58,000
+ultimate result that we got and this is
+
+179
+00:05:56,400 --> 00:06:00,720
+the whole reason that i rewrote it if
+
+180
+00:05:58,000 --> 00:06:03,360
+you look at this 2xy you can see that
+
+181
+00:06:00,720 --> 00:06:05,199
+over here where cosine corresponds to x
+
+182
+00:06:03,360 --> 00:06:06,639
+sine corresponds to y based on our
+
+183
+00:06:05,199 --> 00:06:08,800
+original functions
+
+184
+00:06:06,639 --> 00:06:11,199
+and then x squared here
+
+185
+00:06:08,800 --> 00:06:12,400
+corresponds with squaring the x that we
+
+186
+00:06:11,199 --> 00:06:14,400
+put in there
+
+187
+00:06:12,400 --> 00:06:16,960
+then if we take the derivative of our
+
+188
+00:06:14,400 --> 00:06:19,440
+two intermediary functions the ordinary
+
+189
+00:06:16,960 --> 00:06:21,600
+derivative of x with respect to t
+
+190
+00:06:19,440 --> 00:06:23,919
+that's derivative of cosine
+
+191
+00:06:21,600 --> 00:06:25,759
+negative sine
+
+192
+00:06:23,919 --> 00:06:27,759
+of t
+
+193
+00:06:25,759 --> 00:06:29,520
+and then similarly derivative of y just
+
+194
+00:06:27,759 --> 00:06:30,960
+the ordinary derivative no partials
+
+195
+00:06:29,520 --> 00:06:32,800
+going on here
+
+196
+00:06:30,960 --> 00:06:34,560
+with respect to t
+
+197
+00:06:32,800 --> 00:06:36,800
+that's equal to cosine derivative of
+
+198
+00:06:34,560 --> 00:06:38,319
+sine is cosine
+
+199
+00:06:36,800 --> 00:06:40,880
+and these guys show up right you see
+
+200
+00:06:38,319 --> 00:06:44,319
+negative sine over here
+
+201
+00:06:40,880 --> 00:06:45,600
+and you see cosine show up over here
+
+202
+00:06:44,319 --> 00:06:47,440
+and we could generalize this we could
+
+203
+00:06:45,600 --> 00:06:49,280
+write it down and say at least for this
+
+204
+00:06:47,440 --> 00:06:51,520
+specific example it looks like the
+
+205
+00:06:49,280 --> 00:06:53,599
+derivative of the composition is
+
+206
+00:06:51,520 --> 00:06:55,759
+this part which is the partial of f
+
+207
+00:06:53,599 --> 00:06:56,960
+with respect to y
+
+208
+00:06:55,759 --> 00:06:58,319
+right that's kind of what it looks like
+
+209
+00:06:56,960 --> 00:07:00,560
+here once we've plugged in the
+
+210
+00:06:58,319 --> 00:07:02,639
+intermediary functions
+
+211
+00:07:00,560 --> 00:07:05,440
+multiplied by this guy was the ordinary
+
+212
+00:07:02,639 --> 00:07:08,160
+derivative of y with respect to t
+
+213
+00:07:05,440 --> 00:07:09,840
+so that was the ordinary derivative of y
+
+214
+00:07:08,160 --> 00:07:12,160
+with respect to t
+
+215
+00:07:09,840 --> 00:07:15,039
+and then very similarly this guy was the
+
+216
+00:07:12,160 --> 00:07:17,840
+partial of f with respect to x
+
+217
+00:07:15,039 --> 00:07:20,080
+partial x and we're multiplying it by
+
+218
+00:07:17,840 --> 00:07:22,319
+the ordinary derivative of x of t so
+
+219
+00:07:20,080 --> 00:07:24,720
+over here x of t
+
+220
+00:07:22,319 --> 00:07:26,560
+with respect to t
+
+221
+00:07:24,720 --> 00:07:28,639
+and of course when i write this partial
+
+222
+00:07:26,560 --> 00:07:30,639
+f partial y what i really mean is you
+
+223
+00:07:28,639 --> 00:07:32,960
+plug in for x and y
+
+224
+00:07:30,639 --> 00:07:34,160
+the two coordinate functions x of t y of
+
+225
+00:07:32,960 --> 00:07:35,919
+t
+
+226
+00:07:34,160 --> 00:07:37,759
+so if i say partial left partial y over
+
+227
+00:07:35,919 --> 00:07:39,840
+here what i really mean is you take that
+
+228
+00:07:37,759 --> 00:07:42,960
+x squared and then you plug in x of t
+
+229
+00:07:39,840 --> 00:07:44,479
+squared to get cosine cosine squared and
+
+230
+00:07:42,960 --> 00:07:45,919
+same deal over here you're always
+
+231
+00:07:44,479 --> 00:07:47,360
+plugging things in so you ultimately
+
+232
+00:07:45,919 --> 00:07:49,039
+have a function of t
+
+233
+00:07:47,360 --> 00:07:51,520
+but this right here has a name this is
+
+234
+00:07:49,039 --> 00:07:53,199
+the multivariable chain rule uh and it's
+
+235
+00:07:51,520 --> 00:07:55,919
+important enough i'll just kind of i'll
+
+236
+00:07:53,199 --> 00:07:58,160
+just write it out all on its own here
+
+237
+00:07:55,919 --> 00:07:59,520
+if we take the ordinary derivative with
+
+238
+00:07:58,160 --> 00:08:01,440
+respect to t
+
+239
+00:07:59,520 --> 00:08:03,759
+of a composition of a multivariable
+
+240
+00:08:01,440 --> 00:08:04,960
+function in this case just two variables
+
+241
+00:08:03,759 --> 00:08:06,960
+x of t
+
+242
+00:08:04,960 --> 00:08:09,520
+y of t where we're plugging in two
+
+243
+00:08:06,960 --> 00:08:12,080
+intermediary functions x of t y of t
+
+244
+00:08:09,520 --> 00:08:13,280
+each of which just single variable the
+
+245
+00:08:12,080 --> 00:08:16,879
+result
+
+246
+00:08:13,280 --> 00:08:16,879
+is that we take the partial derivative
+
+247
+00:08:17,680 --> 00:08:20,720
+with respect to x
+
+248
+00:08:20,960 --> 00:08:25,000
+and we multiply it by
+
+249
+00:08:26,560 --> 00:08:30,560
+the derivative of x with respect to t
+
+250
+00:08:30,639 --> 00:08:37,039
+and then we add to that
+
+251
+00:08:32,800 --> 00:08:37,039
+the partial derivative with respect to y
+
+252
+00:08:37,919 --> 00:08:42,880
+multiplied by the derivative of y with
+
+253
+00:08:40,159 --> 00:08:42,880
+respect to t
+
+254
+00:08:42,959 --> 00:08:47,200
+so this entire expression here
+
+255
+00:08:45,680 --> 00:08:49,600
+is what you might call the simple
+
+256
+00:08:47,200 --> 00:08:51,920
+version of the multivariable chain rule
+
+257
+00:08:49,600 --> 00:08:53,920
+and you get there's a more general
+
+258
+00:08:51,920 --> 00:08:55,600
+version and we'll kind of build up to it
+
+259
+00:08:53,920 --> 00:08:57,839
+but this is the simplest example you can
+
+260
+00:08:55,600 --> 00:08:59,920
+think of where you you start with one
+
+261
+00:08:57,839 --> 00:09:01,440
+dimension and then you move over to two
+
+262
+00:08:59,920 --> 00:09:05,120
+dimensions somehow and then you move
+
+263
+00:09:01,440 --> 00:09:05,120
+from those two dimensions down to one
+
+264
+00:09:05,279 --> 00:09:08,640
+so this is this is that and in the next
+
+265
+00:09:06,959 --> 00:09:10,399
+video i'm going to talk about the
+
+266
+00:09:08,640 --> 00:09:11,839
+intuition for why this is true you know
+
+267
+00:09:10,399 --> 00:09:13,600
+here i just went through an example and
+
+268
+00:09:11,839 --> 00:09:15,360
+showed oh it just happens to be true it
+
+269
+00:09:13,600 --> 00:09:17,519
+fills this pattern but there's a very
+
+270
+00:09:15,360 --> 00:09:18,800
+nice line of reasoning for where this
+
+271
+00:09:17,519 --> 00:09:20,000
+comes about
+
+272
+00:09:18,800 --> 00:09:22,480
+and i'll also talk about a more
+
+273
+00:09:20,000 --> 00:09:24,000
+generalized form where you'll see it we
+
+274
+00:09:22,480 --> 00:09:26,000
+start using vector notation it makes
+
+275
+00:09:24,000 --> 00:09:27,839
+things look very clean
+
+276
+00:09:26,000 --> 00:09:30,320
+and i might even get around to a more
+
+277
+00:09:27,839 --> 00:09:33,920
+formal argument for why this is true
+
+278
+00:09:30,320 --> 00:09:33,920
+so see you next video
+

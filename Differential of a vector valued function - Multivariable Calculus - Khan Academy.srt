@@ -1,0 +1,564 @@
+1
+00:00:00,399 --> 00:00:05,680
+in the last couple of videos we saw that
+
+2
+00:00:02,000 --> 00:00:08,320
+we can describe a curve by a position
+
+3
+00:00:05,680 --> 00:00:10,800
+vector valued function and in very
+
+4
+00:00:08,320 --> 00:00:13,200
+general terms it would be the x position
+
+5
+00:00:10,800 --> 00:00:15,360
+as a function of time times the unit
+
+6
+00:00:13,200 --> 00:00:16,800
+vector in the horizontal direction
+
+7
+00:00:15,360 --> 00:00:18,960
+plus the
+
+8
+00:00:16,800 --> 00:00:21,119
+y position is a function of time times
+
+9
+00:00:18,960 --> 00:00:22,880
+the unit vector in the vertical
+
+10
+00:00:21,119 --> 00:00:25,519
+direction and this will essentially
+
+11
+00:00:22,880 --> 00:00:27,439
+describe this though if you can imagine
+
+12
+00:00:25,519 --> 00:00:29,679
+a particle and let's say the parameter t
+
+13
+00:00:27,439 --> 00:00:32,160
+represents time it'll describe where the
+
+14
+00:00:29,679 --> 00:00:34,079
+particle is at any given time if we
+
+15
+00:00:32,160 --> 00:00:36,079
+wanted a particular curve we can say
+
+16
+00:00:34,079 --> 00:00:38,079
+well this is only applies for
+
+17
+00:00:36,079 --> 00:00:39,360
+let's say for some curve we're dealing
+
+18
+00:00:38,079 --> 00:00:40,239
+it's r of
+
+19
+00:00:39,360 --> 00:00:42,640
+t
+
+20
+00:00:40,239 --> 00:00:46,559
+and it's only applicable between
+
+21
+00:00:42,640 --> 00:00:48,160
+t being greater than a and less than b
+
+22
+00:00:46,559 --> 00:00:50,640
+and you know that would describe some
+
+23
+00:00:48,160 --> 00:00:52,559
+curve in two dimensions let me just draw
+
+24
+00:00:50,640 --> 00:00:54,800
+it here this is all a review of really
+
+25
+00:00:52,559 --> 00:00:56,480
+the last two videos
+
+26
+00:00:54,800 --> 00:00:58,640
+so this curve you know it might look
+
+27
+00:00:56,480 --> 00:01:01,359
+something like that where this is where
+
+28
+00:00:58,640 --> 00:01:04,879
+t is equal to a that's where t is equal
+
+29
+00:01:01,359 --> 00:01:07,760
+to b and when you know so r of a will be
+
+30
+00:01:04,879 --> 00:01:10,000
+this vector right here that ends at
+
+31
+00:01:07,760 --> 00:01:11,439
+that point and then as t or if you can
+
+32
+00:01:10,000 --> 00:01:12,640
+imagine the parameter being time it
+
+33
+00:01:11,439 --> 00:01:15,600
+doesn't have to be time that's a
+
+34
+00:01:12,640 --> 00:01:17,280
+convenient one to visualize these each
+
+35
+00:01:15,600 --> 00:01:18,880
+corresponding as t gets larger and
+
+36
+00:01:17,280 --> 00:01:21,840
+larger we're just going to different
+
+37
+00:01:18,880 --> 00:01:24,240
+we're specifying different points on the
+
+38
+00:01:21,840 --> 00:01:25,680
+path we saw that two videos ago and in
+
+39
+00:01:24,240 --> 00:01:26,479
+the last video
+
+40
+00:01:25,680 --> 00:01:27,680
+we
+
+41
+00:01:26,479 --> 00:01:30,640
+thought about well what does it mean to
+
+42
+00:01:27,680 --> 00:01:32,560
+take the derivative of a vector-valued
+
+43
+00:01:30,640 --> 00:01:34,240
+function and we came up with this idea
+
+44
+00:01:32,560 --> 00:01:36,079
+that and it wasn't an idea we actually
+
+45
+00:01:34,240 --> 00:01:38,320
+showed it to be true we came up with a
+
+46
+00:01:36,079 --> 00:01:40,799
+definition really that the derivative i
+
+47
+00:01:38,320 --> 00:01:42,000
+could call it r prime of t
+
+48
+00:01:40,799 --> 00:01:43,520
+and it's going to be a vector the
+
+49
+00:01:42,000 --> 00:01:45,280
+derivative of a vector valued function
+
+50
+00:01:43,520 --> 00:01:47,520
+is once again going to be a derivative
+
+51
+00:01:45,280 --> 00:01:49,040
+but it is equal to the way we defined it
+
+52
+00:01:47,520 --> 00:01:53,119
+x prime of t
+
+53
+00:01:49,040 --> 00:01:56,240
+times i plus y time prime of t
+
+54
+00:01:53,119 --> 00:01:57,360
+times j or another way to write that and
+
+55
+00:01:56,240 --> 00:02:00,479
+i'll just write all the different ways
+
+56
+00:01:57,360 --> 00:02:01,920
+just so you get familiar with dr
+
+57
+00:02:00,479 --> 00:02:04,079
+dt
+
+58
+00:02:01,920 --> 00:02:06,240
+is equal to dx
+
+59
+00:02:04,079 --> 00:02:08,720
+dt this is a just a standard derivative
+
+60
+00:02:06,240 --> 00:02:10,479
+it's x of t is a scalar function so this
+
+61
+00:02:08,720 --> 00:02:12,160
+is a standard derivative
+
+62
+00:02:10,479 --> 00:02:15,040
+times
+
+63
+00:02:12,160 --> 00:02:16,879
+i plus d y
+
+64
+00:02:15,040 --> 00:02:19,599
+dt times
+
+65
+00:02:16,879 --> 00:02:21,200
+j and if we wanted to think about the
+
+66
+00:02:19,599 --> 00:02:22,959
+differential one thing that we can think
+
+67
+00:02:21,200 --> 00:02:24,319
+about and you know whenever i do the
+
+68
+00:02:22,959 --> 00:02:26,160
+work the math with the differential it's
+
+69
+00:02:24,319 --> 00:02:27,599
+a little bit hand wavy i'm not being
+
+70
+00:02:26,160 --> 00:02:29,360
+very rigorous but if you imagine
+
+71
+00:02:27,599 --> 00:02:32,239
+multiplying both sides of this equation
+
+72
+00:02:29,360 --> 00:02:34,840
+by a very small dt
+
+73
+00:02:32,239 --> 00:02:36,720
+or this exact dt you would get
+
+74
+00:02:34,840 --> 00:02:38,480
+dr
+
+75
+00:02:36,720 --> 00:02:39,680
+is equal to i'll just leave it like this
+
+76
+00:02:38,480 --> 00:02:42,400
+dx
+
+77
+00:02:39,680 --> 00:02:44,319
+dt times dt i could make these cancel
+
+78
+00:02:42,400 --> 00:02:48,480
+out but i'll just write it like this
+
+79
+00:02:44,319 --> 00:02:49,440
+first times the unit vector i plus d y
+
+80
+00:02:48,480 --> 00:02:52,879
+dt
+
+81
+00:02:49,440 --> 00:02:55,760
+times the unit vec times dt
+
+82
+00:02:52,879 --> 00:02:57,120
+times the unit vector j or we could
+
+83
+00:02:55,760 --> 00:02:58,879
+rewrite this and i'm just rewriting it
+
+84
+00:02:57,120 --> 00:03:00,800
+in all of the different ways that one
+
+85
+00:02:58,879 --> 00:03:03,200
+can rewrite it you could also write this
+
+86
+00:03:00,800 --> 00:03:05,200
+as dr is equal to
+
+87
+00:03:03,200 --> 00:03:07,040
+x prime of t
+
+88
+00:03:05,200 --> 00:03:08,959
+x prime of t
+
+89
+00:03:07,040 --> 00:03:11,519
+dt
+
+90
+00:03:08,959 --> 00:03:13,440
+times the unit vector i sorry this was x
+
+91
+00:03:11,519 --> 00:03:14,879
+prime of
+
+92
+00:03:13,440 --> 00:03:17,599
+t
+
+93
+00:03:14,879 --> 00:03:20,879
+dt right this is x prime of t right
+
+94
+00:03:17,599 --> 00:03:22,239
+there times the unit vector i plus
+
+95
+00:03:20,879 --> 00:03:25,120
+y prime
+
+96
+00:03:22,239 --> 00:03:28,720
+of t that's just that right there times
+
+97
+00:03:25,120 --> 00:03:30,720
+dt times the unit vector j and just to i
+
+98
+00:03:28,720 --> 00:03:33,920
+guess complete the trifecta the other
+
+99
+00:03:30,720 --> 00:03:35,599
+way that we could write this is that dr
+
+100
+00:03:33,920 --> 00:03:39,519
+is equal to if we just allowed these to
+
+101
+00:03:35,599 --> 00:03:40,879
+cancel out then we get is equal to dx
+
+102
+00:03:39,519 --> 00:03:42,799
+times i
+
+103
+00:03:40,879 --> 00:03:45,360
+plus dy
+
+104
+00:03:42,799 --> 00:03:47,040
+times dy times j and that actually makes
+
+105
+00:03:45,360 --> 00:03:48,879
+a lot of intuitive sense that if i look
+
+106
+00:03:47,040 --> 00:03:50,239
+at any dr so let's say i look at the
+
+107
+00:03:48,879 --> 00:03:53,599
+change between
+
+108
+00:03:50,239 --> 00:03:55,360
+this vector and this vector
+
+109
+00:03:53,599 --> 00:03:57,280
+let's say the super small change right
+
+110
+00:03:55,360 --> 00:04:01,280
+there that is our
+
+111
+00:03:57,280 --> 00:04:03,519
+dr and it's made up of it's our dx our
+
+112
+00:04:01,280 --> 00:04:05,360
+change in x is that right there you
+
+113
+00:04:03,519 --> 00:04:07,200
+could imagine it's that right there
+
+114
+00:04:05,360 --> 00:04:08,720
+times but we're vectorizing it by
+
+115
+00:04:07,200 --> 00:04:12,640
+multiplying it by the unit vector in the
+
+116
+00:04:08,720 --> 00:04:15,120
+horizontal direction plus d y
+
+117
+00:04:12,640 --> 00:04:16,720
+d y times the unit vector in the
+
+118
+00:04:15,120 --> 00:04:18,160
+vertical direction so when you multiply
+
+119
+00:04:16,720 --> 00:04:20,160
+this distance times the unit vector
+
+120
+00:04:18,160 --> 00:04:21,840
+you're essentially getting this vector
+
+121
+00:04:20,160 --> 00:04:23,680
+you're essentially getting this vector
+
+122
+00:04:21,840 --> 00:04:25,360
+right here and when you multiply this
+
+123
+00:04:23,680 --> 00:04:27,040
+guy and actually our change in y here is
+
+124
+00:04:25,360 --> 00:04:28,560
+negative you're going to get this vector
+
+125
+00:04:27,040 --> 00:04:29,840
+right here
+
+126
+00:04:28,560 --> 00:04:32,960
+so when you add those together you get
+
+127
+00:04:29,840 --> 00:04:35,280
+your change in your actual position
+
+128
+00:04:32,960 --> 00:04:37,120
+vector so that was all a little bit of
+
+129
+00:04:35,280 --> 00:04:39,520
+background and this might be
+
+130
+00:04:37,120 --> 00:04:41,120
+somewhat useful in a future video from
+
+131
+00:04:39,520 --> 00:04:43,440
+now actually i'm going to leave it there
+
+132
+00:04:41,120 --> 00:04:44,880
+because what i really i just wanted to
+
+133
+00:04:43,440 --> 00:04:47,199
+introduce this notation and get you
+
+134
+00:04:44,880 --> 00:04:49,120
+familiar with it in the next video what
+
+135
+00:04:47,199 --> 00:04:52,800
+i'm going to do is give you a little bit
+
+136
+00:04:49,120 --> 00:04:54,960
+more intuition for what exactly what
+
+137
+00:04:52,800 --> 00:04:57,440
+exactly does this thing mean and how
+
+138
+00:04:54,960 --> 00:04:59,199
+does it change depending on different
+
+139
+00:04:57,440 --> 00:05:01,280
+parameterizations and i'll do it with
+
+140
+00:04:59,199 --> 00:05:04,759
+two different parameterizations for the
+
+141
+00:05:01,280 --> 00:05:04,759
+same curve
+

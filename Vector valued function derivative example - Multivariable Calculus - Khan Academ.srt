@@ -1,0 +1,1468 @@
+1
+00:00:00,480 --> 00:00:04,560
+what i want to do in this video is to
+
+2
+00:00:02,000 --> 00:00:06,560
+make two parametrizations of essentially
+
+3
+00:00:04,560 --> 00:00:08,880
+the same curve but we're going to go
+
+4
+00:00:06,560 --> 00:00:10,320
+along the curve at different rates and
+
+5
+00:00:08,880 --> 00:00:12,719
+hopefully we'll be able to use that to
+
+6
+00:00:10,320 --> 00:00:14,559
+understand or get a better intuition
+
+7
+00:00:12,719 --> 00:00:17,279
+behind what exactly it means to take a
+
+8
+00:00:14,559 --> 00:00:19,199
+derivative of a position vector valued
+
+9
+00:00:17,279 --> 00:00:22,960
+function so let's say my first
+
+10
+00:00:19,199 --> 00:00:25,039
+parametrization i have x of t
+
+11
+00:00:22,960 --> 00:00:29,199
+is equal to t
+
+12
+00:00:25,039 --> 00:00:32,800
+and let's say that y of t is equal to t
+
+13
+00:00:29,199 --> 00:00:36,559
+squared and this is true for
+
+14
+00:00:32,800 --> 00:00:40,000
+t is greater than or equal to 0
+
+15
+00:00:36,559 --> 00:00:41,040
+and less than or equal to
+
+16
+00:00:40,000 --> 00:00:42,559
+2.
+
+17
+00:00:41,040 --> 00:00:44,960
+and if i want to write this as a
+
+18
+00:00:42,559 --> 00:00:48,079
+position vector valued function let me
+
+19
+00:00:44,960 --> 00:00:50,160
+write this x1 let me call that y1 and
+
+20
+00:00:48,079 --> 00:00:51,360
+let me write my position vector valued
+
+21
+00:00:50,160 --> 00:00:54,079
+function
+
+22
+00:00:51,360 --> 00:00:55,120
+i could say r1 because i'm numbering
+
+23
+00:00:54,079 --> 00:00:56,879
+them because i'm going to do a different
+
+24
+00:00:55,120 --> 00:00:59,440
+version of this exact same curve with a
+
+25
+00:00:56,879 --> 00:01:02,239
+slightly different parametrization so r
+
+26
+00:00:59,440 --> 00:01:04,879
+one of t we could say is x one of t
+
+27
+00:01:02,239 --> 00:01:06,479
+times i the position the unit vector i
+
+28
+00:01:04,879 --> 00:01:08,479
+so we'll just say t
+
+29
+00:01:06,479 --> 00:01:10,400
+times i
+
+30
+00:01:08,479 --> 00:01:12,720
+plus right this is just x of t right
+
+31
+00:01:10,400 --> 00:01:13,760
+here or x one of t that's the i'm
+
+32
+00:01:12,720 --> 00:01:15,040
+numbering them because i later have an
+
+33
+00:01:13,760 --> 00:01:15,920
+x2 of t
+
+34
+00:01:15,040 --> 00:01:20,000
+plus
+
+35
+00:01:15,920 --> 00:01:20,880
+t squared plus t squared times
+
+36
+00:01:20,000 --> 00:01:23,439
+j
+
+37
+00:01:20,880 --> 00:01:24,880
+and if i wanted to if i wanted to graph
+
+38
+00:01:23,439 --> 00:01:26,000
+this i'm going to be very careful
+
+39
+00:01:24,880 --> 00:01:27,680
+graphing it because i really want to
+
+40
+00:01:26,000 --> 00:01:28,560
+understand what the derivative means
+
+41
+00:01:27,680 --> 00:01:30,479
+here
+
+42
+00:01:28,560 --> 00:01:31,680
+so let me get my
+
+43
+00:01:30,479 --> 00:01:32,640
+draw
+
+44
+00:01:31,680 --> 00:01:35,040
+try to draw
+
+45
+00:01:32,640 --> 00:01:35,920
+roughly to scale
+
+46
+00:01:35,040 --> 00:01:37,680
+so
+
+47
+00:01:35,920 --> 00:01:39,600
+let's say that this is
+
+48
+00:01:37,680 --> 00:01:40,720
+so we get 1
+
+49
+00:01:39,600 --> 00:01:41,920
+two
+
+50
+00:01:40,720 --> 00:01:42,960
+three
+
+51
+00:01:41,920 --> 00:01:46,079
+four
+
+52
+00:01:42,960 --> 00:01:48,399
+and then let me draw my x-axis
+
+53
+00:01:46,079 --> 00:01:50,320
+that's good enough and my x-axis i want
+
+54
+00:01:48,399 --> 00:01:52,000
+it to be roughly to scale one
+
+55
+00:01:50,320 --> 00:01:55,920
+and two
+
+56
+00:01:52,000 --> 00:01:57,759
+and so at t equals zero both my x and y
+
+57
+00:01:55,920 --> 00:01:59,439
+coordinates are at zero or this is just
+
+58
+00:01:57,759 --> 00:02:01,840
+going to be the zero vector so this is
+
+59
+00:01:59,439 --> 00:02:04,640
+where we are at t equals zero at t
+
+60
+00:02:01,840 --> 00:02:06,479
+equals one this is going to be one times
+
+61
+00:02:04,640 --> 00:02:09,520
+i so we're going to be just like that
+
+62
+00:02:06,479 --> 00:02:12,319
+plus 1 times j right 1 squared is j so
+
+63
+00:02:09,520 --> 00:02:14,879
+we're going to be right there
+
+64
+00:02:12,319 --> 00:02:17,760
+and then at t is equal to 2
+
+65
+00:02:14,879 --> 00:02:20,400
+we're going to be at 2i so 2i you can
+
+66
+00:02:17,760 --> 00:02:22,400
+imagine 2 times i would be this vector
+
+67
+00:02:20,400 --> 00:02:25,360
+right there
+
+68
+00:02:22,400 --> 00:02:28,319
+right 2 times i plus 4 right 2 squared
+
+69
+00:02:25,360 --> 00:02:32,160
+is 4 4 times j so plus
+
+70
+00:02:28,319 --> 00:02:33,920
+plus this plus 4 times j right that's 4
+
+71
+00:02:32,160 --> 00:02:35,840
+times j if you add these two vectors
+
+72
+00:02:33,920 --> 00:02:37,599
+heads to tails you're going to get a
+
+73
+00:02:35,840 --> 00:02:39,680
+vector that goes
+
+74
+00:02:37,599 --> 00:02:42,800
+that endpoint is right there the vector
+
+75
+00:02:39,680 --> 00:02:44,000
+is going to look something like this
+
+76
+00:02:42,800 --> 00:02:45,680
+i don't want to
+
+77
+00:02:44,000 --> 00:02:47,040
+so this is what
+
+78
+00:02:45,680 --> 00:02:51,680
+just to make it clear what we're doing
+
+79
+00:02:47,040 --> 00:02:54,000
+that's r 1 of 2 right this is r 1 of 0
+
+80
+00:02:51,680 --> 00:02:55,760
+this is r 1 of 1. but the bottom line is
+
+81
+00:02:54,000 --> 00:02:57,040
+the path looks like this it's a bit it's
+
+82
+00:02:55,760 --> 00:02:58,959
+a parabola
+
+83
+00:02:57,040 --> 00:03:00,480
+so the path will look
+
+84
+00:02:58,959 --> 00:03:01,280
+like
+
+85
+00:03:00,480 --> 00:03:02,959
+that
+
+86
+00:03:01,280 --> 00:03:05,120
+just like that
+
+87
+00:03:02,959 --> 00:03:06,640
+now that's in my first parameterization
+
+88
+00:03:05,120 --> 00:03:08,159
+of it actually let me draw a little bit
+
+89
+00:03:06,640 --> 00:03:09,519
+more carefully i want to get rid of this
+
+90
+00:03:08,159 --> 00:03:11,120
+arrows just because i want to be a nice
+
+91
+00:03:09,519 --> 00:03:14,560
+clean drawing
+
+92
+00:03:11,120 --> 00:03:16,159
+so my it's going to be a probable well
+
+93
+00:03:14,560 --> 00:03:17,680
+that's that as
+
+94
+00:03:16,159 --> 00:03:19,360
+let me get rid of that other point too
+
+95
+00:03:17,680 --> 00:03:20,720
+just because it i didn't draw it exactly
+
+96
+00:03:19,360 --> 00:03:22,159
+where it needs to be it needs to be
+
+97
+00:03:20,720 --> 00:03:23,920
+right there
+
+98
+00:03:22,159 --> 00:03:26,400
+and my parabola or my part of my
+
+99
+00:03:23,920 --> 00:03:29,040
+parabola is going to look something like
+
+100
+00:03:26,400 --> 00:03:30,799
+that all right good enough so this is
+
+101
+00:03:29,040 --> 00:03:32,159
+the part the first parameterization i'm
+
+102
+00:03:30,799 --> 00:03:34,080
+going to do this exact same curve but
+
+103
+00:03:32,159 --> 00:03:35,519
+i'm going to do it slightly differently
+
+104
+00:03:34,080 --> 00:03:36,560
+so let's say i'll do it in different
+
+105
+00:03:35,519 --> 00:03:41,440
+colors
+
+106
+00:03:36,560 --> 00:03:42,879
+so x 2 of t let's say it equals 2t
+
+107
+00:03:41,440 --> 00:03:46,560
+and y
+
+108
+00:03:42,879 --> 00:03:47,440
+2 of t let's say it's equal to 2
+
+109
+00:03:46,560 --> 00:03:50,480
+t
+
+110
+00:03:47,440 --> 00:03:53,519
+squared or we could alternatively write
+
+111
+00:03:50,480 --> 00:03:55,200
+that that's the same thing as 4 t
+
+112
+00:03:53,519 --> 00:03:57,519
+squared just phrasing both of these guys
+
+113
+00:03:55,200 --> 00:03:59,200
+to the second power that's equal to 4t
+
+114
+00:03:57,519 --> 00:04:00,959
+squared i could write it either way and
+
+115
+00:03:59,200 --> 00:04:02,720
+then let's say my second
+
+116
+00:04:00,959 --> 00:04:04,000
+parameterization and let's say instead
+
+117
+00:04:02,720 --> 00:04:07,280
+of going from t equals 0 to 2 we're
+
+118
+00:04:04,000 --> 00:04:08,000
+going to go from t goes from 0
+
+119
+00:04:07,280 --> 00:04:10,239
+to
+
+120
+00:04:08,000 --> 00:04:11,360
+1. t goes from 0 to 1. we're going to
+
+121
+00:04:10,239 --> 00:04:13,439
+see it's going to we're going to cover
+
+122
+00:04:11,360 --> 00:04:14,959
+the exact same path
+
+123
+00:04:13,439 --> 00:04:17,199
+and our second
+
+124
+00:04:14,959 --> 00:04:18,560
+vector val or position vector valued
+
+125
+00:04:17,199 --> 00:04:20,239
+function
+
+126
+00:04:18,560 --> 00:04:21,600
+r two
+
+127
+00:04:20,239 --> 00:04:24,560
+of t
+
+128
+00:04:21,600 --> 00:04:26,240
+is going to be equal to
+
+129
+00:04:24,560 --> 00:04:27,520
+two t
+
+130
+00:04:26,240 --> 00:04:31,360
+times i
+
+131
+00:04:27,520 --> 00:04:35,360
+plus i could say 2t squared or 4t
+
+132
+00:04:31,360 --> 00:04:38,639
+squared times j and if i were to graph
+
+133
+00:04:35,360 --> 00:04:42,080
+this guy right here it will look like
+
+134
+00:04:38,639 --> 00:04:43,919
+let me draw my axes again
+
+135
+00:04:42,080 --> 00:04:45,680
+it's going to look the same but
+
+136
+00:04:43,919 --> 00:04:47,360
+it's i think useful to draw it because
+
+137
+00:04:45,680 --> 00:04:49,360
+i'm going to draw these the derivatives
+
+138
+00:04:47,360 --> 00:04:50,160
+and all of that on it later so let's see
+
+139
+00:04:49,360 --> 00:04:51,040
+one
+
+140
+00:04:50,160 --> 00:04:51,919
+two
+
+141
+00:04:51,040 --> 00:04:53,680
+three
+
+142
+00:04:51,919 --> 00:04:54,639
+four
+
+143
+00:04:53,680 --> 00:04:55,680
+one
+
+144
+00:04:54,639 --> 00:04:57,919
+two
+
+145
+00:04:55,680 --> 00:05:03,199
+and then let's see what happens when t
+
+146
+00:04:57,919 --> 00:05:05,280
+is equal to 0 when t is equal to 0
+
+147
+00:05:03,199 --> 00:05:07,440
+or r of 0 this all of these are going to
+
+148
+00:05:05,280 --> 00:05:09,680
+be 0 we just got the zero vector x and y
+
+149
+00:05:07,440 --> 00:05:12,160
+are both equal to 0.
+
+150
+00:05:09,680 --> 00:05:14,960
+when t is equal to
+
+151
+00:05:12,160 --> 00:05:16,639
+one half so when t is equal to one half
+
+152
+00:05:14,960 --> 00:05:18,560
+what are we going to get here one half
+
+153
+00:05:16,639 --> 00:05:21,280
+times two is one
+
+154
+00:05:18,560 --> 00:05:23,520
+and then we're going to get the point uh
+
+155
+00:05:21,280 --> 00:05:25,520
+one half squared is one fourth times 4
+
+156
+00:05:23,520 --> 00:05:28,080
+is 1. so when t is equal to 1 half we're
+
+157
+00:05:25,520 --> 00:05:29,520
+going to be at the point 1 1
+
+158
+00:05:28,080 --> 00:05:31,440
+and when t is equal to 1 we're going to
+
+159
+00:05:29,520 --> 00:05:32,639
+be the point 2
+
+160
+00:05:31,440 --> 00:05:34,080
+4
+
+161
+00:05:32,639 --> 00:05:35,440
+right 2
+
+162
+00:05:34,080 --> 00:05:38,160
+4.
+
+163
+00:05:35,440 --> 00:05:40,160
+so notice the curve is exactly the path
+
+164
+00:05:38,160 --> 00:05:42,320
+we go is exactly the same
+
+165
+00:05:40,160 --> 00:05:44,639
+but before we even do the derivatives
+
+166
+00:05:42,320 --> 00:05:46,639
+these two paths are identical i want to
+
+167
+00:05:44,639 --> 00:05:50,240
+think about something let's pretend that
+
+168
+00:05:46,639 --> 00:05:52,080
+our parameter t really is time that t is
+
+169
+00:05:50,240 --> 00:05:55,039
+equal to time and that tends to be the
+
+170
+00:05:52,080 --> 00:05:57,039
+most common that's why they call it t
+
+171
+00:05:55,039 --> 00:05:59,520
+it doesn't have to be time but let's say
+
+172
+00:05:57,039 --> 00:06:01,680
+it is time so what's happening here in
+
+173
+00:05:59,520 --> 00:06:04,960
+this first parametrization when we go
+
+174
+00:06:01,680 --> 00:06:06,560
+from zero to two seconds we cover this
+
+175
+00:06:04,960 --> 00:06:08,240
+path right you can imagine after one
+
+176
+00:06:06,560 --> 00:06:09,680
+second the dot moves here then it moves
+
+177
+00:06:08,240 --> 00:06:11,199
+there you can imagine a dot moving along
+
+178
+00:06:09,680 --> 00:06:13,840
+this curve and it takes two seconds to
+
+179
+00:06:11,199 --> 00:06:15,759
+do so in this situation we have a dot
+
+180
+00:06:13,840 --> 00:06:18,319
+moving along the same curve but it's
+
+181
+00:06:15,759 --> 00:06:20,479
+able to cover the same curve in only one
+
+182
+00:06:18,319 --> 00:06:22,639
+second and half a second it gets here it
+
+183
+00:06:20,479 --> 00:06:24,080
+took this guy one second to get here in
+
+184
+00:06:22,639 --> 00:06:25,680
+one second this guy's all the way over
+
+185
+00:06:24,080 --> 00:06:27,520
+here this guy takes two seconds to go
+
+186
+00:06:25,680 --> 00:06:29,600
+over here so in this second
+
+187
+00:06:27,520 --> 00:06:31,919
+parameterization even though the path is
+
+188
+00:06:29,600 --> 00:06:35,759
+the same the curves are the same
+
+189
+00:06:31,919 --> 00:06:37,840
+the dot is faster dot is
+
+190
+00:06:35,759 --> 00:06:40,800
+faster and i want you to keep that in
+
+191
+00:06:37,840 --> 00:06:43,360
+mind when we think about the derivatives
+
+192
+00:06:40,800 --> 00:06:44,479
+of both of these position vector valued
+
+193
+00:06:43,360 --> 00:06:46,400
+functions
+
+194
+00:06:44,479 --> 00:06:48,479
+so just remember the dot is moving
+
+195
+00:06:46,400 --> 00:06:49,840
+faster for every second it's getting
+
+196
+00:06:48,479 --> 00:06:51,120
+it's getting further along the curve
+
+197
+00:06:49,840 --> 00:06:52,960
+than here that's what only took them one
+
+198
+00:06:51,120 --> 00:06:55,680
+second now let's look at the derivatives
+
+199
+00:06:52,960 --> 00:06:58,160
+of both of these guys
+
+200
+00:06:55,680 --> 00:06:59,120
+so the derivative here so if i were to
+
+201
+00:06:58,160 --> 00:06:59,840
+write
+
+202
+00:06:59,120 --> 00:07:01,680
+r
+
+203
+00:06:59,840 --> 00:07:04,319
+prime
+
+204
+00:07:01,680 --> 00:07:05,840
+r prime r one prime of t let me do a
+
+205
+00:07:04,319 --> 00:07:07,520
+different color actually i already used
+
+206
+00:07:05,840 --> 00:07:09,199
+the orange
+
+207
+00:07:07,520 --> 00:07:11,199
+so let me do it
+
+208
+00:07:09,199 --> 00:07:13,120
+in a blue
+
+209
+00:07:11,199 --> 00:07:15,599
+r one
+
+210
+00:07:13,120 --> 00:07:16,639
+prime of t so this is the derivative now
+
+211
+00:07:15,599 --> 00:07:18,240
+is going to be remember it's just the
+
+212
+00:07:16,639 --> 00:07:20,319
+derivative of each of these times the
+
+213
+00:07:18,240 --> 00:07:22,479
+unit vectors so the derivative of
+
+214
+00:07:20,319 --> 00:07:25,520
+of t with respect to t that's just 1 so
+
+215
+00:07:22,479 --> 00:07:26,560
+it's 1 times i so i'll just write 1
+
+216
+00:07:25,520 --> 00:07:28,639
+i
+
+217
+00:07:26,560 --> 00:07:30,720
+plus i didn't have to write the 1 there
+
+218
+00:07:28,639 --> 00:07:34,479
+plus the derivative of t squared with
+
+219
+00:07:30,720 --> 00:07:35,440
+respect to t is 2t plus 2
+
+220
+00:07:34,479 --> 00:07:36,319
+t
+
+221
+00:07:35,440 --> 00:07:38,720
+j
+
+222
+00:07:36,319 --> 00:07:39,440
+and let me take the derivative over here
+
+223
+00:07:38,720 --> 00:07:40,400
+r
+
+224
+00:07:39,440 --> 00:07:42,160
+2
+
+225
+00:07:40,400 --> 00:07:44,160
+prime of t
+
+226
+00:07:42,160 --> 00:07:46,479
+the derivative of two t with respect to
+
+227
+00:07:44,160 --> 00:07:48,960
+t is two so two i
+
+228
+00:07:46,479 --> 00:07:50,319
+plus the derivative of four t squared is
+
+229
+00:07:48,960 --> 00:07:53,599
+eight t
+
+230
+00:07:50,319 --> 00:07:56,879
+right two times four it is
+
+231
+00:07:53,599 --> 00:07:56,879
+it is eight t
+
+232
+00:07:56,960 --> 00:07:59,360
+8
+
+233
+00:07:58,479 --> 00:08:01,759
+t
+
+234
+00:07:59,360 --> 00:08:03,199
+just like that
+
+235
+00:08:01,759 --> 00:08:05,680
+just like that
+
+236
+00:08:03,199 --> 00:08:09,520
+now the question is
+
+237
+00:08:05,680 --> 00:08:11,360
+what do their what do their respective
+
+238
+00:08:09,520 --> 00:08:12,879
+derivative vectors look like at
+
+239
+00:08:11,360 --> 00:08:14,479
+different points so let's look at i
+
+240
+00:08:12,879 --> 00:08:17,199
+don't know let's see let's see how fast
+
+241
+00:08:14,479 --> 00:08:18,639
+they're moving when time is equal to 1.
+
+242
+00:08:17,199 --> 00:08:20,240
+so let's take
+
+243
+00:08:18,639 --> 00:08:22,160
+let's take a specific point this is just
+
+244
+00:08:20,240 --> 00:08:23,840
+the general formula but let's take it
+
+245
+00:08:22,160 --> 00:08:26,800
+let's figure out what the derivative is
+
+246
+00:08:23,840 --> 00:08:27,840
+at a specific point so let's take r
+
+247
+00:08:26,800 --> 00:08:29,919
+one
+
+248
+00:08:27,840 --> 00:08:31,520
+when time is equal to
+
+249
+00:08:29,919 --> 00:08:34,159
+when time is equal to one and i wanna
+
+250
+00:08:31,520 --> 00:08:37,120
+take the specific point on the curve not
+
+251
+00:08:34,159 --> 00:08:38,640
+the specific point in time so this point
+
+252
+00:08:37,120 --> 00:08:41,360
+on the curve here is when time is equal
+
+253
+00:08:38,640 --> 00:08:42,479
+to one you could say second this point
+
+254
+00:08:41,360 --> 00:08:44,080
+over here which is the exact
+
+255
+00:08:42,479 --> 00:08:48,320
+corresponding point is when time is
+
+256
+00:08:44,080 --> 00:08:50,000
+equal to one half second so r one of one
+
+257
+00:08:48,320 --> 00:08:52,800
+is equal to and we're taking the
+
+258
+00:08:50,000 --> 00:08:55,600
+derivative there is equal to one i right
+
+259
+00:08:52,800 --> 00:08:56,480
+it's not dependent on t at all so it's 1
+
+260
+00:08:55,600 --> 00:08:57,360
+i
+
+261
+00:08:56,480 --> 00:09:00,880
+plus
+
+262
+00:08:57,360 --> 00:09:01,839
+2 times 1 j so plus 2
+
+263
+00:09:00,880 --> 00:09:03,440
+j
+
+264
+00:09:01,839 --> 00:09:06,320
+so at this point
+
+265
+00:09:03,440 --> 00:09:09,040
+the derivative of or the derivative of
+
+266
+00:09:06,320 --> 00:09:12,160
+our position vector function is going to
+
+267
+00:09:09,040 --> 00:09:15,120
+be 1i plus 2j so we can draw it like
+
+268
+00:09:12,160 --> 00:09:19,360
+this so if we do 1i is like this 1i
+
+269
+00:09:15,120 --> 00:09:21,600
+and then 2j just 2j is like that
+
+270
+00:09:19,360 --> 00:09:23,279
+so our derivative right there i'll do it
+
+271
+00:09:21,600 --> 00:09:24,640
+in the same color that i wrote it in in
+
+272
+00:09:23,279 --> 00:09:26,000
+this green color it's going to look like
+
+273
+00:09:24,640 --> 00:09:28,080
+this
+
+274
+00:09:26,000 --> 00:09:30,080
+it's going to look like that
+
+275
+00:09:28,080 --> 00:09:31,680
+and notice it looks like at least its
+
+276
+00:09:30,080 --> 00:09:32,720
+direction is let me do it a little bit
+
+277
+00:09:31,680 --> 00:09:35,440
+straighter
+
+278
+00:09:32,720 --> 00:09:38,399
+its direction
+
+279
+00:09:35,440 --> 00:09:40,880
+that's not even its direction
+
+280
+00:09:38,399 --> 00:09:42,560
+looks tangent to the curve it's going in
+
+281
+00:09:40,880 --> 00:09:43,680
+the direction that my particle is moving
+
+282
+00:09:42,560 --> 00:09:45,279
+remember my particle's going from here
+
+283
+00:09:43,680 --> 00:09:46,560
+to there so it's going in the direction
+
+284
+00:09:45,279 --> 00:09:48,959
+and i'm going to think about in a second
+
+285
+00:09:46,560 --> 00:09:51,040
+what this length of this derivative
+
+286
+00:09:48,959 --> 00:09:53,519
+vector is this right here just to be
+
+287
+00:09:51,040 --> 00:09:56,240
+clear is r one
+
+288
+00:09:53,519 --> 00:09:59,040
+prime it's a vector so it's the it's
+
+289
+00:09:56,240 --> 00:10:02,079
+it's telling us the instantaneous change
+
+290
+00:09:59,040 --> 00:10:03,200
+in our position vector with respect to t
+
+291
+00:10:02,079 --> 00:10:05,120
+or time
+
+292
+00:10:03,200 --> 00:10:06,959
+when time is equal to one second that's
+
+293
+00:10:05,120 --> 00:10:09,519
+this thing right here now let's take the
+
+294
+00:10:06,959 --> 00:10:10,640
+exact same position here on our curve
+
+295
+00:10:09,519 --> 00:10:11,839
+but that's going to occur at a different
+
+296
+00:10:10,640 --> 00:10:13,040
+time for this guy we already said it
+
+297
+00:10:11,839 --> 00:10:14,880
+only takes him
+
+298
+00:10:13,040 --> 00:10:16,640
+he's here at time is equal to one half
+
+299
+00:10:14,880 --> 00:10:17,680
+second so let's take
+
+300
+00:10:16,640 --> 00:10:19,760
+let's take
+
+301
+00:10:17,680 --> 00:10:22,800
+let me do it in i can do the same color
+
+302
+00:10:19,760 --> 00:10:25,440
+so here we have r2
+
+303
+00:10:22,800 --> 00:10:27,040
+r2 we're going to evaluate it one half
+
+304
+00:10:25,440 --> 00:10:29,200
+because at time is equal to one half
+
+305
+00:10:27,040 --> 00:10:31,680
+seconds and this is going to be equal to
+
+306
+00:10:29,200 --> 00:10:33,360
+2i this isn't dependent at all on time
+
+307
+00:10:31,680 --> 00:10:34,399
+so two
+
+308
+00:10:33,360 --> 00:10:37,120
+i
+
+309
+00:10:34,399 --> 00:10:38,640
+plus eight times the time so we're eight
+
+310
+00:10:37,120 --> 00:10:40,640
+time right here is one half so eight
+
+311
+00:10:38,640 --> 00:10:42,480
+times one half is four
+
+312
+00:10:40,640 --> 00:10:44,480
+so plus four
+
+313
+00:10:42,480 --> 00:10:46,240
+j so what does this look like
+
+314
+00:10:44,480 --> 00:10:47,920
+the instantaneous derivative here and
+
+315
+00:10:46,240 --> 00:10:50,959
+this is the derivative have to be very
+
+316
+00:10:47,920 --> 00:10:53,600
+clear so 2i that's let me draw some more
+
+317
+00:10:50,959 --> 00:10:56,079
+so 2i maybe gets us about
+
+318
+00:10:53,600 --> 00:10:59,279
+that far plus 4j
+
+319
+00:10:56,079 --> 00:11:00,880
+will get us up to right around there
+
+320
+00:10:59,279 --> 00:11:02,720
+plus 4j
+
+321
+00:11:00,880 --> 00:11:04,160
+is that vector so when you add those two
+
+322
+00:11:02,720 --> 00:11:05,920
+heads to tails
+
+323
+00:11:04,160 --> 00:11:08,399
+you get this thing
+
+324
+00:11:05,920 --> 00:11:09,600
+you get something that let me let me do
+
+325
+00:11:08,399 --> 00:11:13,680
+it like
+
+326
+00:11:09,600 --> 00:11:15,680
+you get something that looks like that
+
+327
+00:11:13,680 --> 00:11:17,360
+is something that looks like that i
+
+328
+00:11:15,680 --> 00:11:20,399
+didn't draw it as neatly as i would like
+
+329
+00:11:17,360 --> 00:11:22,480
+to but let's notice something
+
+330
+00:11:20,399 --> 00:11:24,160
+both of these vectors are going in the
+
+331
+00:11:22,480 --> 00:11:28,800
+exact same direction they're both
+
+332
+00:11:24,160 --> 00:11:31,920
+tangential to the path to our curve but
+
+333
+00:11:28,800 --> 00:11:34,800
+this vector is going is is its length
+
+334
+00:11:31,920 --> 00:11:37,040
+its magnitude is much larger than this
+
+335
+00:11:34,800 --> 00:11:38,480
+vector's magnitude and that makes sense
+
+336
+00:11:37,040 --> 00:11:39,920
+because i hinted at it when we first
+
+337
+00:11:38,480 --> 00:11:42,000
+talked about these vector valued
+
+338
+00:11:39,920 --> 00:11:43,760
+position functions and their derivatives
+
+339
+00:11:42,000 --> 00:11:45,839
+is that the length
+
+340
+00:11:43,760 --> 00:11:48,560
+the length
+
+341
+00:11:45,839 --> 00:11:50,240
+you can kind of view it as the speed the
+
+342
+00:11:48,560 --> 00:11:53,920
+length is equal to the speed if you
+
+343
+00:11:50,240 --> 00:11:55,760
+imagine time t being time and these
+
+344
+00:11:53,920 --> 00:11:57,839
+parametrizations are representing a dot
+
+345
+00:11:55,760 --> 00:11:59,760
+moving along these curves so in this
+
+346
+00:11:57,839 --> 00:12:01,360
+case the particle only takes a second to
+
+347
+00:11:59,760 --> 00:12:03,760
+go there so at this point in its path
+
+348
+00:12:01,360 --> 00:12:06,000
+it's moving much faster than this
+
+349
+00:12:03,760 --> 00:12:08,800
+particle is so if you think about it
+
+350
+00:12:06,000 --> 00:12:11,279
+this vector right here if you imagine
+
+351
+00:12:08,800 --> 00:12:12,720
+this is a position vector this is
+
+352
+00:12:11,279 --> 00:12:14,880
+velocity
+
+353
+00:12:12,720 --> 00:12:16,639
+this right here is velocity right
+
+354
+00:12:14,880 --> 00:12:19,279
+velocity is
+
+355
+00:12:16,639 --> 00:12:21,040
+a speed plus direction speed is just you
+
+356
+00:12:19,279 --> 00:12:22,880
+know how fast are you going velocity is
+
+357
+00:12:21,040 --> 00:12:25,600
+how fast you're going in what direction
+
+358
+00:12:22,880 --> 00:12:27,120
+i'm going this fast in and you could
+
+359
+00:12:25,600 --> 00:12:27,760
+calculate it using pythagorean theorem
+
+360
+00:12:27,120 --> 00:12:30,320
+but i just want to give you the
+
+361
+00:12:27,760 --> 00:12:32,399
+intuition right here i'm going that fast
+
+362
+00:12:30,320 --> 00:12:34,240
+in this direction here i'm going this
+
+363
+00:12:32,399 --> 00:12:36,480
+fast i'm going even faster that's my
+
+364
+00:12:34,240 --> 00:12:38,560
+magnitude but i'm still going in the
+
+365
+00:12:36,480 --> 00:12:41,040
+same direction so hopefully you have a
+
+366
+00:12:38,560 --> 00:12:46,040
+gut feeling now of what the derivative
+
+367
+00:12:41,040 --> 00:12:46,040
+of these position vectors really are
+
